@@ -33,7 +33,9 @@
         <div class="col-md-12 col-sm-12" id="innerDiv">
           <p id="bobname">bob dennett</p>
           <p id="frontend">front end developer</p>
-          <!-- <a href="#imagine"><button id="learnMore">view more</button></a> -->
+          <div class="nav">
+            <a href="#about"><button id="learnMore">view more</button></a>
+          </div>
         </div>
       </div>
     </div>
@@ -60,7 +62,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-sm-12" id="left2">
@@ -127,5 +129,14 @@
           </div>
         </div>
       </section>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- jquery scrollTo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <!-- jquery localScroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
+    <script src="smoothscroll.js"></script>
+    <script>
+      $('.nav').localScroll();
+    </script>
     </body>
     </html>
