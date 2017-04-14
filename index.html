@@ -11,15 +11,17 @@
 
 <script src="https://use.fontawesome.com/565098fb8a.js"></script>
 <script src="application.js"></script>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-
-
 <!-- bootstrap core css -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
 <!-- main css -->
-<link rel="stylesheet" type="text/css" href="application.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/application.css" />
 <link href='http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
@@ -40,53 +42,52 @@
       </div>
     </div>
   </section>
-  <section id="ddd">
-    <div class="col-md-6 col-sm-6"  id="imagine">
-      <div class="col-md-7" id="over">
-        <p id="design">design</p>
-        <p id="develop">develop</p>
-        <p id="repeat">repeat</p>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-sm-12" id="forest"></div>
-  </section>
-  <section id="inter">
-    <div class="row">
-      <div class="col-md-12 col-sm-12" id="four">
-        <p id="einstein">
-          "Imagination is more important than
-          knowledge. For knowledge is limited to all we now know
-          and understand, while imagination embraces the entire world,
-          and all there ever will be to know and understand."</br>-Albert Einstein-</p>
+  <section id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-12" id="left2">
+          <p id="desc">Hey I am Bob Dennett, a front end developer from the capital area of New York. I am a winter 2015 graduate of <a href="https://www.learnacademy.org" target="_blank" id="learn">LEARN Academy</a>, a San Diego based developers bootcamp. I also enjoy long walks on the beach, snowboarding, and hanging out with my dog, Jimi</p>
+        </div>
+        <div id="right">
+          <div class="col-md-2 col-md-3" id="html">
+            <i class="devicon-html5-plain"></i>
+          </div>
+          <div class="col-md-2 col-md-3" id="javascript">
+            <i class="devicon-javascript-plain"></i>
+          </div>
+          <div class="col-md-2 col-sm-3" id="css">
+            <i class="devicon-css3-plain" id="icon2"></i>
+          </div>
+          <div class="col-md-2 col-sm-3" id="jQuery">
+            <i class="devicon-jquery-plain"></i>
+          </div>
+          <div class="col-md-2 col-sm-3" id="ruby">
+            <i class="devicon-ruby-plain"></i>
+          </div>
+          <div class="col-md-2 col-sm-3" id="rails">
+            <i class="devicon-rails-plain-wordmark"></i>
+          </div>
         </div>
       </div>
     </section>
-    <section id="about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 col-sm-12" id="left2">
-            <p id="desc">Hey I am Bob dennett, a front end developer from the capital area of new york. I am a winter 2015 graduate of <a href="https://www.learnacademy.org" target="_blank" id="learn">learn academy</a>, a san diego based developers bootcamp. I also enjoy long walks on the beach, snowboarding, and hanging out with my dog, jimi</p>
-          </div>
-          <div id="right">
-            <div class="col-md-2 col-md-3" id="html">
-              <i class="devicon-html5-plain"></i>
-            </div>
-            <div class="col-md-2 col-md-3" id="javascript">
-              <i class="devicon-javascript-plain"></i>
-            </div>
-            <div class="col-md-2 col-sm-3" id="css">
-              <i class="devicon-css3-plain" id="icon2"></i>
-            </div>
-            <div class="col-md-2 col-sm-3" id="jQuery">
-              <i class="devicon-jquery-plain"></i>
-            </div>
-            <div class="col-md-2 col-sm-3" id="ruby">
-              <i class="devicon-ruby-plain"></i>
-            </div>
-            <div class="col-md-2 col-sm-3" id="rails">
-              <i class="devicon-rails-plain-wordmark"></i>
-            </div>
+    <section id="ddd">
+      <div class="col-md-6 col-sm-6"  id="imagine">
+        <div class="col-md-7" id="over">
+          <p id="design">design</p>
+          <p id="develop">develop</p>
+          <p id="repeat">repeat</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12" id="forest"></div>
+    </section>
+    <section id="inter">
+      <div class="row">
+        <div class="col-md-12 col-sm-12" id="four">
+          <p id="einstein">
+            "Imagination is more important than
+            knowledge. For knowledge is limited to all we now know
+            and understand, while imagination embraces the entire world,
+            and all there ever will be to know and understand."</br>-Albert Einstein-</p>
           </div>
         </div>
       </section>
@@ -130,13 +131,13 @@
         </div>
       </section>
       <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <!-- jquery scrollTo -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-    <!-- jquery localScroll -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
-    <script src="smoothscroll.js"></script>
-    <script>
-      $('.nav').localScroll();
-    </script>
+      <!-- jquery scrollTo -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+      <!-- jquery localScroll -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
+      <script src="smoothscroll.js"></script>
+      <script>
+        $('.nav').localScroll();
+      </script>
     </body>
     </html>
