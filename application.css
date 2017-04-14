@@ -35,13 +35,13 @@ body{
 #bobname{
   color:white;
   font-size: 8em;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 #frontend{
   font-size: 5em;
   color:white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
   margin-top: -5%;
 }
