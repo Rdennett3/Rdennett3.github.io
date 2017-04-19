@@ -1,5 +1,5 @@
 body{
-  background:white;
+  background:#f7f7ff;
 }
 #innerDiv{
  height:100vh;
@@ -62,11 +62,14 @@ body{
 #imagine{
  height:80vh;
  background-color: #004BA8 !important;
+ visibility: hidden;
 }
 #forest{
  height:80vh;
  background-image: url("http://farm3.staticflickr.com/2922/33909562051_2e6b3482d6_b.jpg");
  background-size: cover;
+ z-index: -100;
+ visibility: hidden;
 }
 #quote{
  font-size: 3em;
@@ -144,6 +147,7 @@ body{
  background-image: url("http://farm3.staticflickr.com/2913/33227103623_5ca6a6866c_b.jpg");
  background-size: cover;
  text-align: center;
+ visibility: hidden;
 }
 #shelterbtn{
  margin-right: 25%;
@@ -153,12 +157,14 @@ body{
  background-image: url("http://farm4.staticflickr.com/3931/33998503646_8560a68020_b.jpg");
  background-size: cover;
  text-align: center;
+ visibility: hidden;
 }
 #right2{
  height:50%;
  background-image: url("http://farm4.staticflickr.com/3931/33998502936_ecc543a9d9_b.jpg");
  background-size:cover;
  text-align: center;
+ visibility: hidden;
 }
 #four{
  height:50vh;
@@ -224,6 +230,10 @@ body{
 #contact{
  height:40vh;
  text-align: center;
+ visibility: hidden;
+}
+#contact{
+ visibility: hidden;
 }
 .contactbtn{
  height:5em;
@@ -448,6 +458,68 @@ slideRight
 
  animation-duration: 1.5s;
  -webkit-animation-duration: 1.5s;
+
+ animation-timing-function: ease-in-out;
+ -webkit-animation-timing-function: ease-in-out;
+ visibility: visible !important;
+}
+
+@keyframes slideRight {
+ 0% {
+   transform: translateX(-150%);
+ }
+ 100% {
+   transform: translateX(0%);
+ }
+}
+
+@-webkit-keyframes slideRight {
+ 0% {
+   -webkit-transform: translateX(-150%);
+ }
+ 100% {
+   -webkit-transform: translateX(0%);
+ }
+}
+/*SLIDE LEFT*/
+.slideLeft{
+ animation-name: slideLeft;
+ -webkit-animation-name: slideLeft;
+
+ animation-duration: 2s;
+ -webkit-animation-duration: 2s;
+
+ animation-timing-function: ease-in-out;
+ -webkit-animation-timing-function: ease-in-out;
+
+ visibility: visible !important;
+}
+
+@keyframes slideLeft {
+ 0% {
+   transform: translateX(150%);
+ }
+ 100% {
+   transform: translateX(0%);
+ }
+}
+
+@-webkit-keyframes slideLeft {
+ 0% {
+   -webkit-transform: translateX(150%);
+ }
+ 100% {
+   -webkit-transform: translateX(0%);
+ }
+}
+
+/*SLIDE RIGHT*/
+.slideRight{
+ animation-name: slideRight;
+ -webkit-animation-name: slideRight;
+
+ animation-duration: 2s;
+ -webkit-animation-duration: 2s;
 
  animation-timing-function: ease-in-out;
  -webkit-animation-timing-function: ease-in-out;

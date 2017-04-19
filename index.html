@@ -15,8 +15,12 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
 <!-- main css -->
-<link rel="stylesheet" type="text/css" href="application.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/application.css" />
 <link href='http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
 
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
@@ -118,11 +122,11 @@
           </div>
           <div class="col-md-6 col-sm-6" id="socialIcons">
             <div class="row">
-            <a href="https://www.facebook.com/bob.dennett.5" target="_blank"><i class="fa fa-facebook" aria-hidden="true" id="facebook"></i></a>
-            <a href="https://www.instagram.com/bobd3/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
-            <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" id="linkedin"></i></a>
-            <a href="mailto:r.dennett3@gmail.com" id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-          </div>
+              <a href="https://www.facebook.com/bob.dennett.5" target="_blank"><i class="fa fa-facebook" aria-hidden="true" id="facebook"></i></a>
+              <a href="https://www.instagram.com/bobd3/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
+              <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" id="linkedin"></i></a>
+              <a href="mailto:r.dennett3@gmail.com" id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
       </section>
@@ -133,7 +137,49 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
       <script src="smoothscroll.js"></script>
       <script>
-        $('.nav').localScroll();
+      $('.nav').localScroll();
+      </script>
+      <script>
+      $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},700);
+        return false;
+      });
+      </script>
+      <script>
+      $(window).scroll(function() {
+        $('#left, #imagine').each(function(){
+          var imagePos = $(this).offset().top;
+
+          var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+600) {
+            $(this).addClass("slideRight");
+          }
+        });
+      });
+      </script>
+      <script>
+      $(window).scroll(function() {
+        $('#right1, #right2, #forest').each(function(){
+          var imagePos = $(this).offset().top;
+
+          var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+600) {
+            $(this).addClass("slideLeft");
+          }
+        });
+      });
+      </script>
+      <script>
+      $(window).scroll(function() {
+        $('#contact, #footer').each(function(){
+          var imagePos = $(this).offset().top;
+
+          var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+600) {
+            $(this).addClass("slideUp");
+          }
+        });
+      });
       </script>
     </body>
     </html>
