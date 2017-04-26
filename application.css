@@ -59,6 +59,9 @@ body{
  background: #f7f7ff;
  color: #004ba8;
 }
+#inter{
+  background-color: #f7f7ff;
+}
 #imagine{
  height:80vh;
  background-color: #004BA8 !important;
@@ -179,6 +182,7 @@ body{
  font-size: 2.5em;
  font-family: 'Oswald', sans-serif;
  text-transform: uppercase;
+ visibility: hidden;
 }
 #left2{
  height:70vh;
@@ -191,6 +195,9 @@ body{
  background: white;
  z-index: 10;
  margin-left: 35%;
+}
+#about{
+  visibility: hidden;
 }
 #desc{
  font-size: 2.7em;
