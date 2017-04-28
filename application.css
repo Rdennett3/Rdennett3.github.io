@@ -73,7 +73,7 @@ body{
   background-image: url("http://farm3.staticflickr.com/2922/33909562051_2e6b3482d6_b.jpg");
   background-size: cover;
   z-index: -100;
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #quote{
   font-size: 3em;
