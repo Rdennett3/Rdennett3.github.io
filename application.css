@@ -1,392 +1,302 @@
 body{
-   background:#f7f7ff;
- }
- video{
-   min-width: 100%;
-   min-height: 100%;
- }
-#innerDiv{
+  background-image: url('https://farm5.staticflickr.com/4292/36093318101_f01fa25223_z.jpg');
+  margin:0;
+  overflow-x: hidden;
+}
+#three3{
+  border-right: 4px solid #007EA7;
+  margin-right: 2%;
+  width:4em;
+}
+#two2{
+  border-right: 4px solid #007EA7;
+  margin-right: 2%;
+  width:4em;
+}
+#one{
   height:100vh;
-  padding-top: 13%;
-  text-align: center;
-  background: linear-gradient(270deg, #004ba8, #CD8B76, #6B4E71);
-  background-size: 400% 400%;
-
-  -webkit-animation: AnimationName 9s ease infinite;
-  -moz-animation: AnimationName 9s ease infinite;
-  animation: AnimationName 9s ease infinite;
-  }
-  @-webkit-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
-  @-moz-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
-  @keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
 }
-#topname{
-  color:white;
-}
-#bobname{
-  color:white;
-  font-size: 8em;
-  font-family: 'Roboto', sans-serif;
-  text-transform:uppercase;
-}
-#frontend{
-  font-size: 5em;
-  color:white;
-  font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
-  margin-top: -5%;
-}
-#learnMore{
-  height:5em;
-  width:15em;
-  border:3px solid #f7f7ff;
-  color:#f7f7ff;
-  background: transparent;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: .8em;
-}
-#learnMore:hover{
-  border:3px solid #f7f7ff;
-  background: #f7f7ff;
-  color: #004ba8;
-}
-#imagine{
-  height:80vh;
-  background-color: #004BA8 !important;
-  visibility: hidden;
-}
-#forest{
-  height:80vh;
-  background-image: url("http://farm5.staticflickr.com/4181/33502150923_ede18ec7d3_b.jpg");
+#insideOne{
+  opacity: .9;
+  margin-bottom:1em;
+  height:100vh;
+  width:200%;
+  background-image: url('https://farm6.staticflickr.com/5718/30948464751_cd8e4a960e_z.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  z-index: -100;
-  /*visibility: hidden;*/
+  background-position: center;
+  width: 100vw;
 }
-#quote{
+#insideLanding{
+  height:80%;
+  border: 10px solid black;
+  margin-top: 5%;
+  margin-left: 4.5%;
+  /*background-color: rgba(0,0,0,0.75);*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10em;
+  color: #007EA7;
+
+}
+#den{
+  margin-top: -90px;
+}
+#two{
+  height:40vh;
+  text-align: center;
+}
+#about{
   font-size: 3em;
-  color:#f7f7ff;
-  text-align: right;
-  line-height: 75%;
-}
-#over{
-  z-index: 1000;
-  height: 40vh;
-  background: #f7f7ff;
-  margin-top: 20%;
-  margin-left: 65%;
-  text-align: right;
-  animation-name:slideL;
-  animation-duration: 1s;
-}
-#design,
-#develop,
-#repeat{
-  font-family: 'Oswald', sans-serif;
-  color:#4A525A;
-  font-size: 5em;
+  color: white;
+  font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: -7%;
-}
-#pet,
-#reu,
-#access{
-  height:100%;
-  background: transparent;
-}
-.defbtn{
-  width:40%;
-  height:3em;
-  color:white;
-  background: transparent;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 10%;
+  visibility: hidden;
 }
 #three{
   height:80vh;
-}
-.button{
-  height:5em;
-  width:15em;
-  background: transparent;
-  border:3px solid #f7f7ff;
-  color:white;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-transform: uppercase;
-  letter-spacing: .8em;
-  font-size: 1em;
-  transition: 1s;
-}
-.button:hover{
-  border:3px solid #004BA8;
-  background: #004BA8;
-  opacity: .8;
-  color: white;
-  transition: 1s;
-}
-#projOver{
-  height:20vh;
-  text-align: left;
-  z-index: 1000;
-  float:left;
-  text-transform: uppercase;
-  color:#f7f7ff;
-  font-family: 'Oswald', sans-serif;
-  font-size: 4em;
-}
-#left{
-  height:100%;
-  background-image: url("http://farm3.staticflickr.com/2913/33227103623_5ca6a6866c_b.jpg");
-  background-size: cover;
   text-align: center;
-  visibility: hidden;
-}
-#shelterbtn{
-  margin-right: 25%;
-}
-#right1{
-  height:50%;
-  background-image: url("http://farm4.staticflickr.com/3931/33998503646_8560a68020_b.jpg");
-  background-size: cover;
-  text-align: center;
-  visibility: hidden;
-}
-#right2{
-  height:50%;
-  background-image: url("http://farm4.staticflickr.com/3931/33998502936_ecc543a9d9_b.jpg");
-  background-size:cover;
-  text-align: center;
-  visibility: hidden;
+  background-color: rgba(0,0,0,0.95);
+  /*border-radius: 5px;*/
 }
 #four{
+  height:100vh;
+}
+#leftOne{
   height:50vh;
+  background-color: rgba(0,0,0,0.97);
+  margin-top: 10%;
+  /*border-radius: 5px;*/
+}
+#animalInfo{
+  height:50vh;
+  background-color: rgba(0,0,0,.90);
   text-align: center;
-  background-color: #f7f7ff;
 }
-#einstein{
-  color:#4A525A;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5em;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  visibility: visible;
-}
-#left2{
-  height:70vh;
-  background: #f7f7ff;
-  color:#4A525A;
-  text-align: left;
-}
-#project{
-  height:25vh;
-  background: white;
-  z-index: 10;
-  margin-left: 35%;
-}
-#about{
-  visibility: hidden;
-}
-#desc{
-  font-size: 2.7em;
-  font-family: 'Oswald', sans-serif;
-  position: relative;
-  top:50%;
-  transform:translateY(-50%);
-}
-#learn:hover{
-  text-decoration: none !IMPORTANT;
+#animalText,
+#reuText,
+#presText{
   color:white;
+  font-size: 2.5em;
+  margin-top: 10%;
+  font-family: 'Amatic SC', cursive;
+
 }
-#right{
-  height:70vh;
-  background: #f7f7ff;
+#rightOne{
+  height:50vh;
+  background-color: red;
+  margin-top: 10%;
+}
+#reuInfo{
+  height:50vh;
+  background-color: rgba(0,0,0,.90);
+  text-align: center;
+}
+i{
+  font-size: 5em;
 }
 #html,
 #css,
-#javascript{
-  height:35vh;
-  background: transparent;
-  text-align: center;
-  font-size: 7em;
-  top:10%;
-  color:#4A525A;
-}
-#jQuery,
+#ruby,
 #rails,
-#ruby{
-  height:35vh;
-  background: transparent;
-  text-align: center;
-  font-size: 7em;
-  color:#4A525A;
-  top:10%;
-}
-#contact{
-  height:40vh;
-  text-align: center;
+#bootstrap,
+#github{
+  margin-top: 1.8em;
+  color: white;
   visibility: hidden;
 }
-#contact{
+.mainBtn{
+  height:4em;
+  width:16em;
+  border:3px solid white;
+  background: black;
+  color:white;
+  font-weight: bold;
+  font-kerning: 1em;
+  font-style: oblique;
   visibility: hidden;
-}
-.contactbtn{
-  height:5em;
-  width:15em;
-  background: transparent;
-  border:3px solid #4A525A;
-  color:#4A525A;
   text-transform: uppercase;
-  letter-spacing: .8em;
-  font-size: 1em;
-  transition: 1s;
 }
-.contactbtn:hover{
-  border:3px solid #4A525A;
-  background: #4A525A;
-  color:#f7f7ff;
+.mainBtn:hover{
+  background-color: #007EA7;
+  border: 3px solid #007EA7;
+  transition: .5s;
+  opacity: .75;
 }
-#or,
-#number{
+#btnOne{
+  margin-top: 20%;
+}
+#btnTwo{
+  margin-top: 20%;
+}
+#leftone{
+  height:50vh;
+  background-image: url('http://farm3.staticflickr.com/2913/33227103623_5ca6a6866c_b.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,.8);
+  opacity: .9;
+  text-align: center;
+  /*visibility: hidden;*/
+}
+#animal{
   font-size: 2em;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
+  color:white;
 }
-#intouch{
-  font-size: 5em;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-#creep1{
-  height:20vh;
+#reuManager{
+  height:50vh;
+  background-color: green;
+  background-image: url('http://farm4.staticflickr.com/3931/33998503646_8560a68020_b.jpg');
   text-align: center;
-  position:relative;
-  top:50%;
-  transform:translateY(50%);
+  /*visibility: hidden;*/
 }
-#creep{
+#presentation{
+  height:50vh;
+  background-image: url('http://farm4.staticflickr.com/3931/33998502936_ecc543a9d9_b.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .9;
+  text-align: center;
+  /*visibility: hidden;*/
+}
+#presInfo{
+  height:50vh;
+  background-color: rgba(0,0,0,.90);
+  text-align: center;
+}
+#afflab{
+  height:50vh;
+  background-color: blue;
+  background-image: url('https://farm5.staticflickr.com/4177/33580381953_045f7a0ff1_z.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /*visibility: hidden;*/
+}
+#afflabInfo{
+  height:50vh;
+  background-color: rgba(0,0,0,.90);
+}
+#solid{
+  height:50vh;
+  background-color: red;
+  background-image: url('https://farm3.staticflickr.com/2886/33955048491_6e129828f1_z.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /*visibility: hidden;*/
+}
+#projInfo{
+  height:50vh;
+  background-color: rgba(0,0,0,.90);
+  text-align: center;
+}
+#quote{
+  height:60vh;
+  text-align: center;
+  background-color: rgba(0,0,0,0.95);;
+}
+#einstein{
+  font-size: 2.5em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5%;
+  visibility: hidden;
+}
+#skills{
+  height:60vh;
+}
+#map{
+  height:60vh;
+  background-image: url('https://farm5.staticflickr.com/4419/36948656221_f5bdbd1cc1_z.jpg');
+}
+#information{
+  height:60vh;
+  text-align: center;
+  background-color: rgba(0,0,0,.90);
+}
+#inTouch{
   font-size: 3em;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  float: right;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+  margin-top: 5%;
+  visibility: hidden;
 }
-#socailicons{
-  text-align: center;
+#btnThree{
+  visibility: hidden;
+}
+#call{
+  font-size: 2.5em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-top: 5%;
+  color: white;
+  font-style:italic;
+  visibility: hidden;
+}
+#info{
+  font-size: 2.5em;
+  color:white;
 }
 #facebook,
 #instagram,
 #linkedin,
-#email{
-  font-size: 4em;
-  position:relative;
-  top:-50%;
-  transform:translateY(130%);
-  padding-right: 1em;
-  float:left;
-  color:#4A525A;
-  display: inline-block;
+#github1{
+  font-size: 1.75em;
+  color:white;
+  letter-spacing: .5em;
+  visibility: hidden;
 }
-#facebook:hover,
-#instagram:hover,
-#linkedin:hover,
-#email:hover{
-  color:#004BA8;
+#copyright{
+  height:5vh;
+  text-align: center;
+  background-color: rgba(0,0,0,1);
 }
-#email{
-  display: none;
+#copy{
+  color:white;
+  font-size: 1.5em;
+  position:fixed;
 }
-@media (max-width: 1000px){
-  #bobname{
-    margin-top: 10%;
-    font-size: 5em;
+@media only screen and (max-width:800px){
+  #insideLanding{
+    color:green;
+    font-size: 7em;
+    margin-top: 5%;
+    margin-bottom: 2%;
   }
-  #frontend{
-
+  #den{
+    margin-top: 1%;
   }
-  #imagine{
-    display:none;
+  #animalInfo,
+  #reuInfo,
+  #presInfo,
+  #afflabInfo,
+  #projInfo{
+    display: none;
   }
-  #forest{
-    display:none;
-  }
-  #right{
-    display:none;
-  }
-  #projOver{
-    display:none;
-  }
-  #intouch{
-    display:none;
-  }
-  #left{
-    height:50%;
-  }
-  .contactbtn{
-    display:none;
-  }
-  #contact{
-    height:25vh;
-  }
-  #or,
-  #number{
-    display:none;
-  }
-  #creep{
-    display:none;
-  }
-  #footer{
-    text-align: center;
-  }
-  #over{
-    display:none;
-  }
-  #shelterbtn{
-    margin-right: 0;
-  }
-  #desc{
-    font-size: 2em;
-  }
-  #einstein{
-    font-size: 1.75em;
-  }
-  #bobd{
+  #iformation{
     height:100%;
-    width:100%;
   }
-  .button{
-    border:3px solid #004BA8;
-    color:#f7f7ff;
-    background: #004BA8;
-    opacity:.8;
+  #quote{
+    display:none;
   }
-  #facebook,
-  #instagram,
-  #linkedin,
-  #email{
-    float: center;
-    font-size: 3em;
-    padding-right: 1em;
-    margin-bottom: 10%;
-    display:inline-block;
+  #three{
+    font-size: .75em;
   }
-  #socialIcons{
-    margin-left: 15%;
+  #html,
+  #css,
+  #ruby,
+  #rails,
+  #bootstrap,
+  #github{
+    display:none;
   }
-  #email{
-    margin-top: -9%;
+  #copyright{
+    display:none;
   }
 }
 /*==============================================
@@ -430,8 +340,8 @@ slideLeft
 	animation-name: slideLeft;
 	-webkit-animation-name: slideLeft;
 
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease-in-out;
 	-webkit-animation-timing-function: ease-in-out;
@@ -464,8 +374,8 @@ slideRight
 	animation-name: slideRight;
 	-webkit-animation-name: slideRight;
 
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease-in-out;
 	-webkit-animation-timing-function: ease-in-out;
@@ -521,391 +431,21 @@ slideRight
  	}
  }
 
- body{
-   background-image: url('https://farm5.staticflickr.com/4292/36093318101_f01fa25223_z.jpg');
-   margin:0;
-   overflow-x: hidden;
- }
- #three3{
-   border-right: 4px solid #007EA7;
-   margin-right: 2%;
-   width:4em;
- }
- #two2{
-   border-right: 4px solid #007EA7;
-   margin-right: 2%;
-   width:4em;
- }
- #one{
-   height:100vh;
- }
- #insideOne{
-   opacity: .9;
-   margin-bottom:1em;
-   height:100vh;
-   width:200%;
-   background-image: url('https://farm6.staticflickr.com/5718/30948464751_cd8e4a960e_z.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   width: 100vw;
- }
- #insideLanding{
-   height:80%;
-   border: 10px solid black;
-   margin-top: 5%;
-   margin-left: 4.5%;
-   /*background-color: rgba(0,0,0,0.75);*/
-   font-family: 'Josefin Sans', sans-serif;
-   font-size: 10em;
-   color: #007EA7;
-
- }
- #den{
-   margin-top: -90px;
- }
- #two{
-   height:40vh;
-   text-align: center;
- }
- #about{
-   font-size: 3em;
-   color: white;
-   font-weight: bold;
-   text-transform: uppercase;
-   font-family: 'Open Sans Condensed', sans-serif;
-   margin-top: 10%;
-   visibility: hidden;
- }
- #three{
-   height:80vh;
-   text-align: center;
-   background-color: rgba(0,0,0,0.95);
-   /*border-radius: 5px;*/
- }
- #four{
-   height:100vh;
- }
- #leftOne{
-   height:50vh;
-   background-color: rgba(0,0,0,0.97);
-   margin-top: 10%;
-   /*border-radius: 5px;*/
- }
- #animalInfo{
-   height:50vh;
-   background-color: rgba(0,0,0,.90);
-   text-align: center;
- }
- #animalText,
- #reuText,
- #presText{
-   color:white;
-   font-size: 2.5em;
-   margin-top: 10%;
-   font-family: 'Amatic SC', cursive;
-
- }
- #rightOne{
-   height:50vh;
-   background-color: red;
-   margin-top: 10%;
- }
- #reuInfo{
-   height:50vh;
-   background-color: rgba(0,0,0,.90);
-   text-align: center;
- }
- i{
-   font-size: 5em;
- }
- #html,
- #css,
- #ruby,
- #rails,
- #bootstrap,
- #github{
-   margin-top: 1.8em;
-   color: white;
-   visibility: hidden;
- }
- .mainBtn{
-   height:4em;
-   width:16em;
-   border:3px solid white;
-   background: black;
-   color:white;
-   font-weight: bold;
-   font-kerning: 1em;
-   font-style: oblique;
-   visibility: hidden;
-   text-transform: uppercase;
- }
- .mainBtn:hover{
-   background-color: #007EA7;
-   border: 3px solid #007EA7;
-   transition: .5s;
-   opacity: .75;
- }
- #btnOne{
-   margin-top: 20%;
- }
- #btnTwo{
-   margin-top: 20%;
- }
- #leftone{
-   height:50vh;
-   background-image: url('http://farm3.staticflickr.com/2913/33227103623_5ca6a6866c_b.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-color: rgba(0,0,0,.8);
-   opacity: .9;
-   text-align: center;
-   /*visibility: hidden;*/
- }
- #animal{
-   font-size: 2em;
-   color:white;
- }
- #reuManager{
-   height:50vh;
-   background-color: green;
-   background-image: url('http://farm4.staticflickr.com/3931/33998503646_8560a68020_b.jpg');
-   text-align: center;
-   /*visibility: hidden;*/
- }
- #presentation{
-   height:50vh;
-   background-image: url('http://farm4.staticflickr.com/3931/33998502936_ecc543a9d9_b.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   opacity: .9;
-   text-align: center;
-   /*visibility: hidden;*/
- }
- #presInfo{
-   height:50vh;
-   background-color: rgba(0,0,0,.90);
-   text-align: center;
- }
- #afflab{
-   height:50vh;
-   background-color: blue;
-   background-image: url('https://farm5.staticflickr.com/4177/33580381953_045f7a0ff1_z.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   text-align: center;
-   /*visibility: hidden;*/
- }
- #afflabInfo{
-   height:50vh;
-   background-color: rgba(0,0,0,.90);
- }
- #solid{
-   height:50vh;
-   background-color: red;
-   background-image: url('https://farm3.staticflickr.com/2886/33955048491_6e129828f1_z.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   text-align: center;
-   /*visibility: hidden;*/
- }
- #projInfo{
-   height:50vh;
-   background-color: rgba(0,0,0,.90);
-   text-align: center;
- }
- #quote{
-   height:60vh;
-   text-align: center;
-   background-color: rgba(0,0,0,0.95);;
- }
- #einstein{
-   font-size: 2.5em;
-   color: white;
-   font-weight: bold;
-   text-transform: uppercase;
-   font-family: 'Raleway', sans-serif;
-   margin-top: 5%;
-   visibility: hidden;
- }
- #skills{
-   height:60vh;
- }
- #map{
-   height:60vh;
-   background-image: url('https://farm5.staticflickr.com/4419/36948656221_f5bdbd1cc1_z.jpg');
- }
- #information{
-   height:60vh;
-   text-align: center;
-   background-color: rgba(0,0,0,.90);
- }
- #inTouch{
-   font-size: 3em;
-   text-transform: uppercase;
-   font-family: 'Raleway', sans-serif;
-   color:white;
-   margin-top: 5%;
-   visibility: hidden;
- }
- #btnThree{
-   visibility: hidden;
- }
- #call{
-   font-size: 2.5em;
-   font-family: 'Raleway', sans-serif;
-   text-transform: uppercase;
-   margin-top: 5%;
-   color: white;
-   font-style:italic;
-   visibility: hidden;
- }
- #info{
-   font-size: 2.5em;
-   color:white;
- }
- #facebook,
- #instagram,
- #linkedin,
- #github1{
-   font-size: 1.75em;
-   color:white;
-   letter-spacing: .5em;
-   visibility: hidden;
- }
- #copyright{
-   height:5vh;
-   text-align: center;
-   background-color: rgba(0,0,0,1);
- }
- #copy{
-   color:white;
-   font-size: 1.5em;
-   position:fixed;
- }
- @media only screen and (max-width:800px){
-   #insideLanding{
-     color:green;
-     font-size: 7em;
-     margin-top: 5%;
-     margin-bottom: 2%;
-   }
-   #den{
-     margin-top: 1%;
-   }
-   #animalInfo,
-   #reuInfo,
-   #presInfo,
-   #afflabInfo,
-   #projInfo{
-     display: none;
-   }
-   #iformation{
-     height:100%;
-   }
-   #quote{
-     display:none;
-   }
-   #three{
-     font-size: .75em;
-   }
-   #html,
-   #css,
-   #ruby,
-   #rails,
-   #bootstrap,
-   #github{
-     display:none;
-   }
-   #copyright{
-     display:none;
-   }
- }
- /*==============================================
- slideUp
- ==============================================*/
- .slideUp{
- 	animation-name: slideUp;
- 	-webkit-animation-name: slideUp;
-
- 	animation-duration: 1.5s;
- 	-webkit-animation-duration: 1.5s;
-
- 	animation-timing-function: ease;
- 	-webkit-animation-timing-function: ease;
-
- 	visibility: visible !important;
- }
-
- @keyframes slideUp {
- 	0% {
- 		transform: translateY(100%);
- 	}
- 	100% {
- 		transform: translateY(0%);
- 	}
- }
-
- @-webkit-keyframes slideUp {
- 	0% {
- 		-webkit-transform: translateY(100%);
- 	}
- 	100% {
- 		-webkit-transform: translateY(0%);
- 	}
- }
- /*==============================================
- slideLeft
- ==============================================*/
-
- .slideLeft{
- 	animation-name: slideLeft;
- 	-webkit-animation-name: slideLeft;
-
- 	animation-duration: 1s;
- 	-webkit-animation-duration: 1s;
-
- 	animation-timing-function: ease-in-out;
- 	-webkit-animation-timing-function: ease-in-out;
-
- 	visibility: visible !important;
- }
-
- @keyframes slideLeft {
- 	0% {
- 		transform: translateX(150%);
- 	}
- 	100% {
- 		transform: translateX(0%);
- 	}
- }
-
- @-webkit-keyframes slideLeft {
- 	0% {
- 		-webkit-transform: translateX(150%);
- 	}
- 	100% {
- 		-webkit-transform: translateX(0%);
- 	}
- }
- /*==============================================
- slideRight
- ==============================================*/
-
- .slideRight{
+/*SLIDE RIGHT*/
+.slideRight{
  	animation-name: slideRight;
  	-webkit-animation-name: slideRight;
 
- 	animation-duration: 1s;
- 	-webkit-animation-duration: 1s;
+ 	animation-duration: 2s;
+ 	-webkit-animation-duration: 2s;
 
  	animation-timing-function: ease-in-out;
  	-webkit-animation-timing-function: ease-in-out;
+
  	visibility: visible !important;
  }
 
- @keyframes slideRight {
+@keyframes slideRight {
  	0% {
  		transform: translateX(-150%);
  	}
@@ -922,118 +462,55 @@ slideRight
  		-webkit-transform: translateX(0%);
  	}
  }
- /*SLIDE LEFT*/
- .slideLeft{
-  	animation-name: slideLeft;
-  	-webkit-animation-name: slideLeft;
+ /*==============================================
+fadeIn
+==============================================*/
 
-  	animation-duration: 2s;
-  	-webkit-animation-duration: 2s;
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
 
-  	animation-timing-function: ease-in-out;
-  	-webkit-animation-timing-function: ease-in-out;
+	animation-duration: 1.3s;
+	-webkit-animation-duration: 1.3s;
 
-  	visibility: visible !important;
-  }
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
 
-  @keyframes slideLeft {
-  	0% {
-  		transform: translateX(150%);
-  	}
-  	100% {
-  		transform: translateX(0%);
-  	}
-  }
+	visibility: visible !important;
+}
 
-  @-webkit-keyframes slideLeft {
-  	0% {
-  		-webkit-transform: translateX(150%);
-  	}
-  	100% {
-  		-webkit-transform: translateX(0%);
-  	}
-  }
+@keyframes fadeIn {
+	0% {
+		transform: scale(.5);
+		opacity: 0.0;
+	}
+	/*60% {
+		transform: scale(1.1);
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;
+	}*/
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
 
- /*SLIDE RIGHT*/
- .slideRight{
-  	animation-name: slideRight;
-  	-webkit-animation-name: slideRight;
-
-  	animation-duration: 2s;
-  	-webkit-animation-duration: 2s;
-
-  	animation-timing-function: ease-in-out;
-  	-webkit-animation-timing-function: ease-in-out;
-
-  	visibility: visible !important;
-  }
-
- @keyframes slideRight {
-  	0% {
-  		transform: translateX(-150%);
-  	}
-  	100% {
-  		transform: translateX(0%);
-  	}
-  }
-
-  @-webkit-keyframes slideRight {
-  	0% {
-  		-webkit-transform: translateX(-150%);
-  	}
-  	100% {
-  		-webkit-transform: translateX(0%);
-  	}
-  }
-  /*==============================================
- fadeIn
- ==============================================*/
-
- .fadeIn{
- 	animation-name: fadeIn;
- 	-webkit-animation-name: fadeIn;
-
- 	animation-duration: 1.3s;
- 	-webkit-animation-duration: 1.3s;
-
- 	animation-timing-function: ease-in-out;
- 	-webkit-animation-timing-function: ease-in-out;
-
- 	visibility: visible !important;
- }
-
- @keyframes fadeIn {
- 	0% {
- 		transform: scale(.5);
- 		opacity: 0.0;
- 	}
- 	/*60% {
- 		transform: scale(1.1);
- 	}
- 	80% {
- 		transform: scale(0.9);
- 		opacity: 1;
- 	}*/
- 	100% {
- 		transform: scale(1);
- 		opacity: 1;
- 	}
- }
-
- @-webkit-keyframes fadeIn {
- 	0% {
- 		-webkit-transform: scale(0);
- 		opacity: 0.0;
- 	}
- 	60% {
- 		-webkit-transform: scale(1.1);
- 	}
- 	80% {
- 		-webkit-transform: scale(0.9);
- 		opacity: 1;
- 	}
- 	100% {
- 		-webkit-transform: scale(1);
- 		opacity: 1;
- 	}
- }
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
