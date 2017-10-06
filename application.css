@@ -194,6 +194,11 @@ i{
   font-family: 'Raleway', sans-serif;
   /*visibility: hidden;*/
 }
+.comingSoon{
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+}
 #projInfo{
   height:50vh;
   background-color: rgba(0,0,0,.90);
