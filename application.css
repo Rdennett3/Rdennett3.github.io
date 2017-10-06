@@ -179,6 +179,7 @@ i{
 #afflabInfo{
   height:50vh;
   background-color: rgba(0,0,0,.90);
+  text-align: center;
 }
 #solid{
   height:50vh;
