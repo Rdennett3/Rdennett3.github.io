@@ -76,7 +76,9 @@ body{
 }
 #animalText,
 #reuText,
-#presText{
+#presText,
+#afflabInfo,
+#projInfo{
   color:white;
   font-size: 2.5em;
   margin-top: 10%;
