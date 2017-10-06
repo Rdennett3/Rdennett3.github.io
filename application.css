@@ -201,6 +201,7 @@ i{
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
+  text-shadow: 1px,1px,1px, black;
   color:#007EA7;
   margin-top: 5%;
   visibility: hidden;
