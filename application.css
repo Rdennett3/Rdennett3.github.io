@@ -195,9 +195,12 @@ i{
   /*visibility: hidden;*/
 }
 .comingSoon{
-  font-size: 2em;
+  font-size: 3em;
+  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   color:white;
+  margin-top: 5%;
+  visibility: hidden;
 }
 #projInfo{
   height:50vh;
