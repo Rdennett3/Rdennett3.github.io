@@ -3,6 +3,32 @@ body{
   margin:0;
   overflow-x: hidden;
 }
+#landing{
+  height:100vh;
+  background-color: black;
+  opacity: .75;
+  text-align: left;
+}
+#landingright{
+  height:100vh;
+  background-color: black;
+  opacity:.99;
+  text-align: right;
+}
+#name{
+  font-size:10em;
+  font-family: 'Yantramanav', sans-serif;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color:white;
+}
+#webdev{
+  font-size:5em;
+  text-transform: uppercase;
+  color:white;
+  margin-top: 70%;
+  font-family: 'Yantramanav', sans-serif;
+}
 #three3{
   border-right: 4px solid #007EA7;
   margin-right: 2%;
