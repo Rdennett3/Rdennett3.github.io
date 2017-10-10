@@ -46,16 +46,16 @@ body{
   opacity: .9;
   margin-bottom:1em;
   height:100vh;
-  width:200%;
-  background-image: url('https://farm6.staticflickr.com/5718/30948464751_cd8e4a960e_z.jpg');
+  /*width:200%;*/
+  background-image: url('https://farm5.staticflickr.com/4446/23754453588_d75871c5c3_c.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /*background-position: center;*/
   width: 100vw;
 }
 #insideLanding{
-  height:80%;
-  border: 10px solid black;
+  height:100vh;
+  /*border: 10px solid black;*/
   margin-top: 5%;
   margin-left: 4.5%;
   /*background-color: rgba(0,0,0,0.75);*/
@@ -102,9 +102,7 @@ body{
 }
 #animalText,
 #reuText,
-#presText,
-#afflabText,
-#projText{
+#presText{
   color:white;
   font-size: 2.5em;
   margin-top: 10%;
@@ -200,15 +198,11 @@ i{
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 2em;
-  font-family: 'Raleway', sans-serif;
   /*visibility: hidden;*/
 }
 #afflabInfo{
   height:50vh;
   background-color: rgba(0,0,0,.90);
-  text-align: center;
 }
 #solid{
   height:50vh;
@@ -217,20 +211,7 @@ i{
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  font-size: 2em;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
   /*visibility: hidden;*/
-}
-.comingSoon{
-  font-size: 2.5em;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  text-shadow: 1px,1px,1px, black;
-  color:black;
-  margin-top: 5%;
-  visibility: hidden;
 }
 #projInfo{
   height:50vh;
@@ -315,9 +296,6 @@ i{
   }
   #den{
     margin-top: 1%;
-  }
-  #about{
-    margin-top: 10%;
   }
   #animalInfo,
   #reuInfo,
@@ -546,6 +524,54 @@ fadeIn
 }
 
 @-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+.fadeIn2{
+	animation-name: fadeIn2;
+	-webkit-animation-name: fadeIn2;
+
+	animation-duration: 1.3s;
+	-webkit-animation-duration: 1.3s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes fadeIn2 {
+	0% {
+		transform: scale(.5);
+		opacity: 0.0;
+	}
+	/*60% {
+		transform: scale(1.1);
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;
+	}*/
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn2 {
 	0% {
 		-webkit-transform: scale(0);
 		opacity: 0.0;

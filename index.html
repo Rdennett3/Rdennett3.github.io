@@ -25,7 +25,6 @@
 <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 
 </head>
@@ -89,23 +88,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-5 col-sm-7" id="afflabInfo">
-          <p id="afflabText">For this project I am working a local schenectady business consultancy startup name Affluence Labs. The website is in the works and will be up and running soon!</p>
-        </div>
-        <div class="col-md-7 col-sm-12" id="afflab">
-          <p class="comingSoon">Coming Soon</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-7 col-sm-12" id="solid">
-          <p class="comingSoon">Coming Soon</p>
-        </div>
-        <div class="col-md-5 col-sm-12" id="projInfo">
-          <p id="projText">I was contacted by a local general contractor to build a simple one page portfolio site to showcase their best projects, currently this project is still in the prototyping/ brainstorming phase, but I am hoping to have it live very soon!</p>
-        </div>
+        <div class="col-md-5 col-sm-7" id="afflabInfo"></div>
+        <div class="col-md-7 col-sm-12" id="afflab"></div>
       </div>
     </div>
+    <div class="col-md-7 col-sm-12" id="solid"></div>
+    <div class="col-md-5 col-sm-12" id="projInfo"></div>
   </div>
+</div>
 </div>
 </div>
 </div>
@@ -118,10 +108,10 @@
     </a>
     <p id="call">or call me at</br>518-788-7753</p>
     <div class="row">
-      <a href="https://www.facebook.com/bob.dennett.5" target="_blank"><i class="fa fa-facebook" aria-hidden="true" id="facebook"></i></a>
-      <a href="https://www.instagram.com/bobd3/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
-      <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" id="linkedin"></i></a>
-      <a href="https://github.com/Rdennett3" target="_blank"><i class="fa fa-github" aria-hidden="true" id="github1"></i></a>
+      <a href="https://www.facebook.com/bob.dennett.5"><i class="fa fa-facebook" aria-hidden="true" id="facebook"></i></a>
+      <a href="https://www.instagram.com/bobd3/"><i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
+      <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/"><i class="fa fa-linkedin" aria-hidden="true" id="linkedin"></i></a>
+      <a href="https://github.com/Rdennett3"><i class="fa fa-github" aria-hidden="true" id="github1"></i></a>
     </div>
   </div>
 </div>
@@ -151,7 +141,7 @@ $('.scrollToTop').click(function(){
 </script>
 <script>
 $(window).scroll(function() {
-  $('#about,#einstein,#html,#css,#ruby,#rails,#bootstrap,#github,.mainBtn,#call,#inTouch, #facebook, #instagram, #linkedin, #github1,#animalText,#presText,#reuText,#projText,#afflabText,.comingSoon').each(function(){
+  $('#about,#einstein,#html,#css,#ruby,#rails,#bootstrap,#github,.mainBtn,#call,#inTouch, #facebook, #instagram, #linkedin, #github1,#animalText,#reuText,#presText').each(function(){
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
@@ -161,5 +151,17 @@ $(window).scroll(function() {
   });
 });
 </script>
+<!-- <script>
+$(window).scroll(function() {
+  $('#name,#webdev').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+20) {
+      $(this).addClass("fadeIn2");
+    }
+  });
+});
+</script> -->
 </body>
 </html>
