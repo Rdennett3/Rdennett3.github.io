@@ -290,6 +290,9 @@ i{
   #den{
     margin-top: 1%;
   }
+  #about{
+    margin-top: 10%;
+  }
   #animalInfo,
   #reuInfo,
   #presInfo,
@@ -299,7 +302,6 @@ i{
   }
   #iformation{
     height:100%;
-    margin-top: 10%;
   }
   #quote{
     display:none;
