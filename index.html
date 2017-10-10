@@ -64,8 +64,8 @@
     <div id="projects">
       <div class="row">
         <div class="col-md-7 col-sm-12" id="leftone">
-          <!-- <p id="animal">Animal friend finder</p> -->
-          <a href="#"><button class="mainBtn" id="btnOne">check it out</button></a>
+          <p class="projTitle" id="shelter">shelter friends</p>
+          <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="mainBtn" id="btnOne">check it out</button></a>
         </div>
         <div class="col-md-5 col-sm-0"id="animalInfo">
           <p id="animalText">This was my final project at <a href="https://www.learnacademy.org/"target="_blank">LEARN Academy</a> in San Diego, a Rails app designed to help match up potential adopters with animals in local shelters to make a furever family!</p>
@@ -76,24 +76,36 @@
           <p id="reuText">On this project I was working on a post internship contract with <a href="https://www.notch8.com/">Notch 8</a> from San Diego. We were tasked with taking over a project first started by UCSD that aimed to make the application process for grants easier and more streamlined</p>
         </div>
         <div class="col-md-7 col-sm-12" id="reuManager">
-          <a href="#"><button class="mainBtn" id="btnOne">check it out</button></a>
+          <p class="projTitle">reu manager</p>
+          <a href="https://reumanager.com/" target="_blank"><button class="mainBtn" id="btnOne">check it out</button></a>
         </div>
       </div>
       <div class="row">
         <div class="col-md-7 col-sm-12" id="presentation">
-          <a href="#"><button class="mainBtn" id="btnTwo">check it out</button></a>
+          <p class="projTitle">accessibility</p>
+          <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4"target="_blank"><button class="mainBtn" id="btnTwo">check it out</button></a>
         </div>
         <div class="col-md-5 col sm-0" id="presInfo">
           <p id="presText">This was an oral presentation I gave at <a href="https://www.learnacademy.org/">LEARN Academy</a> on the importance of accesibility standards for users with visual impairments</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-5 col-sm-7" id="afflabInfo"></div>
-        <div class="col-md-7 col-sm-12" id="afflab"></div>
+        <div class="col-md-5 col-sm-7" id="afflabInfo">
+          <p id="afflabText">I am currently working with a local schenectady business consultancy startup to build their web presence and help launch the brand. I am hoping to have this live very soon, so check back!</p>
+        </div>
+        <div class="col-md-7 col-sm-12" id="afflab">
+          <p class="projTitle">AFFLUENCE LABS</p>
+          <p class="comingSoon">coming soon</p>
+        </div>
       </div>
     </div>
-    <div class="col-md-7 col-sm-12" id="solid"></div>
-    <div class="col-md-5 col-sm-12" id="projInfo"></div>
+    <div class="col-md-7 col-sm-12" id="solid">
+      <p class="projTitle">solid general contracting</p>
+      <p class="comingSoon">coming soon</p>
+    </div>
+    <div class="col-md-5 col-sm-12" id="projInfo">
+      <p id="solidText">for this project I am working with a local general contractor to build a simple portfolio page to showcase their best works and provide clients with information about the company.</p>
+    </div>
   </div>
 </div>
 </div>
@@ -141,7 +153,7 @@ $('.scrollToTop').click(function(){
 </script>
 <script>
 $(window).scroll(function() {
-  $('#about,#einstein,#html,#css,#ruby,#rails,#bootstrap,#github,.mainBtn,#call,#inTouch, #facebook, #instagram, #linkedin, #github1,#animalText,#reuText,#presText').each(function(){
+  $('#about,#einstein,#html,#css,#ruby,#rails,#bootstrap,#github,.mainBtn,#call,#inTouch, #facebook, #instagram, #linkedin, #github1,#animalText,#reuText,#presText,.projTitle,.comingSoon,#afflabText,#solidText').each(function(){
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
@@ -151,5 +163,17 @@ $(window).scroll(function() {
   });
 });
 </script>
+<!-- <script>
+$(window).scroll(function() {
+  $('#name,#webdev').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+20) {
+      $(this).addClass("fadeIn2");
+    }
+  });
+});
+</script> -->
 </body>
 </html>
