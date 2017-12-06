@@ -296,6 +296,7 @@
 #contact{
   height:90vh;
   background-color: #1C3144;
+  text-align: center;
 }
 @media screen and (max-width:800px){
   #contact{
