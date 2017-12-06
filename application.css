@@ -1,354 +1,353 @@
-body{
-  background-image: url('https://farm5.staticflickr.com/4292/36093318101_f01fa25223_z.jpg');
-  margin:0;
-  overflow-x: hidden;
-}
-#landing{
+
+.overlay {
+      /* Height & width depends on how you want to reveal the overlay (see JS below) */
+      height: 100%;
+      width: 0;
+      position: fixed; /* Stay in place */
+      z-index: 100; /* Sit on top */
+      left: 0;
+      top: 0;
+      background: #1c3144; /* Old browsers */
+      background: -moz-linear-gradient(left, #1c3144 0%, #173753 45%, #284b63 67%, #19535f 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3144', endColorstr='#19535f',GradientType=1 ); /* IE6-9 */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  #openbars{
+    font-size: 5em;
+    position: fixed;
+    z-index:100;
+    margin: .5em;
+    color:#E94F37;
+    cursor: crosshair;
+
+  }
+
+  @media screen and (max-width:800px){
+    #openbars{
+      font-size: 3em;
+      margin:.25em;
+    }
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+      position: relative;
+      top: 25%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      text-align: center; /* Centered text/links */
+      margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+
+      padding: 8px;
+      text-decoration: none;
+      color:#F6F7EB;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4em;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+      color:#E94F37 ;
+      text-decoration: none;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+  }
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+      }
+  }
+
+#topDiv{
   height:100vh;
   background-color: black;
-  opacity: .75;
+  background-image: url('https://farm5.staticflickr.com/4529/38706906782_5825a6df66_z.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:800px) {
+  #topDiv{
+    height:80vh;
+    text-align: center;
+  }
+}
+
+#front1,#end1,#dev1{
+
+    position: relative;
+    top:30%;
+    transform: translateY(-50%);
+    font-size: 0px;
+    color:white;
+    text-shadow: 3px 3px 3px black;
+    line-height: .8;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+  }
+
+@media screen and (max-width:800px){
+  #front1,#end1,#dev1{
+    font-size: 5.5em;
+  }
+}
+
+#frontDiv{
+  visibility: hidden;
+  height:60vh;
+  background: #1c3144; /* Old browsers */
+  background: -moz-linear-gradient(left, #1c3144 0%, #173753 45%, #284b63 67%, #19535f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3144', endColorstr='#19535f',GradientType=1 ); /* IE6-9 */
+  margin-top: 8%;
+  margin-left: 40%;
+  border:2px solid #E94F37;
+}
+
+@media screen and (max-width:800px){
+  #frontDiv{
+    display: none;
+  }
+}
+
+#front,#end,#dev{
+  position: relative;
+  top:20%;
+  transform: translateY(-50%);
+  font-size: 8.5em;
+  color:white;
+  text-shadow: 3px 3px 3px black;
+  line-height: .8;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-width:800px){
+  #front, #end, #dev{
+    font-size: 6em;
+    position: relative;
+    top:40%;
+    transform: translateY(-50%);
+  }
+}
+
+#divTwo{
+  height:80vh;
+  background: #1c3144; /* Old browsers */
+  background: -moz-linear-gradient(left, #1c3144 0%, #173753 45%, #284b63 67%, #19535f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3144', endColorstr='#19535f',GradientType=1 ); /* IE6-9 */
   text-align: left;
 }
-#landingright{
-  height:100vh;
-  background-color: black;
-  opacity:.99;
-  text-align: right;
-}
-#name{
-  font-size:10em;
-  font-family: 'Yantramanav', sans-serif;
-  text-transform: uppercase;
-  text-decoration: line-through;
-  color:white;
-}
-#webdev{
-  font-size:5em;
-  text-transform: uppercase;
-  color:white;
-  margin-top: 70%;
-  font-family: 'Yantramanav', sans-serif;
-}
-#three3{
-  border-right: 4px solid #007EA7;
-  margin-right: 2%;
-  width:4em;
-}
-#two2{
-  border-right: 4px solid #007EA7;
-  margin-right: 2%;
-  width:4em;
-}
-#one{
-  height:100vh;
-}
-#insideOne{
-  opacity: .9;
-  margin-bottom:1em;
-  height:100vh;
-  /*width:200%;*/
-  background-image: url('https://farm5.staticflickr.com/4446/23754453588_d75871c5c3_c.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-position: center;*/
-  width: 100vw;
-}
-#insideLanding{
-  height:100vh;
-  /*border: 10px solid black;*/
-  margin-top: 5%;
-  margin-left: 4.5%;
-  /*background-color: rgba(0,0,0,0.75);*/
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 10em;
-  color: #007EA7;
 
-}
-#den{
-  margin-top: -90px;
-}
-#two{
-  height:40vh;
-  text-align: center;
-}
 #about{
-  font-size: 3em;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Open Sans Condensed', sans-serif;
-  margin-top: 10%;
   visibility: hidden;
-}
-#three{
-  height:80vh;
-  text-align: center;
-  background-color: rgba(0,0,0,0.95);
-  /*border-radius: 5px;*/
-}
-#four{
-  height:100vh;
-}
-#leftOne{
-  height:50vh;
-  background-color: rgba(0,0,0,0.97);
+  font-size: 3.5em;
+  line-height: 1em;
   margin-top: 10%;
-  /*border-radius: 5px;*/
+  color:#F6F7EB;
+  font-family: 'Cormorant Garamond', serif;
+  margin-left: 5%;
 }
-.projTitle{
-  font-size: 3em;
-  text-transform: uppercase;
-  font-family: 'Yantramanav', sans-serif;
-  color:white;
-  margin-top: 5%;
-  text-shadow: 5px 5px #000000;
-  visibility: hidden;
+
+#label{
+  height:20vh;
+  background-color: #173753;
+  text-align: left;
 }
-.comingSoon{
-  font-size: 2em;
-  font-family: 'Yantramanav', sans-serif;
-  color: white;
-  text-shadow: 3px 3px #000000;
-  margin-top: 5%;
+
+#work{
+  color:#F6F7EB;
+  text-shadow: 1px 1px 1px black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5em;
+  margin-left: 5%;
+  margin-top: 3%;
 }
-#animalInfo{
-  height:50vh;
-  background-color: rgba(0,0,0,.90);
-  text-align: center;
+.title{
+  font-size: 4em;
+  font-family: 'Oswald', sans-serif;
+  color:#F6F7EB;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px black;
 }
-#animalText,
-#reuText,
-#presText,
-#solidText,
-#afflabText{
-  color:white;
-  font-size: 2.5em;
-  margin-top: 10%;
-  font-family: 'Amatic SC', cursive;
+.info{
+  font-size: 1.4em;
+  font-family: 'Cormorant Garamond', serif;
+  color:#F6F7EB;
 
 }
-#rightOne{
-  height:50vh;
-  background-color: red;
-  margin-top: 10%;
-}
-#reuInfo{
-  height:50vh;
-  background-color: rgba(0,0,0,.90);
-  text-align: center;
-}
-i{
-  font-size: 5em;
-}
-#html,
-#css,
-#ruby,
-#rails,
-#bootstrap,
-#github{
-  margin-top: 1.8em;
-  color: white;
-  visibility: hidden;
-}
-.mainBtn{
-  height:4em;
-  width:16em;
-  border:3px solid white;
-  background: black;
-  color:white;
-  font-weight: bold;
-  font-kerning: 1em;
-  font-style: oblique;
-  visibility: hidden;
+.mainbutton{
+  height:3em;
+  width:12em;
+  background-color: transparent;
+  border:3px solid #F6F7EB;
+  border-radius: 0;
+  font-family: 'Oswald', sans-serif;
+  color:#F6F7EB;
   text-transform: uppercase;
 }
-.mainBtn:hover{
-  background-color: #007EA7;
-  border: 3px solid #007EA7;
-  transition: .5s;
-  opacity: .75;
+
+.mainbutton:hover{
+  background-color:#E94F37;
+  transition: 1s;
+  border: 3px solid #E94F37;
 }
-#btnOne{
-  margin-top: 8%;
-}
-#btnTwo{
-  margin-top: 8%;
-}
-#leftone{
-  height:50vh;
-  background-image: url('http://farm3.staticflickr.com/2913/33227103623_5ca6a6866c_b.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: rgba(0,0,0,.8);
-  opacity: .9;
-  text-align: center;
-  /*visibility: hidden;*/
-}
-#animal{
-  font-size: 2em;
-  color:white;
-}
-#reuManager{
-  height:50vh;
-  background-color: green;
-  background-image: url('http://farm4.staticflickr.com/3931/33998503646_8560a68020_b.jpg');
-  text-align: center;
-  /*visibility: hidden;*/
-}
-#presentation{
-  height:50vh;
-  background-image: url('http://farm4.staticflickr.com/3931/33998502936_ecc543a9d9_b.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: .9;
-  text-align: center;
-  /*visibility: hidden;*/
-}
-#presInfo{
-  height:50vh;
-  background-color: rgba(0,0,0,.90);
-  text-align: center;
-}
-#afflab{
-  height:50vh;
-  background-color: blue;
-  background-image: url('https://farm5.staticflickr.com/4177/33580381953_045f7a0ff1_z.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  /*visibility: hidden;*/
-}
-#afflabInfo{
-  height:50vh;
-  background-color: rgba(0,0,0,.90);
-  text-align: center;
-}
-#solid{
-  height:50vh;
-  background-color: red;
-  background-image: url('https://farm3.staticflickr.com/2886/33955048491_6e129828f1_z.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  /*visibility: hidden;*/
-}
-#projInfo{
-  height:50vh;
-  background-color: rgba(0,0,0,.90);
-  text-align: center;
-}
-#quote{
-  height:60vh;
-  text-align: center;
-  background-color: rgba(0,0,0,0.95);;
-}
-#einstein{
+
+.soon{
   font-size: 2.5em;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 5%;
-  visibility: hidden;
+  color: #F6F7EB;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 1px 1px 1px black;
 }
-#skills{
-  height:60vh;
-}
-#map{
-  height:60vh;
-  background-image: url('https://farm5.staticflickr.com/4419/36948656221_f5bdbd1cc1_z.jpg');
-}
-#information{
-  height:60vh;
+
+#workMain{
+  height:100vh;
   text-align: center;
-  background-color: rgba(0,0,0,.90);
+  background-color:#173753;
 }
-#inTouch{
-  font-size: 3em;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  color:white;
-  margin-top: 5%;
-  visibility: hidden;
-}
-#btnThree{
-  visibility: hidden;
-}
-#call{
-  font-size: 2.5em;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  margin-top: 5%;
-  color: white;
-  font-style:italic;
-  visibility: hidden;
-}
-#info{
-  font-size: 2.5em;
-  color:white;
-}
-#facebook,
-#instagram,
-#linkedin,
-#github1{
-  font-size: 1.75em;
-  color:white;
-  letter-spacing: .5em;
-  visibility: hidden;
-}
-#copyright{
-  height:5vh;
-  text-align: center;
-  background-color: rgba(0,0,0,1);
-}
-#copy{
-  color:white;
-  font-size: 1.5em;
-  position:fixed;
-}
-@media only screen and (max-width:800px){
-  #insideLanding{
-    color:green;
-    font-size: 7em;
-    margin-top: 5%;
-    margin-bottom: 2%;
-  }
-  #den{
-    margin-top: 1%;
-  }
-  #animalInfo,
-  #reuInfo,
-  #presInfo,
-  #afflabInfo,
-  #projInfo{
-    display: none;
-  }
-  #iformation{
-    height:100%;
-  }
-  #quote{
-    display:none;
-  }
-  #three{
-    font-size: .75em;
-  }
-  #html,
-  #css,
-  #ruby,
-  #rails,
-  #bootstrap,
-  #github{
-    display:none;
-  }
-  #copyright{
-    display:none;
-  }
-  #landingright{
-    display: none;
+@media screen and (max-width:800px){
+  #workMain{
+    height:30vh;
   }
   #about{
-    margin-top: 30%;
+    font-size: 2.5em;
   }
+  #einstein{
+    font-size: 2.5em;
+  }
+}
+
+#reumanager{
+  height:55vh;
+  text-align: center;
+  visibility: hidden;
+}
+
+#reuinfo{
+  height:90%;
+  border:2px solid #E94F37;
+  background: #1c3144; /* Old browsers */
+  background: -moz-linear-gradient(left, #1c3144 0%, #173753 45%, #284b63 67%, #19535f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1c3144 0%,#173753 45%,#284b63 67%,#19535f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3144', endColorstr='#19535f',GradientType=1 ); /* IE6-9 */
+}
+
+#animalmain{
+  height:100vh;
+  background-color: #173753;
+}
+@media screen and (max-width:800px){
+  #animalmain{
+    height: 25vh;
+  }
+}
+
+.row{
+  margin-bottom: 5%;
+}
+#quote{
+  height:80vh;
+  background-color: #284B63;
+}
+@media screen and (max-width:800px){
+  #quote{
+    height:100%;
+  }
+}
+#einstein{
+  font-size: 3.5em;
+  line-height: 1em;
+  margin-top: 10%;
+  color:#F6F7EB;
+  font-family: 'Cormorant Garamond', serif;
+  margin-left: 5%;
+  visibility: hidden;
+}
+@media screen and (max-width:800px){
+  #einstein{
+    font-size: 2.5em;
+    position: relative;
+    top:15%;
+    transform: translateY(-1%);
+  }
+}
+#contact{
+  height:90vh;
+  background-color: #1C3144;
+}
+@media screen and (max-width:800px){
+  #contact{
+    height:160vh;
+  }
+}
+#googlemap{
+  margin-top: 10%;
+}
+
+#contact{
+  text-align: center;
+
+}
+
+#getintouch{
+  font-size: 3.5em;
+  line-height: 1em;
+  position:relative;
+  margin-top: 20%;
+  color:#F6F7EB;
+  font-family: 'Cormorant Garamond', serif;
+  margin-left: 5%;
+}
+
+#contactinfo{
+  text-align: center;
+  position:relative;
+  top:50%;
+  transform: translateY(15%);
+}
+
+.btn-main{
+  height:3em;
+  width:10em;
+  border: 2px solid #F6F7EB;
+  background-color: transparent;
+  color:#F6F7EB;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+}
+
+#phone{
+  color:#F6F7EB;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2em;
+}
+
+#facebook, #instagram, #linked-in,#github{
+  font-size: 2em;
+  color:#F6F7EB;
+  letter-spacing: .5em;
 }
 /*==============================================
 slideUp
