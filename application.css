@@ -1,7 +1,14 @@
-#totop{
-  font-size: 4em;
-}
-.overlay {
+#bob{
+     font-size: 3.5em;
+     z-index: 100;
+     position: fixed;
+     font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+     margin-left: 1%;
+     color:#E94F37;
+     text-shadow:1px 1px 1px black;
+   }
+  .overlay {
       /* Height & width depends on how you want to reveal the overlay (see JS below) */
       height: 100%;
       width: 0;
@@ -17,7 +24,78 @@
       overflow-x: hidden; /* Disable horizontal scroll */
       transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
-  
+  #openbars{
+    font-size: 5em;
+    position: fixed;
+    z-index:100;
+    margin: .5em;
+    color:#E94F37;
+    cursor: crosshair;
+
+  }
+
+  #totop{
+    font-size: 4em;
+    z-index: 100;
+    position:fixed;
+    margin-left: 1%;
+    color:#F6F7EB;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  @media screen and (max-width:800px){
+    #openbars{
+      font-size: 3em;
+      margin:.25em;
+    }
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+      position: relative;
+      top: 25%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      text-align: center; /* Centered text/links */
+      margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+
+      padding: 8px;
+      text-decoration: none;
+      color:#F6F7EB;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4em;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+      color:#E94F37 ;
+      text-decoration: none;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+  }
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+      }
+  }
+
 #topDiv{
   height:100vh;
   background-color: black;
@@ -107,8 +185,8 @@
   line-height: 1em;
   margin-top: 10%;
   color:#F6F7EB;
-  font-family: 'Cormorant Garamond', serif;
   margin-left: 5%;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #label{
@@ -208,6 +286,11 @@
 .row{
   margin-bottom: 5%;
 }
+
+#quotetext{
+  text-align: center;
+}
+
 #quote{
   height:80vh;
   background-color: #284B63;
@@ -237,7 +320,6 @@
 #contact{
   height:90vh;
   background-color: #1C3144;
-  text-align: center;
 }
 @media screen and (max-width:800px){
   #contact{
