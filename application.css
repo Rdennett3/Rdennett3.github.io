@@ -110,27 +110,8 @@
   }
 }
 
-#front1,#end1,#dev1{
-
-    position: relative;
-    top:30%;
-    transform: translateY(-50%);
-    font-size: 0px;
-    color:white;
-    text-shadow: 3px 3px 3px black;
-    line-height: .8;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-  }
-
-@media screen and (max-width:800px){
-  #front1,#end1,#dev1{
-    font-size: 5.5em;
-  }
-}
-
 #frontDiv{
-  visibility: hidden;
+  display: none;
   height:60vh;
   background: #1c3144; /* Old browsers */
   background: -moz-linear-gradient(left, #1c3144 0%, #173753 45%, #284b63 67%, #19535f 100%); /* FF3.6-15 */
@@ -151,7 +132,7 @@
 
 #front,#end,#dev{
   position: relative;
-  top:20%;
+  top:30%;
   transform: translateY(-50%);
   font-size: 8.5em;
   color:white;
