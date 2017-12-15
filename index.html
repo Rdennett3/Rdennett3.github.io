@@ -1,173 +1,159 @@
-<DOCTYPE html>
-  <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="application.css">
-    <link rel="stylesheet" href="https://use.typekit.net/oni4uuf.css">
-    <script src="https://use.fontawesome.com/7b3d917096.js"></script>
+<!DOCTYPE html>
+<html>
+<title>Bob Dennett</title>
+<head>
 
-  </head>
-  <body id="page-top">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <script src="application.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Teko" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+  <script src="https://use.fontawesome.com/9da495d7be.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 
 
 
-    <section>
-      <a href="#page-top" class="scrollToTop"><h1 id="bob">bob dennett</h1></a>
-      <div class="col-md-12 col-sm-12" id="topDiv">
-          <p id="front">front</p>
-          <p id="end">end</p>
-          <p id="dev">developer</p>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/application.css" />
+  <!-- animate.css -->
+  <link rel="stylesheet" href="animate.min.css">
+</head>
+
+<body>
+  <div class="top" id="top">
+    <div class="col-md-6 col-sm-6" id="left1">
+      <a href="#top" class="scrollToTop"><h1 id="bob">bob dennett</h1></a>
+    </div>
+    <div class="col-md-6 col-sm-6" id="right">
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="col-md-12 col-sm-12 col-xs-12"id="aboutContainer">
+      <p id="about1">Hey! I am a design passionate, front end
+        focused, full stack developer. I thrive on
+        fast paced environments, pivoting on a dime, and am always up
+        for a new challenge. Have a look at my past and current projects below.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="animal">
+        <div class="col-md-6 col-sm-12" id="petbg">
+          <a href="https://aqueous-taiga-4911.herokuapp.com/" target=_blank""id="checkbutton"><button class="checkit">check it</button></a>
+        </div>
+        <div class="col-md-6 col-sm-6" id="petdesc">
+          <h1  class="title" id="an1"><a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank">Shelter friends</h1></a>
+          <p class="description"><p id="animalText">This was my final project at <a href="https://www.learnacademy.org/"target="_blank">LEARN Academy</a> in San Diego, a Rails app designed to help match up potential adopters with animals in local shelters to make a furever family!</p></p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="aboutMe">
-      <div class="col-md-12 col-sm-12" id="divTwo">
-        <p id="about">Hey! I am a design passionate, front end
-          focused, full stack developer. I thrive on
-          fast paced environments, pivoting on a dime, and am always up
-          for a new challenge. Have a look at my past and current projects below.</p>
-        </div>
-      </section>
-
-      <section id="label">
-        <div class="col-md-12 col-sm-12 col-xs-12"id="label">
-          <p id="work">My Work.</p>
-        </div>
-      </section>
-
-      <section id="workMain">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12" id="reumanager">
-            <div class="col-md-3 col-sm-0"></div>
-            <div class="col-md-6 col-sm-12" id="reuinfo">
-              <p class="title" id="reu">Reu Manager</p></br>
-              <p class="info" id="reutext">On this project I was working on a post internship contract with <a href="https://www.notch8.com/">Notch 8</a> from San Diego. We were tasked with taking over a project first started by UCSD that aimed to make the application process for grants easier and more streamlined</p>
-              <a href="https://reumanager.com/"><button class="mainbutton" id="reubutton">check it out</button></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="animalmain">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12" id="reumanager">
-            <div class="col-md-3 col-sm-0"></div>
-            <div class="col-md-6 col-sm-12" id="reuinfo">
-              <p class="title" id="reu">Animal Friends</p></br>
-              <p class="info" id="reutext">This was my final project at <a href="https://www.learnacademy.org/"target="_blank">LEARN Academy</a> in San Diego, a Rails app designed to help match up potential adopters with animals in local shelters to make a furever family!</p>
-              <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="mainbutton" id="reubutton">check it out</button></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="animalmain">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12" id="reumanager">
-            <div class="col-md-3 col-sm-0"></div>
-            <div class="col-md-6 col-sm-12" id="reuinfo">
-              <p class="title" id="reu">accesibility</p></br>
-              <p class="info" id="reutext">This was an oral presentation I gave at <a href="https://www.learnacademy.org/">LEARN Academy</a> on the importance of accesibility standards for users with visual impairments</p>
-              <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4&t=67s" target="_blank"><button class="mainbutton" id="reubutton">check it out</button></div></a>
-          </div>
-        </div>
-      </section>
-
-      <section id="animalmain">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12" id="reumanager">
-            <div class="col-md-3 col-sm-0"></div>
-            <div class="col-md-6 col-sm-12" id="reuinfo">
-              <p class="title" id="reu">solid general contracting</p></br>
-              <p class="info" id="reutext">for this project I am working with a local general contractor to build a simple portfolio page to showcase their best works and provide clients with information about the company.</p>
-              <p class="soon">Coming Soon</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="animalmain">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12" id="reumanager">
-            <div class="col-md-3 col-sm-0"></div>
-            <div class="col-md-6 col-sm-12" id="reuinfo">
-              <p class="title" id="reu">affluence labs</p></br>
-              <p class="info" id="reutext">For this project I am working with a local business consultancy to build their online footprint. The final product will be a fully custom solution to help them get their name, and purpose out to the world.</p>
-              <p class="soon">Coming Soon</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="quote">
-        <div class="col-md-12 col-sm-12" id="quotetext">
-          <p id="einstein">Imagination is more important than knowledge.For knowledge is limited to all we now know and understand, while imagination embraces the entire world, and all there ever will be to know and understand.</br>
-Albert Einstein</p>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="row">
-          <div class="col-md-6 col-sm-12" id="map">
-            <iframe id="googlemap"
-            width="100%"
-            height="450"
-            frameborder="0" style="border:5px solid white"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDNWjeEbjWL4zAHDm2fDVhvx6IMkK3lB6I&q=Rotterdam+NY&maptype=satellite" allowfullscreen>
-          </iframe>
-        </div>
-        <div class="col-md-6 col-sm-12" id="contactinfo">
-          <p id="getintouch">Want to get in touch?</p></br>
-          <a href="mailto:r.dennett3@gmail.com"><button class="mainbutton">email me</button></a></br></br>
-          <p id="phone">Or Call</br><span>518-788-7753</span></p></br>
-          <a href="https://www.facebook.com/bob.dennett.5"target="_blank"><i class="fa fa-facebook" aria-hidden="true" id="facebook"></i></a>
-          <a href="https://www.instagram.com/bobd3/"target="_blank"><i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
-          <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/"target="_blank"><i class="fa fa-linkedin" aria-hidden="true" id="linked-in"></i></a>
-          <a href="https://github.com/Rdennett3"target="_blank"><i class="fa fa-github" aria-hidden="true" id="github"></i></a>
-
-        </div>
+    <div class="access">
+      <div class="col-md-6 col-sm-6" id="accessdesc">
+        <h1  class="title"><a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank">ACCESSIBILITY</h1></a>
+        <p class="description" id="accessinfo">This was an oral presentation I gave at <a href="https://www.learnacademy.org/">LEARN Academy</a> on the importance of accesibility standards for users with visual impairments</p></p>
       </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!-- jquery scrollTo -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-<!-- jquery localScroll -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
-<script>
-$('myNav').localScroll();
-</script>
-<script>
-$('.scrollToTop').click(function(){
-  $('html, body').animate({scrollTop : 0},300);
-  return false;
-});
-</script>
-<!-- <script>
-$(window).scroll(function() {
-  $('#frontDiv').each(function(){
-    var imagePos = $(this).offset().top;
+      <div class="col-md-6 col-sm-12" id="accessbg">
+        <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"id="checkbutton"><button class="checkit">check it</button></a>
+      </div>
+    </div>
 
-    var topOfWindow = $(window).scrollTop();
-    if (imagePos < topOfWindow+1020) {
-      $(this).addClass("slideUp");
-    }
-  });
-});
-</script> -->
-<script>
-$(window).scroll(function() {
-  $('#about,#work,#reumanager,#einstein').each(function(){
-    var imagePos = $(this).offset().top;
+    <div class="reuman">
+      <div class="col-md-6 col-sm-12" id="reubg">
+        <a href="https://reumanager.com/" target="_blank" id="checkbutton"><button class="checkit" target="_blank">check it</button></a>
+      </div>
+      <div class="col-md-6 col-sm-6" id="reudesc">
+        <h1  class="title"><a href="https://reumanager.com/"target="_blank">reu manager</a></h1>
+        <p class="description"id="reuText">On this project I was working on a post internship contract with <a href="https://www.notch8.com/">Notch 8</a> from San Diego. We were tasked with taking over a project first started by UCSD that aimed to make the application process for grants easier and more streamlined</p>
+      </div>
+    </div>
 
-    var topOfWindow = $(window).scrollTop();
-    if (imagePos < topOfWindow+600) {
-      $(this).addClass("slideUp");
-    }
-  });
-});
-</script>
+    <div class="access">
+      <div class="col-md-6 col-sm-6" id="accessdesc">
+        <h1  class="title"><a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank">Solid General Contracting</h1></a>
+        <p class="description" id="accessinfo"></p>
+      </div>
+      <div class="col-md-6 col-sm-12" id="solidbg">
+        <button class="checkit">coming soon</button>
+      </div>
+    </div>
 
-  </body>
-  </html>
+    <div class="about">
+      <div class="col-md-12 col-sm-12" id="aboutleft">
+        <p id="imagination">Imagination</span> is more important than
+          knowledge. For knowledge <span id="is">is</span> limited to all we now know
+          and understand, while imagination embraces <span id="the">the</span> entire <span id="world">world</span>,
+          and all there ever will be to know and understand.</br><span id="ae">Albert Einstein</p>
+      </div>
+    </div>
+
+    <footer class="contact">
+      <div class="row">
+        <p id="number">518-788-7753</p>
+      </div></br></br>
+        <a href="https://www.facebook.com/bob.dennett.5" target="_blank" class="icon"><i class="fa fa-facebook" aria-hidden="true"id="facebook"></i></a>
+        <a href="https://www.linkedin.com/in/bob-dennett-b3227b103" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"id="linkedin"></i></a>
+        <a href="https://www.instagram.com/bobd3/" target="_blank" class="icon"><i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
+        <a href="mailto:r.dennett3@gmail.com" target="_blank" class="icon"><i class="fa fa-envelope-o" aria-hidden="true" id="mail"></i></a>
+    </footer>
+
+        <script>
+        $('.scrollToTop').click(function(){
+          $('html, body').animate({scrollTop : 0},700);
+          return false;
+        });
+        </script>
+        <script>
+        $(window).scroll(function() {
+          $('#petbg,#theroinfo,#therodesc,#accessdesc,#reubg,#afflabbg').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+600) {
+              $(this).addClass("slideRight");
+            }
+          });
+        });
+        </script>
+        <script>
+        $(window).scroll(function() {
+          $('#petdesc, #petinfo,#therobg,#accessbg,#right,#solidbg,#reudesc').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+600) {
+              $(this).addClass("slideLeft");
+            }
+          });
+        });
+        </script>
+
+        <script>
+        var map;
+
+        function initialize() {
+          var map = new google.maps.Map(
+            document.getElementById("map"), {
+              center: new google.maps.LatLng(42.7862185, -73.9735639),
+              zoom: 13,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+          }
+          google.maps.event.addDomListener(window, "load", initialize);
+          </script>
+
+
+        </body>
