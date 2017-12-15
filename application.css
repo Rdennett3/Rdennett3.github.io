@@ -3,7 +3,7 @@ body{
  }
 .top{
   height:100vh;
-  background-image: url('ocean1.jpg');
+  background-image: url('https://farm5.staticflickr.com/4580/24554237438_ca983c016f_z.jpg');
   background-size: cover;
 }
 #bob{
@@ -86,7 +86,7 @@ body{
 
 #petbg{
   height:100%;
-  background-image: url('pup.jpg');
+  background-image: url('https://farm5.staticflickr.com/4515/38369498636_3fa1287b3d_m.jpg');
   background-size: cover;
   visibility: hidden;
   text-align: center;
@@ -153,7 +153,7 @@ body{
 }
 #accessbg{
   height:100%;
-  background-image: url('eye2.png');
+  background-image: url('https://farm5.staticflickr.com/4541/38425299151_116596a980_c.jpg');
   background-size:cover;
   background-repeat: no-repeat;
   visibility: hidden;
