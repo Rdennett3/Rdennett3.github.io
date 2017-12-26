@@ -1,18 +1,20 @@
-body{
+/*FIRST SECTION TOP*/
+ body{
    overflow-x: hidden;
  }
 .top{
   height:100vh;
-  background-image: url('https://farm5.staticflickr.com/4580/24554237438_ca983c016f_z.jpg');
+  background-image: url('ocean1.jpg');
   background-size: cover;
 }
 #bob{
   font-family: 'Lato', sans-serif;
   font-size: 3em;
   text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
   position: fixed;
   z-index: 1;
-  color:#E94F37;
+  color:white;
   padding-top:2%;
 }
 
@@ -47,6 +49,8 @@ body{
   font-size: 1.5em;
 }
 #right{
+  -webkit-clip-path: polygon(0 0, 100% 0%, 25% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 25% 100%, 0% 100%);
   height:100%;
   background: linear-gradient(to bottom,red, blue);
   opacity: .4;
@@ -86,7 +90,7 @@ body{
 
 #petbg{
   height:100%;
-  background-image: url('https://farm5.staticflickr.com/4515/38369498636_3fa1287b3d_m.jpg');
+  background-image: url('pup.jpg');
   background-size: cover;
   visibility: hidden;
   text-align: center;
@@ -153,7 +157,7 @@ body{
 }
 #accessbg{
   height:100%;
-  background-image: url('https://farm5.staticflickr.com/4541/38425299151_116596a980_c.jpg');
+  background-image: url('eye2.png');
   background-size:cover;
   background-repeat: no-repeat;
   visibility: hidden;
