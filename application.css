@@ -1,455 +1,612 @@
-/*FIRST SECTION TOP*/
 body{
-   overflow-x: hidden;
- }
-.top{
-  height:100vh;
-  background-image: url('https://farm5.staticflickr.com/4580/24554237438_ca983c016f_z.jpg');
-  background-size: cover;
+  overflow-x: hidden;
+  background-color: #000000;
+  margin: 0 !important;
 }
-#bob{
-  font-family: 'Lato', sans-serif;
-  font-size: 3em;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px black;
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS in application.js) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 1);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.8s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 15%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  z-index: 10;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  /* margin-left: 40%; */
+  padding: 8px;
+  text-decoration: none;
+  font-size: 4em;
+  color: #ffffff;
+  display: block; /* Display block instead of inline */
+  transition: .5s; /* Transition effects on hover (color) */
+  font-family: 'Teko', sans-serif;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #E1EFE6;
+  text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  font-size: 50px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 700px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 2em;
+    top: 15px;
+    right: 10px;
+  }
+}
+
+#openbutton{
+  font-size: 5em;
   position: fixed;
   z-index: 1;
-  color:white;
-  padding-top:2%;
+  padding-left: 2%;
+  padding-top: 2%;
+  background: linear-gradient(330deg,#e05252 0%, blue 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  cursor: pointer;
 }
 
-#toptext{
-  font-size: 5em;
-  z-index: 1
+#topLeft{
+  height:100vh;
+  background: linear-gradient(45deg,#30496B,#30B8D2);
+  z-index: -10;
+}
+#topMain{
+  max-height: 100vh;
+}
+#topRight{
+  height:100vh;
+  background: rgba(0, 0, 0, .85);
 }
 
-#about{
-  text-align: center;
+#bg-vid{
+  overflow-y: hidden;
+  postion: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  /* -webkit-clip-path: polygon(0 0, 0% 100%, 53% 0);
+  clip-path: polygon(0 0, 0% 100%, 53% 0); */
 }
 
+#bob{
+  z-index: 10;
+  font-size: 8em;
+  text-align: right;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  line-height: 85px;
+  padding-top: 15%;
+  padding-right: 5%;
+  font-weight: 300;
+  background: linear-gradient(330deg,#e05252 0%, blue 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  /* background: linear-gradient(45deg,#30496B,#30B8D2);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent; */
+  /* text-shadow: 2px 2px 2px #ffffff; */
+}
+
+#aboutMe{
+  height:74vh;
+  background: rgba(0,0,0,1);
+}
 #about1{
-  position:relative;
-  top:50%;
-  transform: translateY(-50%);
+  padding-top: 8%;
+  padding-right: 3%;
   display: table;
   margin: 0 auto;
   font-weight: 400;
-  font-size:2.8em;
+  font-size:3em;
   background: linear-gradient(330deg,#e05252 0%, blue 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   line-height: 75px;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
+  font-family: 'Teko', sans-serif;
+  text-align: right;
+  /* visibility: hidden; */
+}
 
-}
-#animalText{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5em;
-}
-#right{
-  -webkit-clip-path: polygon(0 0, 100% 0%, 25% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 25% 100%, 0% 100%);
-  height:100%;
-  background: linear-gradient(to bottom,red, blue);
-  opacity: .4;
-  visibility: hidden;
-}
-.description{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5em;
-}
-.checkit{
+/* WORK SECTION */
+
+
+.main{
   height:4em;
-  width:12em;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  /*border: 3px solid #E94F37;;*/
-  color:#ffffff;
+  width: 14em;
   background: linear-gradient(330deg,#e05252 0%, blue 100%);
-  font-size: 1.2em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Teko', sans-serif;
+  font-stretch: extra-expanded;
+  color: #ffffff;
   text-transform: uppercase;
-  padding-top: -10px;
-  letter-spacing: 5px;
-  }
-/*END FIRST TOP SECTION*/
-
-#aboutContainer{
-  height:80vh;
-  background-color: black;
+  margin-top: 15%;
 }
 
-/*ANIMAL PROJECT SECTION*/
-.animal{
-  height:100vh;
-  text-align: left;
+.mainFont{
+  font-size: 3em;
+  color:#ffffff;
+  padding-bottom: 2%;
 }
 
-#petbg{
-  height:100%;
-  background-image: url('https://farm5.staticflickr.com/4515/38369498636_3fa1287b3d_m.jpg');
-  background-size: cover;
-  visibility: hidden;
-  text-align: center;
-}
-#petinfo{
-  text-align: left;
-  visibility: hidden;
-}
-#petdesc{
-  top:40%;
-  visibility: hidden;
-}
-/*END ANIMAL PROJECT SECTION*/
-
-/*THERO SECTION*/
-.thero{
-  height:100vh;
-  text-align: right;
-}
-#therobg{
-  height:100%;
-  background-image: url('https://farm5.staticflickr.com/4541/38425299151_116596a980_c.jpg');
-  background-size: cover;
-  visibility: hidden;
-  text-align: center;
-}
-#theroinfo{
-  text-align: right;
-  visibility: hidden;
-}
-#therodesc{
-  top:40%;
-  visibility: hidden;
-}
-
-/*END THERO SECTION*/
-
-/*REU MANAGER SECTION*/
-.reuman{
-  height:100vh;
-  text-align: left;
-}
-#reubg{
-  height:100%;
-  background-image: url('https://farm6.staticflickr.com/5330/30920280302_ee015096f4_z.jpg');
-  background-size: cover;
-  visibility: hidden;
-  text-align: center;
-}
-#reudesc{
-  visibility: hidden;
-  top:40%;
-  /*position: relative;
-  top: 50%;
-  transform: translateY(-50%);*/
-}
-/*END REU MANAGER SECTION*/
-
-/*ACCESSIBILITY SECTION*/
-.access{
-  height:100vh;
-  text-align: right;
-
-}
-#accessbg{
-  height:100%;
-  background-image: url('https://farm5.staticflickr.com/4541/38425299151_116596a980_c.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
-  visibility: hidden;
-  text-align: center;
-}
-#accessdesc{
-  visibility: hidden;
-  top:40%;
-  font-family: 'Cormorant Garamond',serif;
-}
-/*END ACCESSIBILITY SECTION*/
-#solidbg{
-  height:100vh;
-  background-image: url('https://farm3.staticflickr.com/2886/33955048491_6e129828f1_z.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.title{
-  font-family: 'Oswald', sans-serif;
+.second{
+  height:4em;
+  width: 14em;
+  background: linear-gradient(330deg,#e05252 0%, blue 100%);
+  font-family: 'Teko', sans-serif;
+  font-stretch: extra-expanded;
+  color: #ffffff;
   text-transform: uppercase;
-  position: relative;
-  top:50%;
-  transform: translateY(-50%);
+  margin-top: 15%;
+  cursor: default;
 }
 
-a{
-  color:black!important;
+.secondFont{
+  font-size: 3em;
+  color:#ffffff;
+  padding-bottom: 2%;
 }
-a:hover{
-  color:#E94F37!important;
-  text-decoration: none!important;
+
+#workSection{
+  background: rgba(0,0,0,);
 }
-#contact{
-  height:80vh;
-  background-color: #ffffff;
+
+.projTitle{
+  color:#ffffff;
+  font-size: 5em;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black;
 }
-/*ABOUT SECTION*/
-.about{
-  height:75vh;
-  background: white;
-  text-align: right;
-}
-#aboutleft{
-  height:100%;
+
+#reuManager{
+  height:70vh;
+  /* visibility: hidden; */
+  background-image: url('images/embers.jpeg');
   background-size: cover;
-  background: black;
+  text-align: center;
 }
-#aboutright1{
-  height:50%;
-  background-color: black;
+
+#eye{
+  width:100%;
+  height:100%;
+  z-index: -5;
 }
-#aboutright2{
-  height:50%;
-  background-color: blue;
+
+#animalFriends{
+  height:70vh;
+  background-image: url('images/pup1.jpg');
+  background-size: cover;
+  /* visibility: hidden; */
+  text-align: center;
 }
+
+#accessibility{
+  height:70vh;
+  background-image: url('images/eye1.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+#solid{
+  height:70vh;
+  background-image: url('https://farm5.staticflickr.com/4467/37972212101_bf9ccb1292_z.jpg');
+  background-size: cover;
+  /* visibility: hidden; */
+  text-align: center;
+}
+
+#misfit{
+  height:70vh;
+  background-image: url('images/gloomy-road.jpeg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  text-align: center;
+}
+
+#afflab{
+  height: 70vh;
+  /* visibility: hidden; */
+  background-image: url('https://farm5.staticflickr.com/4177/33580381953_045f7a0ff1_z.jpg');
+  background-size: cover;
+  text-align: center;
+}
+/* END WORK SECTION */
+
+/* BREAK SECTION */
+#breakSection{
+  background: rgba(0,0,0,.9);
+}
+
+#breakLeft{
+  height:60vh;
+  text-align: right;
+  /* visibility: hidden; */
+  /* background: rgba(0,0,0,.9); */
+}
+
+#breakRight{
+  /* visibility: hidden; */
+}
+
+#emailLink:hover{
+  text-decoration: none;
+}
+
+#fire{
+  height:100%;
+  width: 100%;
+}
+
+.d3{
+  padding-top: 6%;
+  font-size: 8em;
+  font-weight: 300;
+  font-family: 'Teko', sans-serif;
+  color:#ffffff;
+  text-transform: uppercase;
+  line-height: 110px;
+  letter-spacing: -2px;
+  background: linear-gradient(330deg,#e05252 0%, blue 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+/* END BREAK SECTION */
+
+/* QUOTE SECTION */
+
+#quote{
+  height:65vh;
+  background: #000000;
+}
+
 #imagination{
-  position:relative;
-  top:50%;
-  transform: translateY(-50%);
+  padding-top: 5%;
+  padding-right: 3%;
   display: table;
   margin: 0 auto;
   font-weight: 400;
-  font-size:2.8em;
+  font-size:3em;
   background: linear-gradient(330deg,#e05252 0%, blue 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   line-height: 75px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Teko', sans-serif;
+  text-align: right;
+  /* visibility: hidden; */
+}
+/* END QUOTE SECTION */
+
+/* CONTACT SECTION */
+#map{
+  height:100vh;
+}
+
+/* #contactOuter{
+  background: #000000;
+} */
+
+#contact{
+  padding-top: 5%;
+  height:100vh;
+  background: rgba(0,0,0,.9);
+  background-size: cover;
+  text-align:center;
+
+  /* padding-right: 8%; */
+}
+
+#contact-heading{
+  color: #ffffff;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  padding-top: 1.5em;
   text-transform: uppercase;
-  text-align: center;
 }
-#ae{
-  text-align: center;
-}
-/*END ABOUT SECTION*/
 
-/*CONTACT SECTION*/
-.contact{
-  height:25vh;
-  background: black;
-  text-align: center;
+.contact-info{
+  color: #ffffff;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
 }
-#facebook,
-#linkedin,
-#instagram,
-#mail{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 4em;
+
+.contact-info a{
+  color:white !important;
+  text-decoration: none;
+  text-transform:uppercase;
+}
+
+.contact-info a :hover{
+  text-decoration: none !important;
+}
+
+#insta,
+#linked,
+#github{
+  font-size: 5em;
   color:white;
-  letter-spacing: .5em;
+  padding-left: 1em;
+  padding-top: 25px;
 }
 
-#facebook:hover,
-#linkedin:hover,
-#instagram:hover,
-#mail:hover{
-  color:#E94F37;
-}
+/* END CONTACT SECTION */
+/* FOOTER SECTION */
 
-#number{
-  font-size: 2em;
-  color:white;
+#foot{
+  height:10vh;
+  background: linear-gradient(330deg,#e05252 0%, blue 100%);
+  text-align: center;
 }
-/*====================
-MOBILE SCREEN STYLES
-====================*/
-@media screen and (max-width:1000px) {
-  #bob{
-    font-size: 2em;
-    font-weight: bold;
+#copyright{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:#ffffff;
+  padding-top:1%;
+  font-family: 'Teko', sans-serif;
+  font-weight:300;
+}
+/* END FOOTER SECTION */
+/* MOBILE STYLES DECLARED BELOW */
+@media screen and (max-width:900px){
+  .description{
+    font-size: 1.5em;
+    height: 30%;
   }
-  #about{
-    height:50vh;
+  .overlay a{
+    font-size: 4em;
+    text-align: center;
+    margin-left: 5%;
   }
-  #petdesc{
+  #topLeft{
     display: none;
   }
-  #petbg{
-    height:50vh;
-  }
-  .animal{
-    height:50vh;
-  }
-  #therodesc{
-    display: none;
-  }
-  #therobg{
-    height:50vh;
-  }
-  .thero{
-    height:50vh;
-  }
-  .reuman{
-    height:50vh;
-  }
-  #reubg{
-    height:50vh;
-  }
-  #reudesc{
-    display: none;
-  }
-  #accessdesc{
-    display: none;
-  }
-  .access{
-    height:50vh;
+  .mainButton{
+    padding-top: 1%;
   }
   #imagination{
-    font-size:1.5em;
-    line-height: 225%;
+    font-size: 2.2em;
     text-align: center;
+    line-height: 45px;
+  }
+  #aboutMe{
+    height: 80vh;
   }
   #about1{
-    font-size:1.5em;
-    line-height: 225%;
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 65px;
+  }
+
+  .d3{
+    font-size: 6em;
+    line-height: 75px;
+  }
+
+  #breakLeft{
     text-align: center;
   }
-  .checkit{
-    height:4em;
-    width:12em;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    /*border: 3px solid #E94F37;;*/
-    color:#ffffff;
-    background: linear-gradient(330deg,#e05252 0%, blue 100%);
-    font-size: 1.2em;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    padding-top: -10px;
-    letter-spacing: 5px;
+
+  #workTitle{
+    height:20vh;
   }
-  #bob{
-    color:white;
+  #work{
+    font-size: 7em;
   }
-  #bob:hover{
-    color:#E94F37;
+  #workSection{
+    height:100%;
   }
-  #solidbg{
-    height:50vh;
+  #map{
+    height:100vh;
+    /* visibility: visible; */
   }
-  #afflabbg{
-    height:50vh;
+  #contact-heading{
+    padding-top: 1.5em;
   }
 }
-/*============
-ANIMATIONS
-============*/
+/* END MOBILE STYLES */
+/* CSS ANIMATIONS DECLARED BELOW */
 
 /*SLIDE LEFT*/
 .slideLeft{
- 	animation-name: slideLeft;
- 	-webkit-animation-name: slideLeft;
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;
 
- 	animation-duration: 2s;
- 	-webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
 
- 	animation-timing-function: ease-in-out;
- 	-webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 
- 	visibility: visible !important;
- }
+  visibility: visible !important;
+}
 
- @keyframes slideLeft {
- 	0% {
- 		transform: translateX(150%);
- 	}
- 	100% {
- 		transform: translateX(0%);
- 	}
- }
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
- @-webkit-keyframes slideLeft {
- 	0% {
- 		-webkit-transform: translateX(150%);
- 	}
- 	100% {
- 		-webkit-transform: translateX(0%);
- 	}
- }
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+/*SLIDE LEFT2*/
+.slideLeft2{
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;
+
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes slideLeft2 {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideLeft2 {
+  0% {
+    -webkit-transform: translateX(150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
 
 /*SLIDE RIGHT*/
 .slideRight{
- 	animation-name: slideRight;
- 	-webkit-animation-name: slideRight;
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
 
- 	animation-duration: 2s;
- 	-webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
 
- 	animation-timing-function: ease-in-out;
- 	-webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 
- 	visibility: visible !important;
- }
+  visibility: visible !important;
+}
 
 @keyframes slideRight {
- 	0% {
- 		transform: translateX(-150%);
- 	}
- 	100% {
- 		transform: translateX(0%);
- 	}
- }
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
- @-webkit-keyframes slideRight {
- 	0% {
- 		-webkit-transform: translateX(-150%);
- 	}
- 	100% {
- 		-webkit-transform: translateX(0%);
- 	}
- }
- /*==============================================
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+/*==============================================
 slideUp
 ==============================================*/
 
 
 
 .slideUp{
-	animation-name: slideUp;
-	-webkit-animation-name: slideUp;
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
 
-	animation-duration: 1s;
-	-webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
 
-	animation-timing-function: ease;
-	-webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
 
-	visibility: visible !important;
+  visibility: visible !important;
 }
 
 @keyframes slideUp {
-	0% {
-		transform: translateY(100%);
-	}
+  0% {
+    transform: translateY(100%);
+  }
 
-	100% {
-		transform: translateY(0%);
-	}
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @-webkit-keyframes slideUp {
-	0% {
-		-webkit-transform: translateY(100%);
-	}
-	100% {
-		-webkit-transform: translateY(0%);
-	}
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+.fadeIn{
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*
