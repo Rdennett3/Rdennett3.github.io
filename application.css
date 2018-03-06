@@ -78,7 +78,9 @@ body{
 
 #topLeft{
   height:100vh;
-  background: linear-gradient(45deg,#30496B,#30B8D2);
+  background-image: url('https://farm5.staticflickr.com/4529/38706906782_5825a6df66_z.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: -10;
 }
 #topMain{
