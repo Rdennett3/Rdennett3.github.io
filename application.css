@@ -197,7 +197,7 @@ body{
 #reuManager{
   height:70vh;
   visibility: hidden;
-  background-image: url('images/embers.jpeg');
+  background-image: url('https://farm5.staticflickr.com/4551/38630348211_626fc68a45_z.jpg');
   background-size: cover;
   text-align: center;
 }
@@ -210,7 +210,7 @@ body{
 
 #animalFriends{
   height:70vh;
-  background-image: url('images/pup1.jpg');
+  background-image: url('https://farm5.staticflickr.com/4515/38369498636_3fa1287b3d_m.jpg');
   background-size: cover;
   visibility: hidden;
   text-align: center;
@@ -218,7 +218,7 @@ body{
 
 #accessibility{
   height:70vh;
-  background-image: url('images/eye1.jpg');
+  background-image: url('https://farm5.staticflickr.com/4541/38425299151_116596a980_c.jpg');
   background-size: cover;
   text-align: center;
 }
