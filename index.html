@@ -14,12 +14,13 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous">
   </script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
 
-  <!-- <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNWjeEbjWL4zAHDm2fDVhvx6IMkK3lB6I&callback=initMap">
-</script> -->
-<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Teko:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="application.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
@@ -27,6 +28,7 @@
 <script src="application.js"></script>
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
+
 <body>
   <section>
     <!-- The overlay -->
@@ -38,135 +40,166 @@
       <!-- Overlay content -->
       <div class="overlay-content">
         <a href="#about1" onclick="closeNav()">About Me</a>
-        <a href="#reuManager" onclick="closeNav()">My Work</a>
+        <a href="#projects" onclick="closeNav()">My Work</a>
         <a href="#contact" onclick="closeNav()">Contact</a>
       </div>
     </div>
   </section>
+
   <section>
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <span onclick="openNav()"><i class="fas fa-bars" id="openbutton"></i></span>
-    <div class="row" id="topMain">
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span onclick="openNav()"><i class="fas fa-bars" id="openbutton"></i></span>
+      <div class="row" id="topMain">
 
-      <div class="col-md-5 col-sm-0 col-xs-0" id="topLeft">
-        <video id="bg-vid" autoplay="true" loop>
-          <source src="https://vimeo.com/178616405">
-          </video>
-        </div>
+        <div class="col-md-5 col-sm-0 col-xs-0" id="topLeft">
 
-        <div class="col-md-7 col-sm-0" id="topRight">
-          <p id="bob">Bob Dennett</br></br><span class="smallheadline">web</span></br><span class="smallheadline">developer</span></p>
-        </div>
-      </div>
-      </section>
+          </div>
 
-      <section>
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12" id="aboutMe">
-            <p id="about1">Hey! I am a design passionate, front end
-              focused, full stack developer. I thrive on
-              fast paced environments, pivoting on a dime, and am always up
-              for a new challenge. Have a look at my past and current projects below.
-            </p>
+          <div class="col-md-7 col-sm-0" id="topRight">
+            <p id="bob">Bob Dennett</br></br><span class="smallheadline">web</span></br><span class="smallheadline">developer</span></p>
           </div>
         </div>
-      </section>
+        </section>
+    <!-- <section>
+      <span onclick="openNav()"><i class="fas fa-bars" id="openbutton"></i></span>
+      <div class="row" id="topMain">
+        <div class="col-md-12 col-sm-12 col-xs-12" id="topLeft">
+          <p id="bob">Bob Dennett</br></br><span class="smallheadline">web</span></br><span class="smallheadline">developer</span></p>
+        </div>
+      </section> -->
 
-
-      <section id="workSection" >
+    <section>
       <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12"id="reuManager">
-          <h1 class="projTitle">REU Manager</h1>
-          <a href="https://reumanager.com/" target="_blank"><button class="main"><span class="mainFont">check it out</span></button></a>
+        <div class="col-md-12 col-sm-12 col-xs-12" id="aboutMe">
+          <p id="about1">Hey! I am a design passionate, front end
+            focused, full stack developer. I thrive on
+            fast paced environments, pivoting on a dime, and am always up
+            for a new challenge. Have a look at my past and current projects below.
+          </p>
         </div>
-
-        <div class="col-md-6 col-sm-12 col-xs-12" id="animalFriends">
-          <h1 class="projTitle">Shelter Friends</h1>
-          <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="main"><span class="mainFont">check it out</span></button></a>
-        </div>
-
       </div>
+    </section>
+
+    <section class="col-md-12 col-sm-12" id="projects">
       <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12" id="accessibility">
-          <h1 class="projTitle">Accessibility</h1>
-          <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="main"><span class="mainFont">check it out</span></button></a>
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12" id="solid">
-          <h1 class="projTitle">Solid contracting</h1>
-          <button class="second"><span class="secondFont">coming soon</span></button>
-        </div>
-      </div>
-    </div>
+        <!-- <div class="slideRight"> -->
+          <div class="col-md-4 col-sm-0" id="proj1">
 
-    <div class="row">
-      <div class="col-md-6 col-sm-12 col-xs-12" id="misfit">
-        <h1 class="projTitle">Misfit Grafix</h1>
-        <button class="second"><span class="secondFont">coming soon</span></button>
-      </div>
-      <div class="col-md-6 col-sm-12 col-xs-12" id="afflab">
-        <h1 class="projTitle">Affluence Labs</h1>
-        <button class="second"><span class="secondFont">coming soon</span></button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</section>
+              <p class="projInfo"id="pet">this was my final project at <a href="https://www.learnacademy.org" target="_blank"><span id="learn">Learn</span></a> Academy,
+                an app that aims to connect available shelter pets with possible
+                adopters. for this project i was part of a 5 person team, and we were
+                given just under two weeks to plan, and build the app.</p>
+              </div>
+            <!-- </div> -->
+            <div class="col-md-8 col-sm-0" id="petBG">
+              <h2 class="title" id="access">Shelter friends</h2>
+              <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="defBtn">check it</button></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-sm-12" id="pres">
+              <h2 class="title" id="access">Accessibility</h2>
+              <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="defBtn">check it</button></a>
+            </div>
+            <div class="col-md-4 col-sm-12" id="proj2">
+              <p id="accessibility" class="projInfo">This is an oral presentation I gave while at <a href="https://www.learnacademy.org" target="_blank"><span id="learn">Learn</span></a> Academy
+              on the importance of accessibility requirements in web projects. I felt that it was an important topic to cover which is often overlooked. </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-12" id="proj3">
 
-<section id="breakSection">
-  <div class="row">
-    <div class="col-md-5 col-sm-12 col-xs-12" id="breakLeft">
-      <p class="d3">design</p>
-      <p class="d3">develop</p>
-      <p class="d3">repeat</p>
-    </div>
-    <div class="col-md-7 col-sm-12 col-xs-12" id="breakRight">
-      <img src="https://farm5.staticflickr.com/4561/37904535174_0cc37cc49a_c.jpg" id="fire"/>
-    </div>
-  </div>
-</section>
+                <p id="reuman" class="projInfo">Following my internship with <a href="https://www.notch8.com/" id="notch8">Notch 8</a> I was contracted to work on a project originally started by UCSD which aimed to
+                make the process of applying for academic grants more streamlined. I was part of a 7 person team for this project and was mainly responsible for the front end design and build
+             </p>
+                </div>
+                <div class="col-md-8 col-sm-12" id="reu">
+                  <h2 class="title" id="reutitle">reu manager</h2>
+                  <a href="https://reumanager.com/" target="_blank"><button class="defBtn">check it</button></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-sm-12" id="afflab">
+                  <h2 class="title" id="access">Affluence labs</h2>
+                  <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="defBtn2">coming soon</button></a>
+                </div>
+                <div class="col-md-4 col-sm-12" id="proj4">
+                  <p class="projInfo" id="affLab">Affluence labs is a local business consultancy that approached me to build them a coming soon/ landing page for them. Though
+                  the project has stalled as of late, I am very proud of the work I did on the project and will be posting it once I have the permission to do so</p>
+                  </div>
+                </div>
 
-<section id="einstein">
-  <div class="row">
-    <div class="col-md-12 col-sm-12" id="quote">
-      <p id="imagination">Imagination is more important than
-        knowledge. For knowledge is limited to all we now know
-        and understand, while imagination embraces the entire world,
-        and all there ever will be to know and understand. </br>Albert Einstein</p>
-      </div>
-    </div>
-  </section>
+                <div class="row">
+                  <div class="col-md-4 col-sm-12" id="proj5">
+                    <p id="misfitDesc" class="projInfo">Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint
+                       beyond Facebook, and Instagram. I am very excited to move past the concept phase and will post updates very soon.
+                    </p>
+                    </div>
 
-  <section id="contactOuter">
-    <div class="row">
-      <div class="col-md-6 col-sm-0 col-xs-0" id="map"></div>
-      <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 42.8036691, lng: -74.008184},
-          zoom: 13
-        });
-      }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3nkc4e_Im1yubR-EGZDjm9FPTVS6FU9U&callback=initMap"async defer></script>
+                    <div class="col-md-8 col-sm-12" id="misfit">
+                      <h2 class="title" id="reutitle">misfit grafix</h2>
+                      <a target="_blank"><button class="defBtn2">coming soon</button></a>
+                    </div>
+                  </div>
 
-      <div class="col-md-6 col-sm-12" id="contact">
-        <h1 id="contact-heading">Lets talk</h1>
-        <h2 class="contact-info"><i class="fas fa-phone" id="phone"></i>: 518-788-7753</h2>
-        <h2 class="contact-info"><i class="fas fa-envelope"> &nbsp </i><a href="mailto:r.dennett3@gmail.com"id="emailLink">:&nbsp R.dennett3@gmail.com</h2></a></h2>
-        <a href="https://www.instagram.com/bobd3/" target="_blank"><i class="fab fa-instagram" id="insta"></i></a>
-        <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><i class="fab fa-linkedin"id="linked"></i></a>
-        <a href="https://github.com/Rdennett3" target="_blank"><i class="fab fa-github" id="github"></i></a>
+                </section>
+                <!-- end projects -->
 
-      </div>
-    </div>
+                <section id="breakSection">
+                  <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12" id="breakLeft">
+                      <p class="d3">design</p>
+                      <p class="d3">develop</p>
+                      <p class="d3">repeat</p>
+                    </div>
+                    <div class="col-md-7 col-sm-12 col-xs-12" id="breakRight">
+                      <img src="images/fire1.jpeg" id="fire"/>
+                    </div>
+                  </div>
+                </section>
 
-  </section>
-  <footer>
-    <div class="col-md-12 col-sm-12" id="foot">
-      <p id="copyright">&copy; 2018 bob dennett</p>
-    </div>
-  </footer>
+                <section id="einstein">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12" id="quote">
+                      <p id="imagination">Imagination is more important than
+                        knowledge. For knowledge is limited to all we now know
+                        and understand, while imagination embraces the entire world,
+                        and all there ever will be to know and understand. </br>Albert Einstein</p>
+                      </div>
+                    </div>
+                  </section>
 
-</body>
+                  <section id="contactOuter">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-0 col-xs-0" id="map"></div>
+                      <script>
+                      var map;
+                      function initMap() {
+                        map = new google.maps.Map(document.getElementById('map'), {
+                          center: {lat: 42.8036691, lng: -74.008184},
+                          zoom: 13
+                        });
+                      }
+                      </script>
+                      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3nkc4e_Im1yubR-EGZDjm9FPTVS6FU9U&callback=initMap"async defer></script>
+
+                      <div class="col-md-6 col-sm-12" id="contact">
+                        <div class="hell">
+                        <h1 id="contact-heading">Lets talk</h1>
+                        <h2 class="contact-info"><i class="fas fa-phone" id="phone"></i>: 518-788-7753</h2>
+                        <h2 class="contact-info"><i class="fas fa-envelope"> &nbsp </i><a href="mailto:r.dennett3@gmail.com"id="emailLink">:&nbsp R.dennett3@gmail.com</h2></a></h2>
+                        <a href="https://www.instagram.com/bobd3/" target="_blank"><i class="fab fa-instagram" id="insta"></i></a>
+                        <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><i class="fab fa-linkedin"id="linked"></i></a>
+                        <a href="https://github.com/Rdennett3" target="_blank"><i class="fab fa-github" id="github"></i></a>
+                      </div>
+                    </div>
+                    </div>
+
+                  </section>
+                  <footer>
+                    <div class="col-md-12 col-sm-12" id="foot">
+                      <p id="copyright">&copy; 2018 bob dennett</p>
+                    </div>
+                  </footer>
+
+                </body>

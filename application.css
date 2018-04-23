@@ -42,7 +42,7 @@ body{
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: #E1EFE6;
+  color: #E94F37;
   text-decoration: none;
 }
 
@@ -78,31 +78,18 @@ body{
 
 #topLeft{
   height:100vh;
-  background-image: url('https://farm5.staticflickr.com/4529/38706906782_5825a6df66_z.jpg');
+  background-image: url('https://farm5.staticflickr.com/4788/39898407735_c320587a91_c.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -10;
-  visibility: hidden;
+
 }
 #topMain{
   max-height: 100vh;
 }
 #topRight{
   height:100vh;
-  background: rgba(0, 0, 0, .85);
-}
-
-#bg-vid{
-  overflow-y: hidden;
-  postion: fixed;
-  left:0;
-  right:0;
-  bottom:0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  /* -webkit-clip-path: polygon(0 0, 0% 100%, 53% 0);
-  clip-path: polygon(0 0, 0% 100%, 53% 0); */
+  background: rgba(0, 0, 0, 1);
 }
 
 #bob{
@@ -118,15 +105,15 @@ body{
   background: linear-gradient(330deg,#e05252 0%, blue 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
+  visibility: hidden;
   /* background: linear-gradient(45deg,#30496B,#30B8D2);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent; */
   /* text-shadow: 2px 2px 2px #ffffff; */
 }
-
 #aboutMe{
   height:74vh;
-  background: rgba(0,0,0,1);
+  background: rgba(0,0,0,.9);
 }
 #about1{
   padding-top: 8%;
@@ -139,113 +126,173 @@ body{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   line-height: 75px;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Teko', serif;
   text-align: right;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 /* WORK SECTION */
 
 
-.main{
-  height:4em;
-  width: 14em;
-  background: linear-gradient(330deg,#e05252 0%, blue 100%);
-  font-family: 'Teko', sans-serif;
-  font-stretch: extra-expanded;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-top: 15%;
+
+#projects{
+   min-height:100vh;
+   background: black;
+ }
+
+ .title{
+   text-align: center;
+   font-family: 'Noto Sans', sans-serif;
+   padding-top: 5%;
+   color:white;
+   font-size: 3em;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 2px black;
+ }
+
+ .defBtn{
+   position: relative;
+   margin-top: 10%;
+   height:2em;
+   width:10em;
+   border-radius: 0px;
+   border:3px solid #E94F37;
+   background-color: #E94F37;
+   color:white;
+   font-size: 2em;
+   font-family: 'Lato', sans-serif;
+   letter-spacing: 8px;
+   text-transform: uppercase;
+   transition-duration:1s;
+ }
+
+ .defBtn:hover{
+   border:3px solid #E94F37;
+   background-color: #E94F37;
+   color:white;
+   transition-duration: 1s;
+ }
+
+ .defBtn2{
+   position: relative;
+   margin-top: 8%;
+   height:3.2em;
+   width:10em;
+   border-radius: 0px;
+   border:3px solid #E94F37;
+   background-color: #E94F37;
+   color:white;
+   font-size: 2em;
+   font-family: 'Lato', sans-serif;
+   letter-spacing: 8px;
+   text-transform: uppercase;
+   transition-duration:1s;
+   cursor: default;
+ }
+
+ .projInfo{
+   font-family: 'Teko', sans-serif;
+   color: white;
+   margin-top: 13%;
+ }
+
+ #petBG{
+   height:60vh;
+   background-image: url("https://farm5.staticflickr.com/4515/38369498636_3fa1287b3d_m.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: left;
+   color: transparent;
+   text-align: center;
+   vertical-align: middle;
+   visibility: hidden;
+ }
+
+ #pet,
+ #accessibility,
+ #reuman,
+ #misfitDesc,
+ #affLab{
+   font-size: 2.2em;
+   line-height: 40px;
+ }
+
+#pet,
+#reuman,
+#misfitDesc{
+  text-align: right;
 }
 
-.mainFont{
-  font-size: 3em;
-  color:#ffffff;
-  padding-bottom: 2%;
-}
+ #proj1,
+ #proj2,
+ #proj3,
+ #proj4,
+ #proj5{
+   visibility: hidden;
+ }
 
-.second{
-  height:4em;
-  width: 14em;
-  background: linear-gradient(330deg,#e05252 0%, blue 100%);
-  font-family: 'Teko', sans-serif;
-  font-stretch: extra-expanded;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-top: 15%;
-  cursor: default;
-}
+ #learn,
+ #notch8{
+   color:#E03616;
+   font-weight: bold;
+   text-decoration: none!important;
+ }
 
-.secondFont{
-  font-size: 3em;
-  color:#ffffff;
-  padding-bottom: 2%;
-}
+ #learn:hover,
+ #notch8:hover{
+   text-decoration: none !important;
+ }
 
-#workSection{
-  background: rgba(0,0,0,);
-}
+ #reu{
+   height:60vh;
+   background-image: url("https://farm5.staticflickr.com/4553/39003159232_04fce62c80_b.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   visibility: hidden;
+ }
 
-.projTitle{
-  color:#ffffff;
-  font-size: 5em;
-  font-family: 'Teko', sans-serif;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px black;
-}
+ #pres{
+   height:60vh;
+   background-image: url("https://farm5.staticflickr.com/4541/38425299151_116596a980_c.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   font-family: 'raleway', sans-serif;
+   visibility: hidden;
+ }
 
-#reuManager{
-  height:70vh;
-  visibility: hidden;
-  background-image: url('https://farm5.staticflickr.com/4551/38630348211_626fc68a45_z.jpg');
-  background-size: cover;
-  text-align: center;
-}
+ #afflab{
+   height:60vh;
+   background-image: url("https://farm5.staticflickr.com/4177/33580381953_045f7a0ff1_z.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   font-family: 'raleway', sans-serif;
+   visibility: hidden;
+ }
 
-#eye{
-  width:100%;
-  height:100%;
-  z-index: -5;
-}
+ #solid{
+   height:60vh;
+   background-image: url("https://farm3.staticflickr.com/2886/33955048491_6e129828f1_z.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   font-family: 'raleway', sans-serif;
+   visibility: hidden;
+ }
 
-#animalFriends{
-  height:70vh;
-  background-image: url('https://farm5.staticflickr.com/4515/38369498636_3fa1287b3d_m.jpg');
-  background-size: cover;
-  visibility: hidden;
-  text-align: center;
-}
+ #misfit{
+   height:60vh;
+   background-image: url("https://farm5.staticflickr.com/4660/38850424340_c451fa8716_c.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   font-family: 'raleway', sans-serif;
+   visibility: hidden;
+ }
 
-#accessibility{
-  height:70vh;
-  background-image: url('https://farm5.staticflickr.com/4541/38425299151_116596a980_c.jpg');
-  background-size: cover;
-  text-align: center;
-}
 
-#solid{
-  height:70vh;
-  background-image: url('https://farm5.staticflickr.com/4467/37972212101_bf9ccb1292_z.jpg');
-  background-size: cover;
-  visibility: hidden;
-  text-align: center;
-}
-
-#misfit{
-  height:70vh;
-  background-image: url('https://farm5.staticflickr.com/4660/38850424340_c451fa8716_z.jpg');
-  background-size: cover;
-  background-repeat:no-repeat;
-  text-align: center;
-}
-
-#afflab{
-  height: 70vh;
-  visibility: hidden;
-  background-image: url('https://farm5.staticflickr.com/4177/33580381953_045f7a0ff1_z.jpg');
-  background-size: cover;
-  text-align: center;
-}
 /* END WORK SECTION */
 
 /* BREAK SECTION */
@@ -256,12 +303,11 @@ body{
 #breakLeft{
   height:60vh;
   text-align: right;
-  visibility: hidden;
   /* background: rgba(0,0,0,.9); */
 }
 
 #breakRight{
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 #emailLink:hover{
@@ -285,6 +331,7 @@ body{
   background: linear-gradient(330deg,#e05252 0%, blue 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
+  visibility: hidden;
 }
 /* END BREAK SECTION */
 
@@ -328,9 +375,12 @@ body{
   background-size: cover;
   text-align:center;
 
+
   /* padding-right: 8%; */
 }
-
+.hell{
+  visibility: hidden;
+}
 #contact-heading{
   color: #ffffff;
   font-family: 'Teko', sans-serif;
@@ -364,6 +414,12 @@ body{
   color:white;
   padding-left: 1em;
   padding-top: 25px;
+}
+
+#insta:hover,
+#linked:hover,
+#github:hover{
+  color:#E94F37;
 }
 
 /* END CONTACT SECTION */
