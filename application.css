@@ -500,7 +500,7 @@ body{
   #proj3,
   #proj4,
   #proj5{
-    display: none;
+    visibility: hidden;
   }
 }
 /* END MOBILE STYLES */
