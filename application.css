@@ -326,7 +326,7 @@ body{
   font-family: 'Teko', sans-serif;
   color:#ffffff;
   text-transform: uppercase;
-  line-height: 100px;
+  line-height: 90px;
   letter-spacing: -2px;
   background: linear-gradient(330deg,#e05252 0%, blue 100%);
   -webkit-background-clip:text;
