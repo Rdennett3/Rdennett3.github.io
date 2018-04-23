@@ -307,7 +307,7 @@ body{
 }
 
 #breakRight{
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 #emailLink:hover{
@@ -462,7 +462,7 @@ body{
     line-height: 45px;
   }
   #aboutMe{
-    height: 80vh;
+    height: 100vh;
   }
   #about1{
     font-size: 2.2em;
