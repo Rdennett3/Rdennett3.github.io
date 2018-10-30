@@ -285,7 +285,7 @@ body{
 
  #misfit{
    height:60vh;
-   background-image: url("https://farm5.staticflickr.com/4660/38850424340_c451fa8716_c.jpg");
+   background-image: url("https://farm1.staticflickr.com/972/42108419042_cede1aaf31_c.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    text-align: center;
@@ -459,15 +459,17 @@ body{
     padding-top: 1%;
   }
   #imagination{
-    font-size: 2.2em;
+    font-size: 3.2em;
     text-align: center;
     line-height: 45px;
   }
   #aboutMe{
+    top: 20%;
     height: 100vh;
   }
   #about1{
-    font-size: 2.2em;
+    top: 50%;
+    font-size: 3.2em;
     text-align: center;
     line-height: 65px;
   }

@@ -9,7 +9,7 @@ function closeNav() {
 }
 
 $(window).scroll(function() {
-  $('#afflab,#pres').each(function(){
+  $('#afflab,#pres, #misfit').each(function(){
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
@@ -20,7 +20,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-  $('#petBG,#solid,#accessibility, #reu, #misfit, #affLab, #breakRight').each(function(){
+  $('#petBG,#solid,#accessibility, #reu, #affLab, #breakRight').each(function(){
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
