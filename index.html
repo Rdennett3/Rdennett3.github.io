@@ -1,197 +1,147 @@
-<!DOCTYPE html>
-<html>
-<title>Bob Dennett</title>
-<head>
+<DOCTYPE html>
+  <head>
+    <title>Bob Dennett</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="animations.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous">
-  </script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Teko:500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="application.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
-  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
-  <script src="application.js"></script>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-</head>
-
-<body>
-  <section>
-    <!-- The overlay -->
-    <div id="myNav" class="overlay">
-
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-arrow-left"></i></a>
-
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a href="#about1" onclick="closeNav()">About Me</a>
-        <a href="#projects" onclick="closeNav()">My Work</a>
-        <a href="#contact" onclick="closeNav()">Contact</a>
-      </div>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#aboutHead" onclick="closeNav()">About</a>
+      <a href="#workHead" onclick="closeNav()">Work</a>
+      <a href="#footer" onclick="closeNav()">Contact</a>
     </div>
-  </section>
 
-  <section>
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <span onclick="openNav()"><i class="fas fa-bars" id="openbutton"></i></span>
-    <div class="row" id="topMain">
-
-      <div class="col-md-5 col-sm-0 col-xs-0" id="topLeft">
-
-      </div>
-
-      <div class="col-md-7 col-sm-0" id="topRight">
-        <p id="bob">Bob Dennett</br></br><span class="smallheadline">web</span></br><span class="smallheadline">developer</span></p>
-      </div>
+    <!-- Use any element to open the sidenav -->
+    <div class="col-md-12 col-sm-12"id="nav">
+      <span onclick="openNav()"><i class="fas fa-align-left" id="open"></i></span>
     </div>
-  </section>
 
-  <section>
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12" id="aboutMe">
-        <p id="about1">Hey! I am a design passionate, front end
-          focused, full stack developer. I thrive on
-          fast paced environments, pivoting on a dime, and am always up
-          for a new challenge. Have a look at my past and current projects below.
-        </p>
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      <div class="wrapper" id="top">
+        <header>
+          <p class="line-1 anim-typewriter" id="topSpan">Bob<span>Dennett</span></p>
+          <h1 class="heading" id="aboutHead">About Me</h1>
+        </header>
       </div>
-    </div>
-  </section>
+        <div class="col-lg-12 col-md-12 col-sm-12" id="spacer"></div>
 
-  <section class="col-md-12 col-sm-12" id="projects">
-    <div class="row">
-      <!-- <div class="slideRight"> -->
-      <div class="col-md-4 col-sm-0" id="proj1">
-
-        <p class="projInfo"id="pet">this was my final project at <a href="https://www.learnacademy.org" target="_blank"><span id="learn">Learn</span></a> Academy,
-          an app that aims to connect available shelter pets with possible
-          adopters. for this project i was part of a 5 person team, and we were
-          given just under two weeks to plan, and build the app.</p>
-        </div>
-        <!-- </div> -->
-        <div class="col-md-8 col-sm-0" id="petBG">
-          <h2 class="title" id="access">Shelter friends</h2>
-          <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="defBtn">check it</button></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-sm-12" id="pres">
-          <h2 class="title" id="access">Accessibility</h2>
-          <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="defBtn">check it</button></a>
-        </div>
-        <div class="col-md-4 col-sm-12" id="proj2">
-          <p id="accessibility" class="projInfo">This is an oral presentation I gave while at <a href="https://www.learnacademy.org" target="_blank">
-            <span id="learn">Learn</span></a> Academy
-            on the importance of accessibility requirements in web projects. I felt that it was an important topic to cover which is often overlooked. </p>
+        <div class="col-md-12" id="main1">
+          <p id="aboutText">Hey! I am a design passionate, front end focused, full stack developer.
+            I thrive on fast paced environments, pivoting on a dime, and am always up for a
+            new challenge. I constantly strive to learn new technologies, techniques, and
+            concepts. Outside of development some of my other passions include snowboarding, camping, hiking, cooking, and hanging out with my dog Jimi.</p>
+            <h1 class="heading2" id="workHead">WORK</h1>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12" id="proj3">
+          <div class="col-lg-12 col-md-12 col-sm-12" id="spacer2"></div>
 
-            <p id="reuman" class="projInfo">Following my internship with <a href="https://www.notch8.com/" id="notch8">Notch 8</a> I was contracted to work on a project originally started by UCSD which aimed to
-              make the process of applying for academic grants more streamlined. I was part of a 7 person team for this project and was mainly responsible for the front end design and build
+
+          <div class="workOuter">
+            <div class="col-lg-7 col-md-7 col-sm-12" id="shelter">
+              <h1 class="workTitle">Shelter Friends</h1>
+              <p class="workText">
+                this was my final project at Learn Academy, an app that aims to connect available shelter pets with possible adopters. for this project i was part of a 5 person team, and we were given just under two weeks to plan, and build the app.
+              </p>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12" id="reuman">
+              <h1 class="workTitle">REU Manager</h1>
+              <p class="workText">
+                Following my internship with Notch 8 I was contracted to work on a project originally started by UCSD which aimed to make the process of applying for academic grants more streamlined. I was part of a 7 person team for this project and was mainly responsible for the front end design and build
+              </p>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12" id="access">
+              <h1 class="workTitle">Accessibility</h1>
+              <p class="workText">
+                This is an oral presentation I gave while at Learn Academy on the importance of accessibility requirements in web projects. I felt that it was an important topic to cover which is often overlooked.
+              </p>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12" id="thero">
+              <h1 class="workTitle">Thero.org</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12" id="misfit">
+              <h1 class="workTitle">Misfit Grafix</h1>
+              <p class="workText">
+                Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint beyond Facebook, and Instagram. I am very excited to finish work on this project and will post updates very soon
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12" id="workDesc"></div>
+          </div>
+
+          <div class="col-md-12 col-sm-12" id="quote">
+            <p id="quote1">
+              "Imagination is more important than knowledge. For knowledge is limited to all we now know and understand, while imagination embraces the entire world, and all there ever will be to know and understand."</br>
+              Albert Einstein
             </p>
           </div>
-          <div class="col-md-8 col-sm-12" id="reu">
-            <h2 class="title" id="reutitle">reu manager</h2>
-            <a href="https://reumanager.com/" target="_blank"><button class="defBtn">check it</button></a>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-md-8 col-sm-12" id="afflab">
-            <h2 class="title" id="access">Affluence labs</h2>
-            <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="defBtn2">coming soon</button></a>
-          </div> -->
-          <!-- <div class="col-md-4 col-sm-12" id="proj4">
-            <p class="projInfo" id="affLab">Affluence labs is a local business consultancy that approached me to build them a coming soon/ landing page for them. Though
-              the project has stalled as of late, I am very proud of the work I did on the project and will be posting it once I have the permission to do so</p>
-            </div> -->
-          </div>
 
           <div class="row">
-            <div class="col-md-8 col-sm-12" id="misfit">
-              <h2 class="title" id="access">Misfit Grafix</h2>
-              <button class="defBtn2">coming soon</button>
-            </div>
-            <div class="col-md-4 col-sm-12" id="proj5">
-              <p id="accessibility" class="projInfo">Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint beyond Facebook, and Instagram. I am very excited to finish work on this project and will post updates very soon</p>
+            <div class="col-md-12 col-sm-12" id="footer">
+              <div class="col-md-6 col-sm-12" id="footLeft">
+                <h1>Drop me a line</h1>
+                <form action="https://formspree.io/r.dennett3@gmail.com" method="POST" id="form">
+                  <input type="text" name="name" id="nameField" placeholder="YOUR NAME"></br>
+                  <input type="email" name="_replyto" id="emailField" placeholder="YOUR EMAIL ADDRESS"></br>
+                  <textarea name="message" placeholder="WHAT WOULD YOU LIKE TO SAY?" id="messageField"></textarea></br>
+                  <input type="submit" value="Send Away!" id="submit">
+                </form>
               </div>
-            </div>
-            <div class="row">
-
-        </section>
-        <!-- end projects -->
-
-        <section id="breakSection">
-          <div class="row">
-            <div class="col-md-5 col-sm-12 col-xs-12" id="breakLeft">
-              <p class="d3">design</p>
-              <p class="d3">develop</p>
-              <p class="d3">repeat</p>
-            </div>
-            <div class="col-md-7 col-sm-12 col-xs-12" id="breakRight">
-              <img src="https://farm5.staticflickr.com/4521/38369496796_a17154bf49_c.jpg" id="fire"/>
-            </div>
-          </div>
-        </section>
-
-        <section id="einstein">
-          <div class="row">
-            <div class="col-md-12 col-sm-12" id="quote">
-              <p id="imagination">Imagination is more important than
-                knowledge. For knowledge is limited to all we now know
-                and understand, while imagination embraces the entire world,
-                and all there ever will be to know and understand. </br>Albert Einstein</p>
-              </div>
-            </div>
-          </section>
-
-          <section id="contactOuter">
-            <div class="row">
-              <div class="col-md-6 col-sm-0 col-xs-0" id="map"></div>
-              <script>
-              var map;
-              function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                  center: {lat: 42.8036691, lng: -74.008184},
-                  zoom: 13
-                });
-              }
-              </script>
-              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3nkc4e_Im1yubR-EGZDjm9FPTVS6FU9U&callback=initMap"async defer></script>
-
-              <div class="col-md-6 col-sm-12" id="contact">
+              <div class="col-md-6 col-sm-12" id="footRight">
                 <div class="hell">
-                  <h1 id="contact-heading">Lets talk</h1>
-                  <h2 class="contact-info"><i class="fas fa-phone" id="phone"></i>: 518-788-7753</h2>
-                  <h2 class="contact-info"><i class="fas fa-envelope"> &nbsp </i><a href="mailto:r.dennett3@gmail.com"id="emailLink">:&nbsp R.dennett3@gmail.com</h2></a></h2>
+                  <h1 id="contact-heading">Get Your Creep On</h1>
+                  <h2 class="contact-info">518-788-7753</h2>
+                  <h2 class="contact-info"><a href="mailto:r.dennett3@gmail.com"id="emailLink">R.dennett3@gmail.com</h2></a></h2>
                   <a href="https://www.instagram.com/bobd3/" target="_blank"><i class="fab fa-instagram" id="insta"></i></a>
                   <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><i class="fab fa-linkedin"id="linked"></i></a>
                   <a href="https://github.com/Rdennett3" target="_blank"><i class="fab fa-github" id="github"></i></a>
                 </div>
               </div>
+              </div>
             </div>
 
-          </section>
-          <footer>
-            <div class="col-md-12 col-sm-12" id="foot">
-              <p id="copyright">&copy; 2018 bob dennett</p>
-            </div>
-          </footer>
+        </div>
 
-        </body>
+        <script>
+          /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "500px";
+    document.getElementById("main").style.marginLeft = "500px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+        </script>
+
+        <script>
+          $(window).scroll(function() {
+            $('#aboutText, #shelter, #reuman, #access, #misfit, #thero, #workDesc, .heading, .heading2, #quote1').each(function(){
+              var imagePos = $(this).offset().top;
+
+              var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+700) {
+                $(this).addClass("slideUp");
+              }
+            });
+          });
+        </script>
+
+      </body>
