@@ -8,9 +8,9 @@
    scroll-behavior: smooth;
  }
 
- body{
+ /* body{
    background: #000;
- }
+ } */
 
  html, body{
    overflow-x: hidden;
@@ -187,12 +187,12 @@
 
  @media screen and (max-width:600px){
    #aboutText{
-     font-size: 3em;
+     font-size: 2em;
    }
  }
 
  .workOuter{
-   background: #000;
+   background: #000 !important;
  }
 
  #spacer{
@@ -236,7 +236,7 @@
 
 @media screen and (max-width:600px){
   .workText{
-    font-size: 2.5em;
+    font-size: 1.65em;
   }
 }
 
@@ -378,7 +378,7 @@
 
  @media screen and (max-width:600px){
    #quote{
-     font-size: .55em;
+     font-size: .45em;
    }
  }
 
@@ -393,7 +393,7 @@
 
  #footLeft{
    padding-top: 5%;
-   height:100%;
+   height:100vh;
    text-align: center;
  }
 
@@ -403,6 +403,13 @@
    font-weight: 400;
    font-family: 'Oswald', sans-serif;
    padding-right: 30%;
+ }
+
+ @media screen and (max-width:600px){
+   #footLeft h1{
+     font-size: 3em;
+     padding-right: 0;
+   }
  }
 
  #form{
@@ -422,6 +429,14 @@
    width: 30vw;
  }
 
+ @media screen and (max-width: 600px){
+   #nameField,
+   #emailField{
+     height:60px;
+     width: 80%;
+   }
+ }
+
  #messageField{
    font-family: 'Oswald', sans-serif;
    font-weight: 200;
@@ -432,6 +447,13 @@
    height: 20vh;
    width: 30vw;
    margin-bottom: 5%;
+ }
+
+ @media screen and (max-width:600px){
+   #messageField{
+     height:20vh;
+     width:80%;
+   }
  }
 
  #submit{
@@ -452,12 +474,25 @@
    transition: .8s;
  }
 
+ @media screen and (max-width: 600px){
+   #submit{
+     width:60%;
+     margin-right: auto;
+   }
+ }
+
  #footRight{
    background: transparent;
-   height:100%;
+   height:100vh;
    padding-top: 5%;
    text-align: left;
  }
+
+  @media screen and (max-width:600px){
+    #footRight{
+      display: none;
+    }
+  }
 
  .hell{
    background: transparent;
