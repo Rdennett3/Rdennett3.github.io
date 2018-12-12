@@ -78,7 +78,7 @@ body{
   transition: .5s;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
   #openbtn{
     font-size: 4vw;
   }
@@ -198,7 +198,7 @@ visibility: hidden;
   text-align: center;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
   .workCard{
     position: relative;
     top: 50%;
@@ -212,7 +212,7 @@ visibility: hidden;
   color: #fff;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
   .workTitle{
     font-size: 4em;
   }
@@ -224,7 +224,7 @@ visibility: hidden;
   font-family: 'Rajdhani', sans-serif;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
   .workDesc{
     font-size: 1.5em;
   }
@@ -249,7 +249,7 @@ visibility: hidden;
    transition-duration: 1s;
  }
 
- @media screen and (max-width:450px){
+ @media screen and (max-width:600px){
    .defBtn{
      height:4em;
      width:10em;
@@ -312,7 +312,7 @@ visibility: hidden;
 #form{
    margin-top: 5%;
  }
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
   #form{
     margin-top: 10%;
   }
