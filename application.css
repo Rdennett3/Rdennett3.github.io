@@ -80,7 +80,7 @@ body{
 
 @media screen and (max-width:450px){
   #openbtn{
-    font-size: 2em;
+    font-size: 4vw;
   }
 }
 
