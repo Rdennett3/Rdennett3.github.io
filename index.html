@@ -3,11 +3,12 @@
   <head>
     <title>Bob Dennett</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- main stylesheet link -->
     <link rel="stylesheet" type="text/css" href="application.css">
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- jquery CDN -->
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -43,20 +44,16 @@
           <script type="text/javascript" src="js/particles.min.js"></script>
           <script type="text/javascript" src="js/app.js"></script>
           <!-- END PARTICLES.JS SCRIPTS -->
-          <p class="line-1 anim-typewriter" id="topSpan">Bob<span>Dennett</span></p>
+          <p class="line-1 anim-typewriter" id="topSpan">Bob <span>Dennett</span></p>
 
         </div>
       </div>
     </section>
 
     <div class="col-lg-12 col-md-12 col-sm-12" id="two">
-      <div class="col-lg-6 col-md-6 col-sm-12" id="twoLeft">
+      <div class="col-lg-12 col-md-12 col-sm-12" id="twoLeft">
         <p id="twoLeftText">
-          Hey! I am a design passionate, front end
-          focused, full stack developer. I thrive on fast paced environments,
-          pivoting on a dime, and am always up for a new challenge. Outside of development
-          some of my passions include snowboarding, camping, hiking, cooking, hockey, and hanging out
-          with my dog jimi.
+          Hey! I am a design passionate, front end focused, full stack developer. I thrive on fast paced environments, pivoting on a dime, and am always up for a new challenge. Outside of development some of my passions include snowboarding, camping, hiking, cooking, hockey, and hanging out with my dog jimi.
         </p>
       </div>
       <!-- <div class="col-lg-6 col-md-6 col-sm-12" id="twoRight">
@@ -70,7 +67,7 @@
           <p class="workDesc">
             Following my internship with Notch 8 I was contracted to work on a project originally started by UCSD which aimed to make the process of applying for academic grants more streamlined. I was part of a 7 person team for this project and was mainly responsible for the front end design and build
           </p>
-          <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="defBtn">check it</button></a>
+          <a href="https://reumanager.com/" target="_blank"><button class="defBtn">check it</button></a>
         </div>
       </div>
       <div class="col-md-12 col-sm-12" id="thero">
@@ -79,7 +76,7 @@
           <p class="workDesc">
             Thero.org is a project that I worked on that was aimed to help connect people with mental health issues and caregivers in an online platform. I was part of what started as a 4 person team initially and since grown to include many more developers. It is really great to know that something I worked on has helped change te lives of people on a daily basis.
           </p>
-          <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="defBtn">check it</button></a>
+          <a href="https://thero.org" target="_blank"><button class="defBtn">check it</button></a>
         </div>
       </div>
       <div class="col-md-12 col-sm-12" id="shelter">
@@ -97,7 +94,7 @@
           <p class="workDesc">
             This is an oral presentation I gave while at Learn Academy on the importance of accessibility requirements in web projects. I felt that it was an important topic to cover which is often overlooked.
           </p>
-          <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="defBtn">check it</button></a>
+          <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="defBtn">check it</button></a>
         </div>
       </div>
       <div class="col-md-12 col-sm-12" id="misfit">
@@ -106,14 +103,22 @@
           <p class="workDesc">
             Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint beyond Facebook, and Instagram. I am very excited to finish work on this project and will post updates very soon
           </p>
-          <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="defBtn">check it</button></a>
+          <!-- <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="defBtn">check it</button></a> -->
         </div>
       </div>
     </div>
 
     <div class="col-md-12 col-sm-12" id="footer">
-      <div class="row">
+      <!-- <div class="row"> -->
         <div class="col-lg-6 col-md-6-col-sm-12" id="bottomLeft">
+          <form action="https://formspree.io/r.dennett3@gmail.com" method="POST" id="form">
+            <input type="text" name="name" id="nameField" placeholder="   YOUR NAME"></br>
+            <input type="email" name="_replyto" id="emailField" placeholder="   YOUR EMAIL ADDRESS"></br>
+            <textarea name="message" placeholder="   WHAT WOULD YOU LIKE TO SAY?" id="messageField"></textarea></br>
+            <input type="submit" value="Send Away!" id="submit">
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-6-col-sm-12" id="bottomRight">
           <div id="map"></div>
           <script>
           var map;
@@ -126,14 +131,6 @@
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwi452_c9NhbdFzq00JdFPamYWbttWRQ&callback=initMap"
           async defer></script>
-        </div>
-        <div class="col-lg-6 col-md-6-col-sm-12" id="bottomRight">
-          <form action="https://formspree.io/r.dennett3@gmail.com" method="POST" id="form">
-            <input type="text" name="name" id="nameField" placeholder="   YOUR NAME"></br>
-            <input type="email" name="_replyto" id="emailField" placeholder="   YOUR EMAIL ADDRESS"></br>
-            <textarea name="message" placeholder="   WHAT WOULD YOU LIKE TO SAY?" id="messageField"></textarea></br>
-            <input type="submit" value="Send Away!" id="submit">
-          </form>
         </div>
       </div>
     </div>
