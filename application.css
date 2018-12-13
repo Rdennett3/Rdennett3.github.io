@@ -5,18 +5,6 @@ html{
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-
 body{
   overflow-x: hidden !important;
   width:100vw !important;
@@ -163,7 +151,7 @@ body{
   z-index: 5;
   color: #fff;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 @media screen and (max-width: 600px){
@@ -232,14 +220,14 @@ body{
 }
 
 .workDesc{
-  font-size: 4em;
+  font-size: 2em;
   color:#fff;
   font-family: 'Rajdhani', sans-serif;
 }
 
 @media screen and (max-width:450px){
   .workDesc{
-    font-size: 5.5vw;
+    font-size: 1.5em;
   }
 }
 
@@ -351,6 +339,7 @@ body{
      height:60px;
      width: 80%;
      margin-bottom: 5%;
+     font-size: 1.5em;
    }
  }
  #messageField{
@@ -369,6 +358,7 @@ body{
      height:20vh;
      width:80%;
      margin-bottom: 5%;
+     font-size: 1.5em;
    }
  }
  #submit{
