@@ -54,7 +54,7 @@ body{
 
 @media screen and (max-width:450px){
   .overlay{
-    background-color: rgba(0,0,0)!important;
+    background-color: rgba(0,0,0,1)!important;
 
   }
   .overlay a{
