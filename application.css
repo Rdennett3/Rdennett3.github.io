@@ -17,7 +17,7 @@ body{
   z-index: 5;
   left: 0;
   top: 0;
-  background-color: rgba(0,0,0,1)!important;
+  background-color: rgba(0,0,0);
   overflow-x: hidden;
   transition: .75s;
 }
@@ -266,6 +266,12 @@ body{
   background-attachment: fixed;
 }
 
+@media screen and (max-width:600px){
+  #shelter{
+    background-image: url('https://farm5.staticflickr.com/4907/46256438622_f779e51c64_b.jpg');
+  }
+}
+
 #reuman{
   height:100vh;
   background-image: url('https://farm5.staticflickr.com/4814/45992282251_058567230f_b.jpg');
@@ -273,6 +279,12 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   align-items: center;
+}
+
+@media screen and (max-width:600px){
+  #reuman{
+    background-image: url('https://farm5.staticflickr.com/4877/46256440942_75a29916c6_b.jpg');
+  }
 }
 
 #access{
@@ -283,6 +295,12 @@ body{
   background-attachment: fixed;
 }
 
+@media screen and (max-width:600px){
+  #access{
+    background-image: url('https://farm5.staticflickr.com/4896/46256439752_5f5a4d9cb7_m.jpg');
+  }
+}
+
 #thero{
   height:100vh;
   background-image: url('https://farm5.staticflickr.com/4844/45080675705_f74067582a_b.jpg');
@@ -291,12 +309,24 @@ body{
   background-attachment: fixed;
 }
 
+@media screen and (max-width:600px){
+  #thero{
+    background-image: url('https://farm5.staticflickr.com/4805/46256440352_16a2f4b339_b.jpg');
+  }
+}
+
 #misfit{
   height:100vh;
   background-image: url('https://farm1.staticflickr.com/972/42108419042_cede1aaf31_b.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media screen and (max-width:600px){
+  #misfit{
+    background-image: url('https://farm5.staticflickr.com/4873/46256439322_47de64066d_b.jpg');
+  }
 }
 
 #footer{
