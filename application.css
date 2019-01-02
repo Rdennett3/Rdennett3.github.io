@@ -117,6 +117,7 @@ body{
     overflow: hidden;
     transform: translateY(-50%);
 }
+
 #topSpan{
   position: relative;
   z-index: 1;
@@ -131,10 +132,10 @@ body{
 
 @media(max-width:700px){
   #topSpan span{
-    font-size: 9.75vw;
+    font-size: 12vw;
   }
   #topSpan{
-    font-size: 9.75vw;
+    font-size: 12vw;
   }
 }
 
