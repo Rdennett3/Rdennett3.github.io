@@ -18,7 +18,7 @@ body{
   z-index: 5;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 1)!important;
+  background-color: rgba(0, 0, 0, 1)!important;
   overflow-x: hidden;
   transition: .75s;
 }
