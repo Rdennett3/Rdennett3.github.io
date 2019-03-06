@@ -1,7 +1,7 @@
 <DOCTYPE HTML>
 
   <head>
-    <title>Capital District Web Design and Development | Bob Dennett</title>
+    <title>Bob Dennett | Capital District Web Design and Development</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- main stylesheet link -->
@@ -15,68 +15,71 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.js"></script>
   </head>
-<body>
 
-  <section>
-      <div id="one">
-        <div id="particles-js">
-          <!-- NAV OPEN BUTTON -->
-          <span onclick="openNav()" id="openbtn">menu</span>
-          <!-- SCRIPTS TO IMPORT PARTICLES.JS -->
-          <script type="text/javascript" src="js/particles.js"></script>
-          <script type="text/javascript" src="js/particles.min.js"></script>
-          <script type="text/javascript" src="js/app.js"></script>
-          <!-- END PARTICLES.JS SCRIPTS -->
-          <p class="line-1 anim-typewriter" id="topSpan">Bob <span>Dennett</span></p>
+  <body>
+
+    <section>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroL">
+          <p class="topIntroText slideUp">Let's Create</p>
+          <p class="topIntroText slideUp">Something</p>
+          <p class="topIntroText slideUp" id="awesome">Awesome</p>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroR">
 
         </div>
       </div>
     </section>
-  <section>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="two">
-      <p>
-        My name is Bob Dennett and I am a design passionate, front end focused, full stack developer. I thrive on fast paced environments, pivoting on a dime, and am always up for a new challenge. Outside of development some of my passions include snowboarding, camping, hiking, cooking, hockey, and hanging out with my dog jimi.
-      </p>
-      <button class="main">instagram</button>
-      <button class="main">LinkedIn</button>
-      <button class="main">GitHub</button>
-      <a href="#four"><button class="main">Contact Me</button></a>
-    </div>
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="three">
+    <section>
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 workMain" id="workOne"></div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 workMain" id="workTwo">
-          <p class="desc">
-            Following my internship with Notch 8 I was contracted to work on a project originally started by UCSD which aimed to make the process of applying for academic grants more streamlined. I was part of a 7 person team for this project and was mainly responsible for the front end design and build
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="two">
+          <p id="twoText">
+            My name is Bob Dennett and I am a design passionate, front end focused, full stack developer. I thrive on fast paced environments, pivoting on a dime, and am always up for a new challenge. Outside of development some of my passions include snowboarding, camping, hiking, cooking, hockey, and hanging out with my dog jimi (he runs the show, naturally).
           </p>
+          <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><button class="main">LinkedIn</button></a>
+          <button class="main">Instagram</button>
+          <a href="https://github.com/Rdennett3" target="_blank"><button class="main">GitHub</button></a>
+          <a href="#contact"><button class="main">Get in touch</button></a>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 workMain" id="workThree"></div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 workMain" id="workFour"></div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 workMain" id="workFive"></div>
       </div>
-      <div class="row">
-        <p id="quote">
-          The only way to discover the limits of the possible is to go beyond them into the impossible.</br></br>
-          Arthur C. Clarke
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="four">
-    <form action="https://formspree.io/r.dennett3@gmail.com" method="POST">
-  <input type="text" name="name" id="nameField" placeholder="Your Name">
-  <input type="email" name="_replyto" id="emailField" placeholder="Your Email"></br>
-  <textarea  placeholder="Your Message"></textarea></br></br>
-  <input type="submit" value="Send away" id="sendBTN">
-</form>
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work1"></div>
+    </section>
+
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work2"></div>
+    </section>
+
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work3"></div>
+    </section>
+
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work4"></div>
+    </section>
+
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work5"></div>
+    </section>
+
+    <script>
+    	$(window).scroll(function() {
+    		$('#twoText').each(function(){
+    		var imagePos = $(this).offset().top;
+
+    		var topOfWindow = $(window).scrollTop();
+    			if (imagePos < topOfWindow+400) {
+    				$(this).addClass("slideUp");
+    			}
+    		});
+    	});
+    </script>
 
 
-  </div>
-
-</body>
-</html>
+  </body>
+  </html>
