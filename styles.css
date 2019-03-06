@@ -12,6 +12,10 @@ body{
   overflow-x: hidden !important;
 }
 
+.content{
+  overflow-x: hidden;
+}
+
 #topIntroL{
   height:100vh;
   background: #1A1A1A;
