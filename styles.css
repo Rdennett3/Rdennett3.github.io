@@ -56,6 +56,7 @@ body{
 @media screen and (max-width:500px){
   #topIntroR{
     height:60vh;
+    background-image: url('images/cloudy-small.jpeg');
   }
 }
 #about{
@@ -65,7 +66,7 @@ body{
 
 #two{
   height:100%;
-  background-image: url('https://farm8.staticflickr.com/7826/33427326508_ac7344ac3f_c.jpg');
+  background-image: url('images/hello.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
