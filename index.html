@@ -19,69 +19,112 @@
 
   <body>
     <div class="content">
-    <section>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroL">
-          <p class="topIntroText slideUp">Let's Create</p>
-          <p class="topIntroText slideUp">Something</p>
-          <p class="topIntroText slideUp" id="awesome">Awesome</p>
+      <section>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroL">
+            <p class="topIntroText slideUp">Let's Create</p>
+            <p class="topIntroText slideUp">Something</p>
+            <p class="topIntroText slideUp" id="awesome">Awesome</p>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroR">
+
+          </div>
         </div>
+      </section>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroR">
-
+      <section>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="two">
+            <p id="twoText">
+              My name is Bob Dennett and I am a design passionate, front end focused, full stack developer. I thrive on fast paced environments, pivoting on a dime, and am always up for a new challenge. Outside of development some of my passions include snowboarding, camping, hiking, cooking, hockey, and hanging out with my dog jimi (he runs the show, naturally).
+            </p>
+            <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><button class="main">LinkedIn</button></a>
+            <button class="main">Instagram</button>
+            <a href="https://github.com/Rdennett3" target="_blank"><button class="main">GitHub</button></a>
+            <a href="#contact"><button class="main">Get in touch</button></a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="two">
-          <p id="twoText">
-            My name is Bob Dennett and I am a design passionate, front end focused, full stack developer. I thrive on fast paced environments, pivoting on a dime, and am always up for a new challenge. Outside of development some of my passions include snowboarding, camping, hiking, cooking, hockey, and hanging out with my dog jimi (he runs the show, naturally).
-          </p>
-          <a href="https://www.linkedin.com/in/bob-dennett-b3227b103/" target="_blank"><button class="main">LinkedIn</button></a>
-          <button class="main">Instagram</button>
-          <a href="https://github.com/Rdennett3" target="_blank"><button class="main">GitHub</button></a>
-          <a href="#contact"><button class="main">Get in touch</button></a>
-        </div>
-      </div>
-    </section>
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work1"></div>
+      </section>
 
-    <section>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work1"></div>
-    </section>
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work2"></div>
+      </section>
 
-    <section>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work2"></div>
-    </section>
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work3"></div>
+      </section>
 
-    <section>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work3"></div>
-    </section>
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work4"></div>
+      </section>
 
-    <section>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work4"></div>
-    </section>
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work5"></div>
+      </section>
 
-    <section>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work5"></div>
-    </section>
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="quote">
+          <p id="imagination">"Imagination is more important than
+            knowledge. For knowledge is limited to all we now know
+            and understand, while imagination embraces the entire world,
+            and all there ever will be to know and understand."" </br>Albert Einstein</p>
+          </div>
+        </section>
 
-  </div>
+        <section>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
+            <form action="https://formspree.io/your@email.com" method="POST">
 
-    <script>
-    	$(window).scroll(function() {
-    		$('#twoText').each(function(){
-    		var imagePos = $(this).offset().top;
+              <div class="group">
+                <label>Name</label>
+                <input type="text" name="name" class="formField">
+              </div>
 
-    		var topOfWindow = $(window).scrollTop();
-    			if (imagePos < topOfWindow+400) {
-    				$(this).addClass("slideUp");
-    			}
-    		});
-    	});
-    </script>
+            </br>
+
+            <div class="group">
+              <label>Email</label>
+              <input type="email" name="_replyto" class="formField">
+            </div>
+
+          </br>
+          <div class="group" id="mess">
+            <label>Note</label>
+            <input type="text" name="message" class="formField" id="mess1">
+          </div>
+        </br>
+
+        <input type="submit" value="Send Away" id="sendBtn">
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="foot">
+
+    </div>
+  </section>
+
+</div>
+
+<script>
+$(window).scroll(function() {
+  $('#twoText, #imagination').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("slideUp");
+    }
+  });
+});
+</script>
 
 
-  </body>
-  </html>
+</body>
+</html>
