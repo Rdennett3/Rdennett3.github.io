@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- jquery CDN -->
     <script
@@ -22,9 +21,11 @@
       <section>
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroL">
-            <p class="topIntroText slideUp">Let's Make</p>
-            <p class="topIntroText slideUp">Something</p>
-            <p class="topIntroText slideUp" id="awesome">Awesome</p>
+            <div id="textWrapper">
+            <p class="topIntroText fadeIn">Let's Make</p>
+            <p class="topIntroText fadeIn">Something</p>
+            <p class="topIntroText fadeIn" id="awesome">Awesome</p>
+          </div>
           </div>
 
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="topIntroR">
@@ -47,85 +48,176 @@
         </div>
       </section>
 
-      <section>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work1"></div>
-      </section>
+      <section class="col-md-12 col-sm-12" id="projects">
 
-      <section>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work2"></div>
-      </section>
+        <div class="row">
+          <div class="col-md-6 col-sm-12" id="misfit">
 
-      <section>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work3"></div>
-      </section>
-
-      <section>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work4"></div>
-      </section>
-
-      <section>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="work5"></div>
-      </section>
-
-      <section>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="quote">
-          <p id="imagination">"Imagination is more important than
-            knowledge. For knowledge is limited to all we now know
-            and understand, while imagination embraces the entire world,
-            and all there ever will be to know and understand."" </br>Albert Einstein</p>
           </div>
-        </section>
+          <div class="col-md-6 col-sm-12" id="proj5">
+            <h2 class="title" id="access">Misfit Grafix</h2>
 
-        <section>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
-            <h1>Reach Out</h1>
-            <form action="https://formspree.io/r.dennett3@gmail.com" method="POST">
+            <p id="accessibility" class="projInfo">Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint beyond Facebook, and Instagram. I am very excited to finish work on this project and will post updates very soon</p>
+            <button class="main2">go to site</button>
+          </div>
+        </div>
 
-              <div class="group">
-                <label>Name</label>
-                <input type="text" name="name" class="formField">
+        <div class="row">
+          <div class="col-md-6 col-sm-12" id="proj3">
+            <h2 class="title" id="reutitle">reu manager</h2>
+            <p id="reuman" class="projInfo">Following my internship with <a href="https://www.notch8.com/" id="notch8">Notch 8</a> I was contracted to work on a project originally started by UCSD which aimed to
+              make the process of applying for academic grants more streamlined. I was part of a 7 person team for this project and was mainly responsible for the front end design and build
+            </p>
+            <a href="https://reumanager.com/" target="_blank"><button class="main2">check it</button></a>
+          </div>
+
+          <div class="col-md-6 col-sm-12" id="reu">
+
+          </div>
+
+        </div>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12" id="thero">
+
+        </div>
+        <div class="col-md-6 col-sm-12" id="proj5">
+          <h2 class="title" id="access">Thero.org</h2>
+
+          <p id="accessibility" class="projInfo">Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint beyond Facebook, and Instagram. I am very excited to finish work on this project and will post updates very soon</p>
+          <button class="main2">go to site</button>
+        </div>
+      </div>
+
+        <div class="row">
+          <!-- <div class="slideRight"> -->
+          <div class="col-md-6 col-sm-0" id="proj1">
+            <h2 class="title" id="access">Shelter friends</h2>
+            <p class="projInfo"id="pet">this was my final project at <a href="https://www.learnacademy.org" target="_blank"><span id="learn">Learn</span></a> Academy,
+              an app that aims to connect available shelter pets with possible
+              adopters. for this project i was part of a 5 person team, and we were
+              given just under two weeks to plan, and build the app.</p>
+              <a href="https://aqueous-taiga-4911.herokuapp.com/" target="_blank"><button class="main2">check it</button></a>
+            </div>
+            <!-- </div> -->
+            <div class="col-md-6 col-sm-0" id="petBG">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12" id="pres">
+
+            </div>
+            <div class="col-md-6 col-sm-12" id="proj2">
+              <h2 class="title" id="access">Accessibility</h2>
+              <p id="accessibility" class="projInfo">This is an oral presentation I gave while at <a href="https://www.learnacademy.org" target="_blank">
+                <span id="learn">Learn</span></a> Academy
+                on the importance of accessibility requirements in web projects. I felt that it was an important topic to cover which is often overlooked. </p>
+                <a href="https://www.youtube.com/watch?v=iEfpYss_BZ4" target="_blank"><button class="main2">check it</button></a>
               </div>
-
-            </br>
-
-            <div class="group">
-              <label>Email</label>
-              <input type="email" name="_replyto" class="formField">
             </div>
 
-          </br>
-          <div class="group" id="mess">
-            <label>Note</label>
-            <input type="text" name="message" class="formField" id="mess1">
-          </div>
-        </br>
+          </section>
+          <!-- end projects -->
 
-        <input type="submit" value="Cast Off" id="sendBtn">
-      </form>
+
+          <section>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="quote">
+              <p id="imagination">"Imagination is more important than
+                knowledge. For knowledge is limited to all we now know
+                and understand, while imagination embraces the entire world,
+                and all there ever will be to know and understand."" </br>Albert Einstein</p>
+              </div>
+            </section>
+
+            <section>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
+                <h1>Reach Out</h1>
+                <form action="https://formspree.io/r.dennett3@gmail.com" method="POST">
+
+                  <div class="group">
+                    <label>Name</label>
+                    <input type="text" name="name" class="formField">
+                  </div>
+
+                </br>
+
+                <div class="group">
+                  <label>Email</label>
+                  <input type="email" name="_replyto" class="formField">
+                </div>
+
+              </br>
+              <div class="group" id="mess">
+                <label>Note</label>
+                <input type="text" name="message" class="formField" id="mess1">
+              </div>
+            </br>
+
+            <input  class="main3" type="submit" value="Send" id="sendBtn">
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="foot">
+
+        </div>
+      </section>
+
     </div>
-  </section>
-
-  <section>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="foot">
-
-    </div>
-  </section>
-
-</div>
-
-<script>
+    <script>
 $(window).scroll(function() {
-  $('#twoText, #imagination, .main').each(function(){
-    var imagePos = $(this).offset().top;
+$('topIntroText').each(function(){
+var imagePos = $(this).offset().top;
 
-    var topOfWindow = $(window).scrollTop();
-    if (imagePos < topOfWindow+400) {
-      $(this).addClass("slideUp");
-    }
-  });
+var topOfWindow = $(window).scrollTop();
+if (imagePos < topOfWindow+600) {
+$(this).addClass("fadeIn");
+}
+});
 });
 </script>
 
+<script>
+$(window).scroll(function() {
+$('#twoText, .main, #imagination, #contact').each(function(){
+var imagePos = $(this).offset().top;
+
+var topOfWindow = $(window).scrollTop();
+if (imagePos < topOfWindow+600) {
+$(this).addClass("slideUp");
+}
+});
+});
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
