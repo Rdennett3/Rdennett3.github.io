@@ -151,9 +151,9 @@ body{
   background: transparent;
   color: #fff;
   /* margin: 1%; */
-  margin-left: 33%;
+  /* margin-left: 33%; */
   margin-top: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
   font-size: 30px
 }
 
@@ -164,9 +164,7 @@ body{
 }
 
 @media screen and (max-width:500px){
-  .main2{
-    margin-left: 20%;
-  }
+  .
 }
 
 .main3{
@@ -187,6 +185,7 @@ body{
 
 
 #projects{
+  text-align: center;
   min-height:100vh;
   background: #0C0C0C;
 }
@@ -391,6 +390,8 @@ line-height: 40px;
 }
 
 #contact form{
+  float:left;
+  margin-left: 25%;
   padding-top: 5%;
   /* text-align: center; */
   /* margin-right: 30%; */
@@ -452,8 +453,8 @@ label{
   height:50px;
   max-width:20%!important;
   margin-top:2%;
-  margin-right: 35%;
-  margin-bottom: 4%;
+  float:left;
+  margin-bottom: 5%;
 }
 
 @media screen and (max-width:500px){
@@ -464,12 +465,14 @@ label{
 }
 
 #foot{
+  text-align: center;
   height:10vh;
   background-image: linear-gradient(to left top, #d7263d, #d6343a, #d43f38, #d34937, #d15236, #c54a41, #b84549, #a8414f, #803853, #56314b, #322736, #1a1a1a);
 }
 
 #foot p{
-  font-size: 2em;
+  padding-top: 1.5%;
+  font-size: 1.5em;
   color:#fff;
   font-family: 'Roboto Condensed', sans-serif;
 }

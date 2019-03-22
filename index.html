@@ -16,7 +16,9 @@
     crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body onload="myFunction()">
+    <div id="loader">
+
     <div class="content">
       <section>
         <div class="row">
@@ -57,7 +59,7 @@
           <div class="col-md-6 col-sm-12" id="proj5">
             <h2 class="title" id="access">Misfit Grafix</h2>
 
-            <p id="accessibility" class="projInfo">Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint beyond Facebook, and Instagram. This is still very much a work in progress (mainly waiting on the content from the client) but you can see my work so far</p>
+            <p id="accessibility" class="projInfo">Misfit Grafix is a local Schenectady area custom paint shop that has recently asked me to start a web project to expand their digital footprint beyond Facebook, and Instagram. This is still a work in progress (mainly waiting on the content from the client) but you can see my work so far</p>
             <a href="https://steep-king-6174.vapid.site/index.html" target="_blank"><button class="main2">go to site</button></a>
           </div>
         </div>
@@ -160,11 +162,13 @@
 
       <section>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="foot">
-
+          <p>&copy 2019 Bobdennett.com</p>
         </div>
+
       </section>
 
     </div>
+
     <script>
 $(window).scroll(function() {
 $('topIntroText').each(function(){
