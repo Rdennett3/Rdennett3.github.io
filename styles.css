@@ -370,7 +370,7 @@ line-height: 40px;
 
 @media screen and (max-width:500px){
   #quote p{
-    font-size: 2em;
+    font-size: 1.75em;
     margin-top: 12%;
   }
 }
