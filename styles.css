@@ -373,6 +373,9 @@ line-height: 40px;
     font-size: 1.75em;
     margin-top: 12%;
   }
+  #quote{
+    height:100%;
+  }
 }
 
 #contact{
