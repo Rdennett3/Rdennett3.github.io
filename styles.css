@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 html{
   scroll-behavior: smooth;
@@ -28,7 +27,7 @@ body{
 }
 
 .topIntroText{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
   font-size: 10vw;
   color:#EEE5E9;
   margin-bottom: -12%;
@@ -72,12 +71,11 @@ body{
 }
 #about{
   height: 100vh;
-  background: #0C0C0C;
+  background-image:url('images/spiration-dark.png');
 }
 
 #two{
   min-height:100%;
-  background: #0C0C0C;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,7 +83,7 @@ body{
 }
 
 #two p{
-  font-family: 'Roboto Condensed', serif;
+  font-family: 'Bebas Neue', cursive;, serif;
   color:#EEE5E9;
   font-size: 3em;
   z-index: 1;
@@ -107,8 +105,8 @@ body{
 
 #two h1{
   /* padding-top: 2%; */
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 8em;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
+  font-size: 12em;
   z-index: -1;
   color: #D7263D;
   float: left;
@@ -116,7 +114,7 @@ body{
 }
 
 .main{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
   text-transform: uppercase;
   border: 3px solid #EEE5E9;
   /* float: right; */
@@ -143,7 +141,7 @@ body{
 }
 
 .main2{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
   text-transform: uppercase;
   border: 3px solid #fff;
   height:50px;
@@ -168,7 +166,7 @@ body{
 }
 
 .main3{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
   text-transform: uppercase;
   border: 3px solid #000;
   height:50px;
@@ -192,7 +190,7 @@ body{
 
 .title{
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
   /* padding-top: 5%; */
   background-image: linear-gradient(to right bottom, #d7263d, #d6343a, #d43f38, #d34937, #d15236, #c54a41, #b84549, #a8414f, #803853, #56314b, #322736, #1a1a1a);
   /* background: -webkit-linear-gradient(#eee, #333); */
@@ -261,7 +259,7 @@ body{
 
 .projInfo{
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
   color: white;
   font-size: 1.7em;
   /* position: relative;
@@ -358,7 +356,7 @@ line-height: 40px;
 }
 
 #quote p{
-  font-family: 'Roboto Condensed', serif;
+  font-family: 'Bebas Neue', cursive;, serif;
   /* margin-top: 2% */
   padding-top: 5%;
   padding-left: 5%;
@@ -379,92 +377,53 @@ line-height: 40px;
 }
 
 #contact{
-  min-height: 100%;
+  display: flex;
+  flex-direction:row;
   background: #0C0C0C;
-  text-align: center;
+  text-align: left;
+  justify-content: flex-start;
   /* visibility: hidden; */
 }
 
+#contact form{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:10%;
+}
+
 #contact h1{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
   font-size: 4em;
   color:#fff;
   padding-top: 5%;
-}
-
-#contact form{
-  float:left;
-  margin-left: 25%;
-  padding-top: 5%;
-  /* text-align: center; */
-  /* margin-right: 30%; */
+  position: relative;
 }
 
 #contact form input{
-  border-bottom: 2px solid #EEE5E9;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  width: 80%;
-  height:8%;
+  width:50vw;
+  background:transparent;
+  border:1px solid #f1f1f1;
+  margin:1%;
+  padding:10px 30px 10px 30px;
+  color:#f1f1f1;
+  font-size: 1.5em;
+  font-family:'Playfair Display';
 }
 
 #contact form textarea{
-  width: 800px;
-  float: left;
-  height:1%;
-  margin-top: 1%;
-
-  /* margin-right: 5.25%; */
-}
-
-#contact input:focus{
-  outline: none;
-}
-
-.formField{
-  background: transparent;
-  float: left;
-  width:600px !important;
-  color:#fff;
-  font-family: 'Roboto Condensed', sans-serif;
+  width:50vw;
+  background:transparent;
+  border:1px solid #f1f1f1;
+  margin:1%;
+  padding:10px 30px 10px 30px;
+  color:#f1f1f1;
   font-size: 1.5em;
+  font-family:'Playfair Display';
 }
 
-.group{
-  display: inline-block;
-}
-
-#mess1{
-  height:15% !important;
-  margin-right: 30%!important;
-}
-
-label{
-  color:#EEE5E9;
-  font-size: 2em;
-  padding-right: 2%;
-  float: left;
-}
-
-#sendBtn{
-  border: 2px solid #EEE5E9 !important;
-  background: transparent;
-  color:#EEE5E9;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2em;
-  height:50px;
-  max-width:20%!important;
-  margin-top:2%;
-  float:left;
-  margin-bottom: 5%;
-}
-
-@media screen and (max-width:500px){
-  #sendBtn{
-    margin-top:15%;
-    min-width: 50%;;
-  }
+#contact form input::placeholder{
+  color:#ffffff;
 }
 
 #foot{
@@ -477,7 +436,7 @@ label{
   padding-top: 1.5%;
   font-size: 1.5em;
   color:#fff;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Bebas Neue', cursive;, sans-serif;
 }
 
 @media screen and (max-width:500px){
