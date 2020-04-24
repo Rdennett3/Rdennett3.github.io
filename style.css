@@ -211,7 +211,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .aboutMe {
-    padding-top: 35%; } }
+    padding-top: 50%; } }
 
 .aboutContainer {
   display: grid;
