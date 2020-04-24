@@ -189,7 +189,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .social {
-    background: #417B5A; } }
+    background: #2f2f2f; } }
 
 .parent {
   display: grid;
@@ -211,7 +211,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .aboutMe {
-    padding-top: 20%; } }
+    padding-top: 35%; } }
 
 .aboutContainer {
   display: grid;
@@ -254,6 +254,24 @@ label input:valid + .label-text {
   font-size: 13px;
   -webkit-transform: translateY(-74px);
   transform: translateY(-74px); }
+
+@media screen and (max-width:800px){
+  label input:focus + .label-text{
+    display:none;
+    transform:translateY(-40px);
+  }
+  label input:valid + .label-text{
+    display:none!important;
+    transform:translateY(-40px);
+
+  }
+  input{
+    width:200px;
+  }
+  input:focus{
+    width:350px!important;
+  }
+}
 
 .label-text {
   color: #2F2F2F;
