@@ -1,3 +1,6 @@
+/* $white:#F2EFE9;
+$black:#2F2F2F;
+$green:#417B5A; */
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,400,700&display=swap");
 html {
   scroll-behavior: smooth; }
@@ -198,20 +201,114 @@ body {
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
 
+.page{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
 .aboutMe {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center; }
   .aboutMe p {
     font-family: 'Raleway', sans-serif;
     font-size: 1.75em;
-    padding: 10%; }
+    padding: 0 5%; }
+    .aboutMe h1{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 4.5em;
+      margin-bottom: -1%;
+      padding-left: 5%;
+    }
+
+    .aboutMe .ulContainer{
+      width: 50%;
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 5%;
+      flex-wrap: wrap;
+    }
+
+    .aboutMe ul{
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      width:50%;
+      padding:0;
+    }
+    .aboutMe .ulContainer ul li{
+      width:25%;
+      list-style: none;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.75em;
+    }
+    .aboutMe ul li{
+      padding-right: 5%;
+    }
+
+    .aboutMe ul li i{
+      color:#2f2f2f;
+      font-size: 1.75em;
+    }
+    .aboutMe ul li i:hover{
+      transition: all .7s ease;
+      transform:scale(1.25);
+    }
+  .aboutMe h3{
+    padding-left: 10%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+  }
+
+  .imageGrid{
+    padding:0 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+    "one two"
+    "one four"
+    "five six";
+  }
+
+  .one{
+    grid-area: one;
+  }
+  .two{
+    grid-area:two;
+  }
+  .three{
+    grid-area:three;
+  }
+  .four{
+    grid-area:four;
+  }
+  .five{
+    grid-area:five;
+  }
+  .six{
+    grid-area:six;
+  }
+
+  .imageGrid .gridItem img{
+      width:475px;
+      height:auto;
+  }
 
 @media screen and (max-width: 800px) {
   .aboutMe {
-    padding-top: 50%; } }
+    padding-top: 300px; } }
 
 .aboutContainer {
   display: grid;
