@@ -521,6 +521,8 @@ main{
   .section{
     display: flex;
     flex-direction: column;
+    margin:0;
+    padding:0;
   }
   .sectionInner{
     width:100%;
@@ -530,7 +532,7 @@ main{
   }
   .sectionInner p{
     font-size: 1em;
-    padding-right:5%;
+    padding-right:10%;
   }
   .sectionInner h3{
     font-size: 1.75em;
