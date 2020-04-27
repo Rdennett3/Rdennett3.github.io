@@ -11,7 +11,7 @@
 
 
 	$(window).scroll(function() {
-		$('#one, #two, #three, #four, #five, #six').each(function(){
+		$('#two, #three, #four, #five, #six, #aboutText').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
@@ -20,6 +20,16 @@
 			}
 		});
 	});
+  // $(window).scroll(function() {
+	// 	$('.aboutMe').each(function(){
+	// 	var imagePos = $(this).offset().top;
+  //
+	// 	var topOfWindow = $(window).scrollTop();
+	// 		if (imagePos < topOfWindow+900) {
+	// 			$(this).addClass("slideUp");
+	// 		}
+	// 	});
+	// });
 
 
 function openNav() {
