@@ -588,6 +588,7 @@ main{
 @keyframes slideUp {
 	0% {
 		transform: translateY(100%);
+    transform:scale(1.25);
     opacity: 0;
 	}
 	100% {
@@ -623,6 +624,7 @@ main{
 @keyframes slideRight {
   0%{
     transform: translateX(-100%);
+    transform:scale(1.25);
     opacity:0;
   }
   100%{
