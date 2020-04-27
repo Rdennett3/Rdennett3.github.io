@@ -166,8 +166,11 @@ z-index: 20;}
       padding: 5% 10% 2% 3%;
       font-size: 5vw;
       font-family: 'Raleway', sans-serif;
-      font-weight: 100; }
+      font-weight: 400;
+      transform: translateX(100%);
+      }
     .hero .heroInnerLeft h3 {
+      transform: translateX(100%);
       margin: 0;
       color: #F2EFE9;
       background: #2F2F2F;
@@ -602,4 +605,28 @@ main{
 		-webkit-transform: translateY(0%);
     opacity:1;
 	}
+}
+
+.slideRight{
+  animation-name: slideRight;
+	-webkit-animation-name: slideRight;
+
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(-100%);
+    /* opacity:0; */
+  }
+  100%{
+    transform: translateX(100%);
+    /* opacity: 1; */
+  }
 }
