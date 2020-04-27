@@ -497,6 +497,25 @@ main{
   height:100%;
 }
 
+#one{
+  visibility: hidden;
+}
+#two{
+  visibility: hidden;
+}
+#three{
+  visibility: hidden;
+}
+#four{
+  visibility: hidden;
+}
+#five{
+  visibility: hidden;
+}
+#six{
+  visibility: hidden;
+}
+
 .sectionInner h3{
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -543,4 +562,36 @@ main{
   font-family: 'Raleway', sans-serif;
   border:1px solid #2f2f2f;
   padding:10px 30px;
+}
+
+/* ANIMATION DECLARATIONS */
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
 }
