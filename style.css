@@ -22,6 +22,8 @@ body {
   top: 0;
   background-color: black;
   background-color: #F2EFE9;
+  /* background-image: url('./images/bg-pattern.svg');
+  background-size: cover; */
   overflow-x: hidden;
   transition: 0.5s; }
 
@@ -193,7 +195,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .social {
-    background: #417B5A; } }
+    background: #2f2f2f; } }
 
 .info {
   height: 60vh;
@@ -218,6 +220,15 @@ body {
     font-weight: 700;
     color: #F2EFE9; }
 
+  @media screen and (max-width:800px){
+    .infoOuter img{
+      display:none;
+    }
+    .infoOuter h1{
+      padding-top:0;
+    }
+  }
+
 .introInner {
   display: flex;
   align-items: center;
@@ -235,6 +246,16 @@ body {
     font-size: 2em;
     background: #124559;
     font-weight: 100; }
+
+  @media screen and (max-width:800px){
+    .introInner{
+      margin:0;
+      padding:0;
+    }
+    .introInner p{
+      padding:50px;
+    }
+  }
 
 #slideLeftText {
   visibility: hidden; }
@@ -299,6 +320,7 @@ body {
     color: #F2EFE9; }
 
 .workBtn {
+  cursor:pointer;
   display: flex;
   align-items: center;
   justify-content: center;
