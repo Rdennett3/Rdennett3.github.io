@@ -39,3 +39,18 @@ $(window).scroll(function() {
     }
   });
 });
+
+// VEGAS SLIDESHOW
+$(function() {
+  $('.heroInnerRight').vegas({
+    duration: 20000,
+    firstTransition: 'zoomOut',
+    transitionDuration:3000,
+    delay: 5000,
+    slides: [
+      { src: 'images/lajolla.jpg'},
+      { src: 'images/huntington.jpg'}
+    ],
+    transition:'zoomOut'
+  });
+});
