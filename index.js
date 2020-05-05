@@ -49,7 +49,9 @@ $(function() {
     delay: 5000,
     slides: [
       { src: 'images/lajolla.jpg'},
-      { src: 'images/huntington.jpg'}
+      { src: 'images/huntington.jpg'},
+      {src: 'images/buddha.jpg'},
+      {src: 'images/td-garden.jpg'}
     ],
     transition:'zoomOut'
   });
