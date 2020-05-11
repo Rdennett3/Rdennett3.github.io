@@ -356,6 +356,42 @@ body {
     font-size: 1em;
     color: #F2EFE9; }
 
+  /* .workBtn{
+    padding:5% 10%;
+    font-size: 1.5em;
+    color:#fff;
+    cursor:pointer;
+    display:block;
+    position: relative;
+    border:2px solid #f7ca18;
+    transition: all 0.4s cubic-bezier(0.42, 0, .58, 1);
+  }
+
+  .workBtn:hover{
+    color:#000!important;
+    background:transparent;
+  }
+
+  .workBtn:hover:before{
+    left:0%;
+    right:auto;
+    width: 100%;
+  }
+
+  .workBtn:before{
+    display:block;
+    position: absolute;
+    top:0px;
+    right:0px;
+    height:100%;
+    width:0px;
+    z-index: -1;
+    content:'';
+    color:#000 !important;
+    background:#f7ca18;
+    transition: all .4s cubic-bezier(0.42, 0, .58, 1);
+  } */
+
 .workBtn {
   cursor:pointer;
   display: flex;
@@ -369,7 +405,8 @@ body {
   font-weight: 100;
   background: transparent;
   transition: 1s ease-in-out;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+ }
 
 .homeContact {
   margin: 0;
