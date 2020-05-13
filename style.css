@@ -745,6 +745,10 @@ form button {
     transform:translate3d(-150px, -55px, 0);
   }
 
+  .rightItem4 button{
+    transform:translate3d(80px, -55px, 0);
+  }
+
   @media screen and (max-width:800px){
     .rightItem4{
       width:100%;
@@ -789,7 +793,7 @@ form button {
   }
 
   .leftItem5 button{
-    transform:translate3d(-20px, -55px, 0);
+    transform:translate3d(-30px, -55px, 0);
   }
   .rightItem5{
     width:50%;
@@ -835,7 +839,7 @@ form button {
   }
 
   .rightItem6 button{
-    transform:translate3d(-20px, -55px, 0);
+    transform:translate3d(20px, -55px, 0);
   }
 
   .rightItem6{
