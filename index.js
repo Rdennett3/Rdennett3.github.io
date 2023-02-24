@@ -178,7 +178,7 @@ let scrollTween = gsap.to(sections, {
 gsap.from("#ppaws-img", {
   x: "90%",
   autoAlpha: 0,
-  markers:true,
+  // markers:true,
 
   scrollTrigger: {
     trigger: "#panel-1",
@@ -416,7 +416,7 @@ footermm.add("(min-width:900px)", () => {
       trigger: "#foot-main",
       start: "top 50%",
       end: "top 10%",
-      markers:true,
+      // markers:true,
     }
   });
   tl.from(".footer-container", {
