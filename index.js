@@ -29,11 +29,15 @@ headerimgmm.add("(min-width:900px)", () => {
       trigger: "#header-image",
       start: "top 45%",
       end: "top top",
+      // scrub:true,
     }
   });
   tl.to("#header-image img", {
     duration: 1,
-    "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)"
+    x:"-20%",
+    // xPercent:10,
+    "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+
   })
 })
 headerimgmm.add("(max-width:899px)", () => {
@@ -81,25 +85,27 @@ let aboutdescmm = gsap.matchMedia();
 aboutdescmm.add("(min-width:900px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".about",
-      start: "top 60%",
+      trigger: "#about-desc",
+      start: "top 50%",
       end: "top top",
+      // markers:true,
     }
   });
 
   tl.from("#about-desc", {
     autoAlpha: 0,
-    y: "100%",
+    x: "-100%",
+    duration:.75,
   })
     .to("#about-desc", {
       autoAlpha: 1,
-      y: "0",
+      x: "0",
     })
 })
 
-// *********************
-// ABOUT IMAGE WITH NALA
-// *********************
+// **********************
+// ABOUT IMAGE - CAMPFIRE
+// **********************
 
 let aboutimgmm = gsap.matchMedia();
 
@@ -113,6 +119,7 @@ aboutimgmm.add("(min-width:900px)", () => {
   });
   tl.to("#about-img", {
     duration: 1,
+    x:"20%",
     "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)"
   })
 })
@@ -193,9 +200,10 @@ gsap.from("#ppaws-img", {
 // ****************
 
 gsap.from("#ppaws-title", {
-  x: "25%",
+  x: "50%",
   autoAlpha: 0,
   duration: .75,
+  scale:1.5,
   scrollTrigger: {
     trigger: "#panel-1",
     start: "right 90%",
@@ -242,9 +250,10 @@ gsap.from("#ppaws-btn", {
 // *********************
 
 gsap.from("#nycua-title", {
-  x: "25%",
+  x: "50%",
   autoAlpha: 0,
   duration: .75,
+  scale:1.5,
   scrollTrigger: {
     trigger: "#panel-2",
     start: "right 90%",
@@ -258,15 +267,18 @@ gsap.from("#nycua-title", {
 // *********************
 
 gsap.from("#nycua-img", {
-  x: "25%",
+  x: "50%",
   autoAlpha: 0,
   delay: .5,
+  scale:1.1,
 
   scrollTrigger: {
     trigger: "#panel-2",
-    start: "left 60%",
-    end: "left 40%",
+    start: "left 70%",
+    end: "left 50%",
     containerAnimation: scrollTween,
+    // scrub:true,
+    // markers:true,
   }
 });
 
@@ -304,14 +316,33 @@ gsap.from("#nycua-btn", {
   }
 });
 
+// *********************
+// CASV IMAGE ANIMATION
+// *********************
+
+gsap.from("#casv-img", {
+  x: "50%",
+  autoAlpha: 0,
+  delay: .5,
+  scale:1.1,
+
+  scrollTrigger: {
+    trigger: "#panel-3",
+    start: "left 70%",
+    end: "left 50%",
+    containerAnimation: scrollTween,
+  }
+});
+
 // ********************
 // CASV TITLE ANIMATION
 // ********************
 
 gsap.from("#casv-title", {
-  x: "25%",
+  x: "50%",
   autoAlpha: 0,
   duration: .75,
+  scale:1.5,
   scrollTrigger: {
     trigger: "#panel-3",
     start: "right 90%",
@@ -321,7 +352,7 @@ gsap.from("#casv-title", {
 });
 
 // ********************
-// CASV IMAGE ANIMATION
+// CASV TEXT ANIMATION
 // ********************
 
 gsap.from("#casv-text", {
@@ -354,14 +385,33 @@ gsap.from("#casv-btn", {
   }
 });
 
+// *********************
+// BETH IMAGE ANIMATION
+// *********************
+
+gsap.from("#beth-img", {
+  x: "50%",
+  autoAlpha: 0,
+  delay: .5,
+  scale:1.1,
+
+  scrollTrigger: {
+    trigger: "#panel-4",
+    start: "left 70%",
+    end: "left 50%",
+    containerAnimation: scrollTween,
+  }
+});
+
 // ********************
 // BETH TITLE ANIMATION
 // ********************
 
 gsap.from("#beth-title", {
-  x: "25%",
+  x: "50%",
   autoAlpha: 0,
   duration: .75,
+  scale:1.5,
   scrollTrigger: {
     trigger: "#panel-4",
     start: "right 90%",
@@ -379,6 +429,7 @@ gsap.from("#beth-text", {
   autoAlpha: 0,
   delay: .25,
   duration: .75,
+  scale:1.1,
   scrollTrigger: {
     trigger: "#panel-4",
     start: "right 90%",
@@ -404,6 +455,74 @@ gsap.from("#beth-btn", {
   }
 });
 
+// *********************
+// BROOKS IMAGE ANIMATION
+// *********************
+
+gsap.from("#brooks-img", {
+  x: "50%",
+  autoAlpha: 0,
+  delay: .5,
+
+  scrollTrigger: {
+    trigger: "#panel-5",
+    start: "left 70%",
+    end: "left 50%",
+    containerAnimation: scrollTween,
+  }
+});
+
+// ********************
+// BROOKS TITLE ANIMATION
+// ********************
+
+gsap.from("#brooks-title", {
+  x: "50%",
+  autoAlpha: 0,
+  duration: .75,
+  scale:1.5,
+  scrollTrigger: {
+    trigger: "#panel-5",
+    start: "right 90%",
+    end: "right 70%",
+    containerAnimation: scrollTween,
+  }
+});
+
+// ********************
+// BROOKS IMAGE ANIMATION
+// ********************
+
+gsap.from("#brooks-text", {
+  x: "25%",
+  autoAlpha: 0,
+  delay: .25,
+  duration: .75,
+  scrollTrigger: {
+    trigger: "#panel-5",
+    start: "right 90%",
+    end: "right 70%",
+    containerAnimation: scrollTween,
+  }
+});
+
+// *********************
+// BROOKS BUTTON ANIMATION
+// *********************
+
+gsap.from("#brooks-btn", {
+  y: "50%",
+  autoAlpha: 0,
+  delay: .5,
+
+  scrollTrigger: {
+    trigger: "#panel-5",
+    start: "right 90%",
+    end: "right 70%",
+    containerAnimation: scrollTween,
+  }
+});
+
 // *************************
 // FOOTER SLIDE IN ANIMATION
 // *************************
@@ -414,43 +533,63 @@ footermm.add("(min-width:900px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#foot-main",
-      start: "top 50%",
+      start: "top 60%",
       end: "top 10%",
       // markers:true,
     }
   });
   tl.from(".footer-container", {
     duration: 1,
-    x: "-100%",
+    x: "-30%",
+  })
+})
+// ***************************
+// FOOTER ITEM SLIDE ANIMATION
+// ***************************
+
+let footeritemmm = gsap.matchMedia();
+
+footeritemmm.add("(min-width:900px)", () => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#foot-main",
+      start: "top 50%",
+      end: "top 10%",
+      // markers:true,
+    }
+  });
+  tl.from(".footer-item", {
+    duration: 1,
+    x: "-50%",
+    autoAlpha:0,
+    stagger:.15,
   })
 })
 
-aboutimgmm.add("(max-width:899px)", () => {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#about-img",
-      start: "top 50%",
-      end: "top top",
-    }
-  });
-  tl.to("#about-img", {
-    duration: 1,
-    "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)"
-  })
-})
+// aboutimgmm.add("(max-width:899px)", () => {
+//   let tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "#about-img",
+//       start: "top 50%",
+//       end: "top top",
+//     }
+//   });
+//   tl.to("#about-img", {
+//     duration: 1,
+//     "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)"
+//   })
+// })
 
 // **************************
 // MOBILE WORK SECTION SLIDER
 // **************************
 
 const swiper = new Swiper('.work-swiper', {
-  autoplay: {
-    delay: 5000,
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
+  slidesPerView:1,
+  spaceBetween:10,
+  // autoplay: {
+  //   delay: 5000,
+  // },
 })
 
 // ***************************************

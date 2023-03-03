@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Munich";
+  src: url("../fonts/munich.ttf");
+}
+@font-face {
+  font-family: "Liquido";
+  src: url("../fonts/liguido.otf");
+}
+@font-face {
+  font-family: "NT Fabulous";
+  src: url("../fonts/nt-fabulous-alternative.otf");
+}
 html,
 body {
   overflow-x: hidden;
@@ -26,7 +38,7 @@ a {
 h1 {
   font-size: 50px;
   font-weight: 200;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "NT Fabulous", sans-serif;
 }
 
 h2 {
@@ -95,6 +107,7 @@ p {
 .inner-container {
   width: 100%;
   height: auto;
+  max-width: 1600px;
 }
 
 .nav-area {
@@ -167,14 +180,12 @@ p {
 }
 .header-container p {
   margin-bottom: 5%;
+  font-size: 2em;
+  line-height: 1.2em;
 }
 .header-container img {
   width: 100%;
-  clip-path: polygon(100% 0, 100% 0, 0 0, 0 0);
-}
-
-#header-text{
-  font-size:2em;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
 
 .xl {
@@ -252,7 +263,6 @@ p {
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 25px;
   padding: 5% 0;
 }
 
@@ -266,8 +276,8 @@ p {
   border: 1px solid white;
 }
 .about-item p {
-  padding: 0 5%;
-  font-size: 2em;
+  font-size: 2.5em;
+  line-height: 1em;
 }
 .about-item img {
   width: 60%;
@@ -387,6 +397,9 @@ p {
   .panel img {
     width: 50%;
   }
+  .panel h1 {
+    color: #E94F37;
+  }
 }
 .panel img {
   width: 80%;
@@ -395,6 +408,7 @@ p {
 
 .panel-item h1 {
   margin-bottom: 25px;
+  color: #E94F37;
 }
 .panel-item p {
   margin-bottom: 25px;
@@ -426,26 +440,9 @@ p {
   justify-content: center;
   border: 1px solid red;
 }
-
-.slide-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.slide-item img {
-  width: 90%;
+.swiper-slide img {
+  width: 100%;
   height: auto;
-  margin-bottom: 20px;
-}
-.slide-item h2 {
-  margin-bottom: 20px;
-}
-.slide-item p {
-  color: #363732;
-  line-height: 1em;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .swiper-scrollbar {
