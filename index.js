@@ -172,6 +172,10 @@ let sections = gsap.utils.toArray(".panel");
 let scrollTween = gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
   ease: "none",
+  snap: {
+    snapTo: 1 / (sections.length - 1),
+    duration: 0.05
+  },
   scrollTrigger: {
     trigger: ".container",
     pin: true,
@@ -579,6 +583,53 @@ footeritemmm.add("(min-width:900px)", () => {
 //     "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)"
 //   })
 // })
+
+let seemm = gsap.matchMedia();
+
+seemm.add("(min-width:900px)", () => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".pinned",
+      start: "top 50%",
+      end: "top top",
+      pin: true,
+      scrub:true,
+    }
+  });
+  tl.to("#pinnedh1", {
+    duration: 1,
+    // x: "-375%",
+    scale:3,
+  })
+})
+
+seemm.add("(max-width:899px)", () => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger:".pinned",
+      start:"top 20%",
+      end: "top top",
+      markers:true,
+    }
+  });
+  tl.to("pinnedh1", {
+    duration:1,
+    x:"-300%",
+  })
+})
+
+// gsap.set("#pinned", {xPercent: 0, yPercent: 0}),
+// gsap.from("#pinned", {x: "-20%", 
+//   scrollTrigger: {
+//       trigger: "#pinned",
+//       start: "top 50%",
+//       end: "top top",
+//       markers:true,
+//       // pin:true,
+//       // duration:3,
+//       scrub: true,
+//       }
+//     })
 
 // **************************
 // MOBILE WORK SECTION SLIDER
