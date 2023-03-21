@@ -349,7 +349,6 @@ p {
   align-items: center;
   justify-content: center;
   color: #201E1F;
-  border: 1px solid red;
 }
 @media screen and (max-width: 900px) {
   .panel {
@@ -381,13 +380,17 @@ p {
   margin-bottom: 25px;
 }
 .panel-item:nth-of-type(1) {
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
+  padding-right: 5%;
 }
 .panel-item:nth-of-type(2) {
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding-top: 10%;
+}
+.panel-item:nth-of-type(2) p {
+  padding-right: 15%;
 }
 
 .work-swiper {
