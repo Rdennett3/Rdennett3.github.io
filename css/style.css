@@ -663,7 +663,6 @@ footer {
   height: auto;
   background: #5CFFD1;
   min-height: 50vh;
-  border: 1px solid #201E1F;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
