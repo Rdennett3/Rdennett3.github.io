@@ -339,7 +339,7 @@ p {
   }
 }
 .panel {
-  width: 100vw;
+  width: 80vw;
   height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
