@@ -375,6 +375,7 @@ p {
 .panel-item h1 {
   margin-bottom: 25px;
   color: #201E1F;
+  z-index: 10;
 }
 .panel-item p {
   margin-bottom: 25px;
