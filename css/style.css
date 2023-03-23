@@ -74,7 +74,7 @@ p {
 
 .mainbtn:hover {
   color: #201E1F;
-  border: 2px solid #EF3E36;
+  border: 2px solid #3BCEAC;
 }
 
 .mainbtn::before {
@@ -85,7 +85,7 @@ p {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background: #EF3E36;
+  background: #3BCEAC;
   color: #201E1F;
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
@@ -113,7 +113,7 @@ p {
   width: 100%;
   height: auto;
   min-height: 50px;
-  background: #EF3E36;
+  background: #3BCEAC;
   position: fixed;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
@@ -155,7 +155,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(to top, #fff 20%, #EF3E36 10%, #EF3E36 10%);
+  background-image: linear-gradient(to top, #fff 20%, #3BCEAC 10%, #3BCEAC 10%);
 }
 
 .header-item {
@@ -249,7 +249,7 @@ p {
 .social i {
   font-size: 2.5em;
   margin: 0 10px;
-  color: #EF3E36;
+  color: #3BCEAC;
 }
 
 .about {
@@ -383,7 +383,7 @@ p {
 }
 
 .award {
-  background: #EF3E36;
+  background: #3BCEAC;
   padding: 5px 20px;
   margin: 10px 0 25px 0;
   color: #201E1F !important;
@@ -590,7 +590,7 @@ marquee {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #EF3E36;
+  background: #3BCEAC;
   border-left: 3px solid 4onyx;
 }
 
@@ -642,7 +642,7 @@ footer {
   width: 100%;
   height: auto;
   min-height: 60vh;
-  background: #EF3E36;
+  background: #3BCEAC;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -658,7 +658,7 @@ footer {
 .footer-container {
   width: 90%;
   height: auto;
-  background: #EF3E36;
+  background: #3BCEAC;
   min-height: 50vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
