@@ -599,7 +599,7 @@ seemm.add("(min-width:900px)", () => {
   tl.to("#pinnedh1", {
     duration: 1,
     // x: "-375%",
-    scale:3,
+    scale:2,
   })
 })
 

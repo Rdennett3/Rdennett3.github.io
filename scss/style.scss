@@ -43,7 +43,7 @@ body {
   font-size: 22px;
   line-height: 1.7em;
   overflow-x: hidden;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   width: 100%;
   height: auto;
 }
@@ -59,11 +59,8 @@ a {
 h1 {
   font-size: 50px;
   font-weight: 200;
-  // font-family: 'Playfair Display', sans-serif;
-  // font-family:'Munich', sans-serif;
-  // font-family: 'Liquido';
-  font-family: 'NT Fabulous', sans-serif;
-  // font-family: 'Atkinson Hyperlegible', sans-serif;
+  // font-family: 'NT Fabulous', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 h2 {
@@ -78,6 +75,8 @@ h3 {
 
 p {
   font-style: normal;
+  font-weight: 400;
+  line-height: 1em;
 }
 
 .mainbtn {
@@ -199,7 +198,7 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
   color: $onyx;
@@ -211,8 +210,9 @@ p {
 
   p {
     margin-bottom: 5%;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.2em;
+    text-align: left;
   }
 
   img {
@@ -242,7 +242,8 @@ p {
   font-size: 5vw;
   line-height: 1em;
   font-weight: 900;
-  font-family: 'NT Fabulous', sans-serif;
+  // font-family: 'NT Fabulous', sans-serif;
+  font-family:"Atkinson Hyperlegible", sans-serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -310,7 +311,7 @@ p {
   justify-content: center;
 
   p {
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 1em;
   }
 
@@ -404,13 +405,13 @@ p {
     
     p{
       color:$white;
-      text-shadow: 1px 1px 0 $onyx;;
+      // text-shadow: 1px 1px 0 $onyx;
     }
 
     h1{
     color:$white;
     z-index: 10;
-    text-shadow: 4px 2px 0 $onyx;
+    // text-shadow: 4px 2px 0 $onyx;
     }
   }
   &:nth-of-type(2){
@@ -752,7 +753,7 @@ marquee {
   h1 {
     color: $onyx;
     text-align: center;
-    transform: scale(2);
+    // transform: scale(2);
   }
 }
 
