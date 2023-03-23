@@ -119,7 +119,6 @@ aboutimgmm.add("(min-width:900px)", () => {
   });
   tl.to("#about-img", {
     duration: 1,
-    x:"20%",
     "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)"
   })
 })

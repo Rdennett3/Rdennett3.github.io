@@ -157,7 +157,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(to top, #fff 20%, #3BCEAC 10%, #3BCEAC 10%);
+  background-image: linear-gradient(to top, #201E1F 20%, #3BCEAC 10%, #3BCEAC 10%);
 }
 
 .header-item {
@@ -219,6 +219,7 @@ p {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  margin: 20px 0;
 }
 @media screen and (max-width: 900px) {
   .xl2 {
@@ -261,7 +262,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #201E1F;
 }
 
 .about-container {
@@ -283,6 +284,7 @@ p {
 .about-item p {
   font-size: 1.5em;
   line-height: 1em;
+  color: #3BCEAC;
 }
 .about-item img {
   width: 60%;
@@ -302,8 +304,11 @@ p {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  background: #fff;
+  background: #201E1F;
   padding: 5% 0;
+}
+.work h1 {
+  color: #3BCEAC;
 }
 
 .work-container {
@@ -381,6 +386,7 @@ p {
 .panel-section:nth-of-type(2) img {
   width: 100%;
   height: auto;
+  filter: brightness(0.5);
 }
 
 .award {
@@ -510,18 +516,18 @@ marquee {
   border: 3px solid #201E1F;
   min-height: 50px;
   padding-left: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Atkinson Hyperlegible", serif;
   box-shadow: 3px 3px 0 #201E1F;
   background: #fff;
 }
 .form-container form input::placeholder {
   font-weight: bold;
-  font-family: "Playfair Display", serif;
+  font-family: "Atkinson Hyperlegible", serif;
   font-size: 1.5em;
   font-weight: 200;
 }
 .form-container form textarea {
-  font-family: "Playfair Display", serif;
+  font-family: "Atkinson Hyperlegible", serif;
   padding-left: 20px;
   padding-top: 20px;
   border: 3px solid #201E1F;
@@ -529,7 +535,7 @@ marquee {
 }
 .form-container form textarea::placeholder {
   font-weight: bold;
-  font-family: "Playfair Display", serif;
+  font-family: "Atkinson Hyperlegible", serif;
   font-size: 1.5em;
   font-weight: 200;
 }
@@ -608,11 +614,14 @@ marquee {
   height: 60%;
 }
 .contact-inner:nth-of-type(1) .getintouch-container {
-  width: 60%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.contact-inner:nth-of-type(1) .getintouch-container h1 {
+  margin-bottom: 20px;
 }
 .contact-inner:nth-of-type(2) {
   height: 40%;
@@ -634,6 +643,7 @@ marquee {
   z-index: 100;
 }
 .pinned h1 {
+  font-size: 10.5vw;
   color: #201E1F;
   text-align: center;
 }
@@ -692,7 +702,7 @@ footer {
 .footer-item:nth-of-type(2) a {
   color: #201E1F;
   font-size: 2em;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 .footer-item:nth-of-type(3) {
   display: flex;
