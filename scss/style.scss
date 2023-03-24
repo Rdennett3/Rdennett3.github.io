@@ -46,6 +46,11 @@ body {
   font-family: 'Atkinson Hyperlegible', sans-serif;
   width: 100%;
   height: auto;
+  cursor: url('../images/plane-2.png'), auto;
+}
+
+::selection {
+  background: #FFBA08; /* WebKit/Blink Browsers */
 }
 
 * {
@@ -54,6 +59,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: url('../images/hand-pointer.png'), auto;
 }
 
 h1 {
@@ -370,9 +376,9 @@ p {
   background: $onyx;
   -moz-display: none;
 
-  @media screen and (max-width:900px) {
-    display: none;
-  }
+  // @media screen and (max-width:900px) {
+  //   display: none;
+  // }
 }
 
 @supports (-moz-appearance:none) {
@@ -392,6 +398,12 @@ p {
   margin-top: 50px;
   color: $onyx;
   background: $onyx;
+
+  @media screen and (max-width:900px){
+    grid-template-columns: 1fr;
+    grid-template-areas: "ps2" "ps2";
+    width:100%;
+  }
 }
 
 .panel-section {
@@ -618,6 +630,15 @@ marquee {
     grid-template-areas: "name email" "phone phone" "message message";
     gap: 10px;
     font-family: 'Playfair Display', serif;
+
+    input[type=submit]{
+      font-size:2em;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      padding-left:0;
+      cursor: url('../images/hand-pointer.png'), auto;
+    }
 
     input {
       outline: 0;
