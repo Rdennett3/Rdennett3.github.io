@@ -25,7 +25,6 @@ body {
   font-family: "Atkinson Hyperlegible", sans-serif;
   width: 100%;
   height: auto;
-  cursor: url("../images/plane-2-small.png"), auto;
 }
 
 ::selection {
@@ -39,7 +38,6 @@ body {
 
 a {
   text-decoration: none;
-  cursor: url("../images/hand-pointer-small.png"), auto;
 }
 
 h1 {
