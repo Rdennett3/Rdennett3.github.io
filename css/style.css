@@ -438,56 +438,62 @@ p {
   height: auto;
 }
 
-.tech {
-  width: 100%;
-  height: auto;
+.skills {
+  background: #3BCEAC;
+  color: #201E1F;
+  padding: 3.5% 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5% 0;
-  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.skills h1 {
+  width: 2500px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  color: #201E1F;
+  margin: 0;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: marquee 20s linear infinite;
+  -webkit-animation: marquee 20s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
-.tech-container {
-  width: 90%;
-  height: auto;
-  min-height: 60vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
-  gap: 20px;
-}
-@media screen and (max-width: 900px) {
-  .tech-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: ". .";
+@-moz-keyframes marquee {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
   }
 }
-
-.tech-item {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background: #201E1F;
-  border-radius: 10px;
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
 }
-
-.tech-item-inner:nth-of-type(1) {
-  background: #fff;
-  height: 50px;
+@keyframes marquee {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
 }
-.tech-item-inner:nth-of-type(2) {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.tech-item-inner:nth-of-type(2) h2 {
-  color: #fff;
-}
-
 marquee {
   color: #201E1F;
   min-height: 200px;

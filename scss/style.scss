@@ -433,6 +433,7 @@ p {
       width: 100%;
       height: auto;
       filter:brightness(.5);
+      
     }
   }
 }
@@ -511,59 +512,58 @@ p {
   }
 }
 
-.tech {
-  width: 100%;
-  height: auto;
-  display: flex;
+.skills{
+  // width:100%;
+  // height:auto;
+  background:$cinnabar;
+  color:$onyx;
+  padding:3.5% 0;
+  display:flex;
   align-items: center;
   justify-content: center;
-  padding: 5% 0;
-  background-color: $white;
-}
+  overflow: hidden;
+  position: relative;
 
-.tech-container {
-  width: 90%;
-  height: auto;
-  min-height: 60vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
-  gap: 20px;
-
-  @media screen and (max-width:900px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: ". .";
+  h1{
+    width:2500px;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    color:$onyx;
+    margin: 0;
+    // line-height: 50px;
+    // text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: marquee 20s linear infinite;
+    -webkit-animation: marquee 20s linear infinite;
+    animation: marquee 20s linear infinite;
   }
 }
 
-.tech-item {
-  width: 100%;
-  height: auto;
-  // border: 1px solid $onyx;
-  display: flex;
-  flex-direction: column;
-  background: $onyx;
-  border-radius: 10px;
+@-moz-keyframes marquee {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
 }
-
-.tech-item-inner {
-
-  &:nth-of-type(1) {
-    background: $white;
-    height: 50px;
-  }
-
-  &:nth-of-type(2) {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    h2 {
-      color: $white;
-    }
-  }
+@-webkit-keyframes marquee {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes marquee {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
 }
 
 marquee {

@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 // NAME AT TOP OF PAGE
 // *******************
 
-gsap.fromTo('.header-container .xl span', { rotate: 5, y: 150, stagger: .05, autoAlpha: 0 }, { y: 0, stagger: .05, autoAlpha: 1, rotate: 0, });
+gsap.fromTo('.header-container .xl span', { rotate: 5, y: 150, stagger: .05, autoAlpha: 0, delay:1.5, }, { y: 0, stagger: .05, autoAlpha: 1, rotate: 0, });
 
 // ***********************
 // PICTURE OF ME ON LAPTOP
@@ -597,7 +597,7 @@ seemm.add("(min-width:900px)", () => {
   });
   tl.to("#pinnedh1", {
     duration: 1,
-    // x: "-375%",
+    y:"25%",
     scale:2,
   })
 })
