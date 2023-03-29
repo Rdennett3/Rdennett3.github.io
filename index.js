@@ -65,7 +65,7 @@ headertextmm.add("(min-width:900px)", () => {
     scrollTrigger: {
       trigger: "#header-text",
       start: "top 55%",
-      markers:true,
+      // markers:true,
     }
   });
   tl.from("#header-text", {
@@ -81,7 +81,7 @@ headertextmm.add("(max-width:899px)", () => {
     scrollTrigger: {
       trigger: "#header-text",
       start: "top 55%",
-      markers:true,
+      // markers:true,
       scrub:true,
     }
   });
@@ -161,6 +161,26 @@ aboutimgmm.add("(max-width:899px)", () => {
 let recentmm = gsap.matchMedia();
 
 recentmm.add("(min-width:900px)", () => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#work1",
+      start: "top 50%",
+      end: "top top",
+    }
+  });
+
+  tl.from("#work1 h1 .recent", {
+    y: 150,
+    stagger: .05,
+    autoAlpha: 0
+  })
+    .to("#work1 h1 .recent", {
+      stagger: .05,
+      autoAlpha: 1
+    })
+})
+
+recentmm.add("(max-width:899px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#work1",
