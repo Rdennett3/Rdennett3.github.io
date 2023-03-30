@@ -29,12 +29,13 @@ headerimgmm.add("(min-width:900px)", () => {
       trigger: "#header-image",
       start: "top 45%",
       end: "top top",
+      markers:true,
       // scrub:true,
     }
   });
   tl.to("#header-image img", {
     duration: 1,
-    x:"-20%",
+    x:"-10%",
     // xPercent:10,
     "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
 
@@ -44,13 +45,14 @@ headerimgmm.add("(max-width:899px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#header-image",
-      start: "top 45%",
+      start: "top 50%",
       end: "top top",
+      // scrub:true,
     }
   });
   tl.to("#header-image img", {
     duration: 1,
-    "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)",
+    "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
   })
 })
 
@@ -80,9 +82,8 @@ headertextmm.add("(max-width:899px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#header-text",
-      start: "top 55%",
+      start: "bottom 100%",
       // markers:true,
-      scrub:true,
     }
   });
   tl.from("#header-text", {
@@ -666,10 +667,15 @@ footeritemmm.add("(min-width:900px)", () => {
 
 const swiper = new Swiper('.work-swiper', {
   slidesPerView:1,
-  spaceBetween:10,
-  autoplay: {
-    delay: 5000,
+  loop:true,
+  navigation: {
+    nextEl: '.swiper-button-next-custom',
+    prevEl: '.swiper-button-prev-custom',
   },
+  // spaceBetween:10,
+  // autoplay: {
+  //   delay: 5000,
+  // },
 })
 
 // ***************************************

@@ -80,7 +80,7 @@ p {
 
 .mainbtn:hover {
   color: #201E1F;
-  border: 2px solid #3BCEAC;
+  border: 2px solid #CEFF1A;
 }
 
 .mainbtn::before {
@@ -91,7 +91,7 @@ p {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background: #3BCEAC;
+  background: #CEFF1A;
   color: #201E1F;
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
@@ -119,7 +119,7 @@ p {
   width: 100%;
   height: auto;
   min-height: 50px;
-  background: #3BCEAC;
+  background: #CEFF1A;
   position: fixed;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
@@ -161,7 +161,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(to top, #201E1F 20%, #3BCEAC 10%, #3BCEAC 10%);
+  background-image: linear-gradient(to top, #201E1F 20%, #CEFF1A 10%, #CEFF1A 10%);
 }
 
 .header-item {
@@ -256,7 +256,7 @@ p {
 .social i {
   font-size: 2.5em;
   margin: 0 10px;
-  color: #3BCEAC;
+  color: #CEFF1A;
 }
 
 .about {
@@ -275,6 +275,11 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 5% 0;
 }
+@media screen and (max-width: 900px) {
+  .about-container {
+    width: 100%;
+  }
+}
 
 .about-item {
   width: 100%;
@@ -285,18 +290,23 @@ p {
 }
 .about-item p {
   font-size: 1.5em;
-  color: #3BCEAC;
+  color: #CEFF1A;
 }
 @media screen and (max-width: 900px) {
   .about-item p {
     font-size: 8vw;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 }
 .about-item img {
   width: 60%;
   height: auto;
   clip-path: polygon(100% 0, 100% 0, 0 0, 0 0);
+}
+@media screen and (max-width: 900px) {
+  .about-item img {
+    width: 75%;
+  }
 }
 
 #recent {
@@ -315,7 +325,7 @@ p {
   padding: 5% 0;
 }
 .work h1 {
-  color: #3BCEAC;
+  color: #CEFF1A;
 }
 
 .work-container {
@@ -404,7 +414,7 @@ p {
 }
 
 .award {
-  background: #3BCEAC;
+  background: #CEFF1A;
   padding: 5px 20px;
   margin: 10px 0 25px 0;
   color: #201E1F !important;
@@ -423,22 +433,47 @@ p {
 }
 
 .swiper-slide {
-  width: 100%;
+  width: 100% !important;
   height: auto;
   min-height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
 }
 .swiper-slide img {
   width: 100%;
   height: auto;
+  filter: brightness(0.5);
 }
 
-.swiper-scrollbar {
-  background: green;
+.button-container {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .button-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: ". .";
+    gap: 5px;
+    background: #CEFF1A;
+  }
+}
+
+.button-item {
+  background: #201E1F;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-item i {
+  color: #CEFF1A;
+  font-size: 10vw;
 }
 
 .swiper-button-next-custom {
@@ -455,7 +490,7 @@ p {
 .skills {
   width: 100%;
   height: auto;
-  background: #3BCEAC;
+  background: #CEFF1A;
   color: #201E1F;
   padding: 3.5% 0;
   display: flex;
@@ -562,7 +597,7 @@ marquee {
   border-right: 2px solid #201E1F;
 }
 .contact-section:nth-of-type(2) {
-  background: #3BCEAC;
+  background: #CEFF1A;
 }
 
 .contact-section-inner {
@@ -586,15 +621,27 @@ marquee {
   align-items: flex-start;
   justify-content: flex-start;
 }
+@media screen and (max-width: 900px) {
+  .contact-section-inner-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .contact-section-inner-container:nth-of-type(1) h1 {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .contact-section-inner-container:nth-of-type(1) h1 {
+    font-size: 1.5em;
+  }
 }
 .contact-section-inner-container a {
   color: #201E1F;
   transition: 0.5s ease-in-out;
 }
 .contact-section-inner-container a:hover {
-  color: #3BCEAC;
+  color: #CEFF1A;
   letter-spacing: 5px;
 }
 
@@ -687,7 +734,7 @@ footer {
   width: 100%;
   height: auto;
   min-height: 60vh;
-  background: #3BCEAC;
+  background: #CEFF1A;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -703,7 +750,7 @@ footer {
 .footer-container {
   width: 90%;
   height: auto;
-  background: #3BCEAC;
+  background: #CEFF1A;
   min-height: 50vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
