@@ -589,6 +589,14 @@ marquee {
 .contact-section-inner-container:nth-of-type(1) h1 {
   margin-bottom: 20px;
 }
+.contact-section-inner-container a {
+  color: #201E1F;
+  transition: 0.5s ease-in-out;
+}
+.contact-section-inner-container a:hover {
+  color: #3BCEAC;
+  letter-spacing: 5px;
+}
 
 form {
   width: 100%;
@@ -673,9 +681,6 @@ form textarea::placeholder {
   color: #201E1F;
   text-align: center;
   padding-top: 5%;
-}
-.pinned h1 a {
-  color: #3BCEAC;
 }
 
 footer {

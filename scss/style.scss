@@ -657,6 +657,15 @@ marquee {
       margin-bottom:20px;
     }
   }
+  a{
+    color:$onyx;
+    transition:.5s ease-in-out;
+
+    &:hover{
+      color:$cinnabar;
+      letter-spacing: 5px;
+    }
+  }
 }
 
 form {
@@ -749,10 +758,6 @@ grid-area: message;
     text-align: center;
     padding-top:5%;
     // transform: scale(2);
-
-    a{
-      color:$cinnabar;
-    }
   }
 }
 
