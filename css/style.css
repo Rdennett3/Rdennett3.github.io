@@ -455,6 +455,7 @@ p {
   filter: brightness(0.5);
 }
 .swiper-slide h1 {
+  width: 60%;
   color: #fff;
   position: absolute;
   top: 50%;
