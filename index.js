@@ -581,7 +581,7 @@ seemm.add("(min-width:900px)", () => {
   });
   tl.to("#pinnedh1", {
     duration: 1,
-    y:"100%",
+    // y:"100%",
     scale:2,
   })
 })
