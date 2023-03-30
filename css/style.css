@@ -80,7 +80,7 @@ p {
 
 .mainbtn:hover {
   color: #201E1F;
-  border: 2px solid #CEFF1A;
+  border: 2px solid #3BCEAC;
 }
 
 .mainbtn::before {
@@ -91,7 +91,7 @@ p {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background: #CEFF1A;
+  background: #3BCEAC;
   color: #201E1F;
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
@@ -103,9 +103,9 @@ p {
 }
 
 .mobile-btn {
-  border: 1px solid #CEFF1A;
+  border: 1px solid #3BCEAC;
   background: #201E1F;
-  color: #CEFF1A;
+  color: #3BCEAC;
   padding: 10px 40px;
 }
 
@@ -126,7 +126,7 @@ p {
   width: 100%;
   height: auto;
   min-height: 50px;
-  background: #CEFF1A;
+  background: #3BCEAC;
   position: fixed;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
@@ -168,7 +168,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(to top, #201E1F 20%, #CEFF1A 10%, #CEFF1A 10%);
+  background-image: linear-gradient(to top, #201E1F 20%, #3BCEAC 10%, #3BCEAC 10%);
 }
 
 .header-item {
@@ -263,7 +263,7 @@ p {
 .social i {
   font-size: 2.5em;
   margin: 0 10px;
-  color: #CEFF1A;
+  color: #3BCEAC;
 }
 
 .about {
@@ -297,7 +297,7 @@ p {
 }
 .about-item p {
   font-size: 1.5em;
-  color: #CEFF1A;
+  color: #3BCEAC;
 }
 @media screen and (max-width: 900px) {
   .about-item p {
@@ -332,7 +332,7 @@ p {
   padding: 5% 0;
 }
 .work h1 {
-  color: #CEFF1A;
+  color: #3BCEAC;
 }
 
 .work-container {
@@ -421,7 +421,7 @@ p {
 }
 
 .award {
-  background: #CEFF1A;
+  background: #3BCEAC;
   padding: 5px 20px;
   margin: 10px 0 25px 0;
   color: #201E1F !important;
@@ -481,7 +481,7 @@ p {
     grid-template-rows: auto;
     grid-template-areas: ". .";
     gap: 5px;
-    background: #CEFF1A;
+    background: #3BCEAC;
   }
 }
 
@@ -494,14 +494,14 @@ p {
   justify-content: center;
 }
 .button-item i {
-  color: #CEFF1A;
+  color: #3BCEAC;
   font-size: 10vw;
 }
 
 .skills {
   width: 100%;
   height: auto;
-  background: #CEFF1A;
+  background: #3BCEAC;
   color: #201E1F;
   padding: 3.5% 0;
   display: flex;
@@ -608,7 +608,7 @@ marquee {
   border-right: 2px solid #201E1F;
 }
 .contact-section:nth-of-type(2) {
-  background: #CEFF1A;
+  background: #3BCEAC;
 }
 
 .contact-section-inner {
@@ -652,7 +652,7 @@ marquee {
   transition: 0.5s ease-in-out;
 }
 .contact-section-inner-container a:hover {
-  color: #CEFF1A;
+  color: #3BCEAC;
   letter-spacing: 5px;
 }
 
@@ -745,7 +745,7 @@ footer {
   width: 100%;
   height: auto;
   min-height: 60vh;
-  background: #CEFF1A;
+  background: #3BCEAC;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -761,7 +761,7 @@ footer {
 .footer-container {
   width: 90%;
   height: auto;
-  background: #CEFF1A;
+  background: #3BCEAC;
   min-height: 50vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
