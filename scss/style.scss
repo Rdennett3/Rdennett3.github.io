@@ -41,7 +41,6 @@ body {
 body {
   // @include margin;
   font-size: 22px;
-  line-height: 1.7em;
   overflow-x: hidden;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   width: 100%;
@@ -50,7 +49,8 @@ body {
 }
 
 ::selection {
-  background: #FFBA08; /* WebKit/Blink Browsers */
+  background: #FFBA08;
+  /* WebKit/Blink Browsers */
 }
 
 * {
@@ -82,7 +82,7 @@ h3 {
 p {
   font-style: normal;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 .mainbtn {
@@ -217,7 +217,6 @@ p {
   p {
     margin-bottom: 5%;
     font-size: 1.5em;
-    line-height: 1.2em;
     text-align: left;
   }
 
@@ -317,18 +316,13 @@ p {
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width:900px){
-    border:1px solid red;
-  }
-
   p {
     font-size: 1.5em;
-    line-height: 1em;
-    color:$cinnabar;
+    color: $cinnabar;
 
-    @media screen and (max-width:900px){
-      font-size:8vw;
-      padding:0 10px;
+    @media screen and (max-width:900px) {
+      font-size: 8vw;
+      padding: 0 10px;
     }
   }
 
@@ -354,8 +348,8 @@ p {
   background: $onyx;
   padding: 5% 0;
 
-  h1{
-    color:$cinnabar;
+  h1 {
+    color: $cinnabar;
   }
 }
 
@@ -408,10 +402,10 @@ p {
   color: $onyx;
   background: $onyx;
 
-  @media screen and (max-width:900px){
+  @media screen and (max-width:900px) {
     grid-template-columns: 1fr;
     grid-template-areas: "ps2" "ps2";
-    width:100%;
+    width: 100%;
   }
 }
 
@@ -453,8 +447,8 @@ p {
     img {
       width: 100%;
       height: auto;
-      filter:brightness(.5);
-      
+      filter: brightness(.5);
+
     }
   }
 }
@@ -493,28 +487,6 @@ p {
   }
 }
 
-// .slide-item{
-//   display:flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-
-//   img{
-//     width:100%;
-//     height:auto;
-//     margin-bottom:20px;
-//   }
-//   h2{
-//     margin-bottom:20px;
-//   }
-//   p{
-//     color:$onyx;
-//     line-height: 1em;
-//     text-align: center;
-//     margin-bottom:20px;
-//   }
-// }
-
 .swiper-scrollbar {
   background: green;
 }
@@ -533,58 +505,81 @@ p {
   }
 }
 
-.skills{
-  // width:100%;
-  // height:auto;
-  background:$cinnabar;
-  color:$onyx;
-  padding:3.5% 0;
-  display:flex;
+.skills {
+  width: 100%;
+  height: auto;
+  background: $cinnabar;
+  color: $onyx;
+  padding: 3.5% 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
 
-  h1{
-    width:2500px;
-    height:auto;
-    display:flex;
+  @media screen and (max-width:900px) {
+    padding: 15% 0;
+  }
+
+  h1 {
+    width: 2500px;
+    height: auto;
+    display: flex;
     flex-direction: row;
     position: absolute;
-    color:$onyx;
+    color: $onyx;
     margin: 0;
-    // line-height: 50px;
-    // text-align: center;
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);	
-    transform:translateX(100%);
-    /* Apply animation to this element */	
+
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
     -moz-animation: marquee 20s linear infinite;
     -webkit-animation: marquee 20s linear infinite;
     animation: marquee 20s linear infinite;
+
+    @media screen and (max-width:900px) {
+      padding: 5% 0;
+    }
   }
 }
 
 @-moz-keyframes marquee {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
+  0% {
+    -moz-transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+  }
 }
+
 @-webkit-keyframes marquee {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
 }
+
 @keyframes marquee {
- 0%   { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%); 
- }
+  0% {
+    -moz-transform: translateX(100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(100%);
+    /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
 }
 
 marquee {
@@ -596,190 +591,143 @@ marquee {
     min-height: 100px;
   }
 }
+// ***************
+// CONTACT SECTION
+// ***************
 
-// .contact {
-//   width: 100%;
-//   height: auto;
-//   padding:5% 0;
-//   display:flex;
-//   align-items: center;
-//   justify-content: center;
-//   background-image: url('../images/pattern.png');
-//   background-size: cover;
-//   background-position: bottom;
-// }
-
-// .contact-container{
-//   width:90%;
-//   height:auto;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   @media screen and (max-width:900px){
-//     flex-direction:column;
-//   }
-
-// }
-
-// .contact-item {
-//   width: 100%;
-//   height: auto;
-//   padding:5% 0;
-// }
-
-.form-container {
-  width: 90%;
-  height: auto;
-
-  form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "name email" "phone phone" "message message";
-    gap: 10px;
-    font-family: 'Playfair Display', serif;
-
-    input[type=submit]{
-      font-size:2em;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      padding-left:0;
-    }
-
-    input {
-      outline: 0;
-      border: 3px solid $onyx;
-      min-height: 50px;
-      padding-left: 20px;
-      font-family: 'Atkinson Hyperlegible', serif;
-      box-shadow: 3px 3px 0 $onyx;
-      background: $white;
-
-      &::placeholder {
-        font-weight: bold;
-        font-family: 'Atkinson Hyperlegible', serif;
-        font-size: 1.5em;
-        font-weight: 200;
-      }
-    }
-
-    textarea {
-      font-family: 'Atkinson Hyperlegible', serif;
-      padding-left: 20px;
-      padding-top: 20px;
-      border: 3px solid $onyx;
-      box-shadow: 3px 3px 0 $onyx;
-
-      &::placeholder {
-        font-weight: bold;
-        font-family: 'Atkinson Hyperlegible', serif;
-        font-size: 1.5em;
-        font-weight: 200;
-      }
-    }
-  }
-}
-
-#name {
-  grid-area: name;
-}
-
-#email {
-  grid-area: email;
-}
-
-#phone {
-  grid-area: phone;
-}
-
-#message {
-  grid-area: message;
-}
-
-.new-contact {
-  width: 100%;
-  height: auto;
-  display: flex;
+.contact{
+  width:100%;
+  height:auto;
+  display:flex;
   align-items: center;
-  justify-content: center;
+  border-top:2px solid $onyx;
+  border-bottom:2px solid $onyx;
 }
 
-.contact-container {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: ". .";
-  border-bottom: 3px solid $onyx;
-  border-top: 3px solid $onyx;
-
-  @media screen and (max-width:900px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: ".";
-  }
+.contact-container{
+  width:100%;
+  height:auto;
+  background:$white;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.contact-item {
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-
-  &:nth-of-type(1) {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    border-right: 3px solid $onyx;
-  }
-
-  &:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $cinnabar;
-    border-left: 3px solid 4onyx;
-  }
-}
-
-.contact-inner {
-  width: 100%;
-  display: flex;
+.contact-section{
+  min-height: 80vh;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: 3px solid $onyx;
-  z-index: 5;
+  align-items: center;
 
-  &:nth-of-type(1) {
-    height: 60%;
-
-    .getintouch-container {
-      width: 75%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      h1{
-        margin-bottom:20px;
-      }
-    }
+  &:nth-of-type(1){
+    border-right:2px solid $onyx;
   }
 
-  &:nth-of-type(2) {
-    height: 40%;
-    background: $white;
-    border-top: 3px solid $onyx;
+  &:nth-of-type(2){
+    background:$cinnabar;
+  }
 
-    a {
-      color: $onyx;
+}
+
+.contact-section-inner{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:5% 0;
+
+  &:nth-of-type(1){
+    border-bottom:2px solid $onyx;
+  }
+}
+
+.contact-section-inner-container{
+  width:90%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &:nth-of-type(1){
+    h1{
+      margin-bottom:20px;
     }
   }
 }
 
-// PINNED SECTION
+form {
+  width:100%;
+  height:auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "name email" "phone phone" "message message";
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  input[type=submit]{
+    font-size:2em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:0;
+  }
+
+  input {
+    outline: 0;
+    border: 3px solid $onyx;
+    min-height: 50px;
+    padding-left: 20px;
+    font-family: 'Atkinson Hyperlegible', serif;
+    box-shadow: 3px 3px 0 $onyx;
+    background: $white;
+
+    &::placeholder {
+      font-weight: bold;
+      font-family: 'Atkinson Hyperlegible', serif;
+      font-size: 1.5em;
+      font-weight: 200;
+    }
+  }
+
+  textarea {
+    font-family: 'Atkinson Hyperlegible', serif;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 3px solid $onyx;
+    box-shadow: 3px 3px 0 $onyx;
+
+    &::placeholder {
+      font-weight: bold;
+      font-family: 'Atkinson Hyperlegible', serif;
+      font-size: 1.5em;
+      font-weight: 200;
+    }
+  }
+}
+
+
+#name {
+grid-area: name;
+}
+
+#email {
+grid-area: email;
+}
+
+#phone {
+grid-area: phone;
+}
+
+#message {
+grid-area: message;
+}
+
+
+// PINNED TALK SOON SECTION
 .pinned {
   width: 100%;
   height: auto;
@@ -790,15 +738,16 @@ marquee {
   background: $white;
   z-index: 100;
 
-  @media screen and (max-width:900px){
-    max-height:20vh;
-    min-height:0;
+  @media screen and (max-width:900px) {
+    max-height: 20vh;
+    min-height: 0;
   }
 
   h1 {
-    font-size:10.5vw;
+    font-size: 10.5vw;
     color: $onyx;
     text-align: center;
+    padding-top:5%;
     // transform: scale(2);
   }
 }
@@ -881,47 +830,6 @@ footer {
     }
   }
 }
-
-// input[type="submit"] {
-//   position: relative;
-//   display: inline-block;
-//   text-decoration: none;
-//   text-transform: uppercase;
-//   letter-spacing: 2px;
-//   color: $ivory;
-//   outline: 2px solid $ivory;
-//   padding: 10px 20px;
-//   overflow: hidden;
-//   transition: color 1s;
-//   z-index: 1;
-//   font-family: 'Roboto', sans-serif;
-//   font-size: 1.5em;
-// }
-
-// input[type="submit" i]:hover {
-//   color: $onyx;
-//   outline: 2px solid $ivory;
-// }
-
-// input[type="submit" i]::before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: -50px;
-//   z-index: -1;
-//   width: 150%;
-//   height: 100%;
-//   background: $ivory;
-//   transform: scaleX(0) skewX(35deg);
-//   transform-origin: left;
-//   transition: transform 1s;
-// }
-
-// input[type="submit" i]:hover::before {
-//   transform: scaleX(1) skewX(35deg);
-//   z-index: 1;
-// }
-
 
 // MARQUEE-ISH ANIMATION
 @keyframes scroll {

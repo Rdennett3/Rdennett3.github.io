@@ -20,7 +20,6 @@ body {
 
 body {
   font-size: 22px;
-  line-height: 1.7em;
   overflow-x: hidden;
   font-family: "Atkinson Hyperlegible", sans-serif;
   width: 100%;
@@ -28,7 +27,8 @@ body {
 }
 
 ::selection {
-  background: #FFBA08; /* WebKit/Blink Browsers */
+  background: #FFBA08;
+  /* WebKit/Blink Browsers */
 }
 
 * {
@@ -59,7 +59,7 @@ h3 {
 p {
   font-style: normal;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 .mainbtn {
@@ -188,7 +188,6 @@ p {
 .header-container p {
   margin-bottom: 5%;
   font-size: 1.5em;
-  line-height: 1.2em;
   text-align: left;
 }
 .header-container img {
@@ -284,14 +283,8 @@ p {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 900px) {
-  .about-item {
-    border: 1px solid red;
-  }
-}
 .about-item p {
   font-size: 1.5em;
-  line-height: 1em;
   color: #3BCEAC;
 }
 @media screen and (max-width: 900px) {
@@ -460,6 +453,8 @@ p {
 }
 
 .skills {
+  width: 100%;
+  height: auto;
   background: #3BCEAC;
   color: #201E1F;
   padding: 3.5% 0;
@@ -469,6 +464,11 @@ p {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 900px) {
+  .skills {
+    padding: 15% 0;
+  }
+}
 .skills h1 {
   width: 2500px;
   height: auto;
@@ -477,14 +477,17 @@ p {
   position: absolute;
   color: #201E1F;
   margin: 0;
-  /* Starting position */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  /* Apply animation to this element */
   -moz-animation: marquee 20s linear infinite;
   -webkit-animation: marquee 20s linear infinite;
   animation: marquee 20s linear infinite;
+}
+@media screen and (max-width: 900px) {
+  .skills h1 {
+    padding: 5% 0;
+  }
 }
 
 @-moz-keyframes marquee {
@@ -505,13 +508,17 @@ p {
 }
 @keyframes marquee {
   0% {
-    -moz-transform: translateX(100%); /* Firefox bug fix */
-    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    -moz-transform: translateX(100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(100%);
+    /* Firefox bug fix */
     transform: translateX(100%);
   }
   100% {
-    -moz-transform: translateX(-100%); /* Firefox bug fix */
-    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    -moz-transform: translateX(-100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Firefox bug fix */
     transform: translateX(-100%);
   }
 }
@@ -526,11 +533,66 @@ marquee {
   }
 }
 
-.form-container {
+.contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #201E1F;
+  border-bottom: 2px solid #201E1F;
+}
+
+.contact-container {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.contact-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section:nth-of-type(1) {
+  border-right: 2px solid #201E1F;
+}
+.contact-section:nth-of-type(2) {
+  background: #3BCEAC;
+}
+
+.contact-section-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0;
+}
+.contact-section-inner:nth-of-type(1) {
+  border-bottom: 2px solid #201E1F;
+}
+
+.contact-section-inner-container {
   width: 90%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.form-container form {
+.contact-section-inner-container:nth-of-type(1) h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -538,14 +600,14 @@ marquee {
   gap: 10px;
   font-family: "Playfair Display", serif;
 }
-.form-container form input[type=submit] {
+form input[type=submit] {
   font-size: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 0;
 }
-.form-container form input {
+form input {
   outline: 0;
   border: 3px solid #201E1F;
   min-height: 50px;
@@ -554,20 +616,20 @@ marquee {
   box-shadow: 3px 3px 0 #201E1F;
   background: #fff;
 }
-.form-container form input::placeholder {
+form input::placeholder {
   font-weight: bold;
   font-family: "Atkinson Hyperlegible", serif;
   font-size: 1.5em;
   font-weight: 200;
 }
-.form-container form textarea {
+form textarea {
   font-family: "Atkinson Hyperlegible", serif;
   padding-left: 20px;
   padding-top: 20px;
   border: 3px solid #201E1F;
   box-shadow: 3px 3px 0 #201E1F;
 }
-.form-container form textarea::placeholder {
+form textarea::placeholder {
   font-weight: bold;
   font-family: "Atkinson Hyperlegible", serif;
   font-size: 1.5em;
@@ -590,82 +652,6 @@ marquee {
   grid-area: message;
 }
 
-.new-contact {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-container {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: ". .";
-  border-bottom: 3px solid #201E1F;
-  border-top: 3px solid #201E1F;
-}
-@media screen and (max-width: 900px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-    grid-template-areas: ".";
-  }
-}
-
-.contact-item {
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-}
-.contact-item:nth-of-type(1) {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  border-right: 3px solid #201E1F;
-}
-.contact-item:nth-of-type(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #3BCEAC;
-  border-left: 3px solid 4onyx;
-}
-
-.contact-inner {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-right: 3px solid #201E1F;
-  z-index: 5;
-}
-.contact-inner:nth-of-type(1) {
-  height: 60%;
-}
-.contact-inner:nth-of-type(1) .getintouch-container {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.contact-inner:nth-of-type(1) .getintouch-container h1 {
-  margin-bottom: 20px;
-}
-.contact-inner:nth-of-type(2) {
-  height: 40%;
-  background: #fff;
-  border-top: 3px solid #201E1F;
-}
-.contact-inner:nth-of-type(2) a {
-  color: #201E1F;
-}
-
 .pinned {
   width: 100%;
   height: auto;
@@ -686,6 +672,7 @@ marquee {
   font-size: 10.5vw;
   color: #201E1F;
   text-align: center;
+  padding-top: 5%;
 }
 
 footer {

@@ -564,6 +564,45 @@ let scrollTween = gsap.to(sections, {
 //   }
 // });
 
+// *******************
+// TALK SOON ANIMATION
+// *******************
+let seemm = gsap.matchMedia();
+
+seemm.add("(min-width:900px)", () => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".pinned",
+      start: "top 50%",
+      end: "top top",
+      pin: true,
+      scrub:true,
+    }
+  });
+  tl.to("#pinnedh1", {
+    duration: 1,
+    y:"100%",
+    scale:2,
+  })
+})
+
+seemm.add("(max-width:899px)", () => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger:".pinned",
+      start:"top 50%",
+      end: "top 20%",
+      pin:true,
+      // markers:true,
+      scrub:true,
+    }
+  });
+  tl.to("#pinnedh1", {
+    duration: 1,
+    // y:"80%",
+    scale:2,
+  })
+})
 // *************************
 // FOOTER SLIDE IN ANIMATION
 // *************************
@@ -621,56 +660,6 @@ footeritemmm.add("(min-width:900px)", () => {
 //   })
 // })
 
-let seemm = gsap.matchMedia();
-
-seemm.add("(min-width:900px)", () => {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pinned",
-      start: "top 50%",
-      end: "top top",
-      pin: true,
-      scrub:true,
-    }
-  });
-  tl.to("#pinnedh1", {
-    duration: 1,
-    y:"25%",
-    scale:2,
-  })
-})
-
-seemm.add("(max-width:899px)", () => {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger:".pinned",
-      start:"top 50%",
-      end: "top 20%",
-      pin:true,
-      // markers:true,
-      scrub:true,
-    }
-  });
-  tl.to("#pinnedh1", {
-    duration: 1,
-    // y:"80%",
-    scale:2,
-  })
-})
-
-// gsap.set("#pinned", {xPercent: 0, yPercent: 0}),
-// gsap.from("#pinned", {x: "-20%", 
-//   scrollTrigger: {
-//       trigger: "#pinned",
-//       start: "top 50%",
-//       end: "top top",
-//       markers:true,
-//       // pin:true,
-//       // duration:3,
-//       scrub: true,
-//       }
-//     })
-
 // **************************
 // MOBILE WORK SECTION SLIDER
 // **************************
@@ -678,9 +667,9 @@ seemm.add("(max-width:899px)", () => {
 const swiper = new Swiper('.work-swiper', {
   slidesPerView:1,
   spaceBetween:10,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
 })
 
 // ***************************************
