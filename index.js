@@ -29,7 +29,7 @@ headerimgmm.add("(min-width:900px)", () => {
       trigger: "#header-image",
       start: "top 45%",
       end: "top top",
-      markers:true,
+      // markers:true,
       // scrub:true,
     }
   });

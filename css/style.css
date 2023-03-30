@@ -102,6 +102,13 @@ p {
   transform: scaleX(1) skewX(35deg);
 }
 
+.mobile-btn {
+  border: 1px solid #CEFF1A;
+  background: #201E1F;
+  color: #CEFF1A;
+  padding: 10px 40px;
+}
+
 .body-container {
   width: 100%;
   height: auto;
@@ -427,7 +434,7 @@ p {
 @media screen and (max-width: 900px) {
   .work-swiper {
     display: block;
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 }
@@ -440,11 +447,25 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .swiper-slide img {
   width: 100%;
   height: auto;
   filter: brightness(0.5);
+}
+.swiper-slide h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-slide a {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-55%, -50%);
 }
 
 .button-container {
@@ -474,17 +495,6 @@ p {
 .button-item i {
   color: #CEFF1A;
   font-size: 10vw;
-}
-
-.swiper-button-next-custom {
-  z-index: 10;
-}
-.swiper-button-next-custom:hover {
-  cursor: pointer;
-}
-.swiper-button-next-custom img {
-  width: 150px;
-  height: auto;
 }
 
 .skills {
