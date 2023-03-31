@@ -668,6 +668,7 @@ footeritemmm.add("(min-width:900px)", () => {
 const swiper = new Swiper('.work-swiper', {
   slidesPerView:1,
   loop:true,
+  effect:'cube',
   navigation: {
     nextEl: '.swiper-button-next-custom',
     prevEl: '.swiper-button-prev-custom',
