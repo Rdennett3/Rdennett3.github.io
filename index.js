@@ -81,8 +81,8 @@ headertextmm.add("(min-width:900px)", () => {
 headertextmm.add("(max-width:899px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: "#header-text",
-      start: "bottom 100%",
+      trigger: "#header-container",
+      start: "top top",
       // markers:true,
     }
   });
