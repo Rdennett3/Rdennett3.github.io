@@ -101,8 +101,8 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
 
-  @media screen and (max-width:900px){
-    width:70%;
+  @media screen and (max-width:900px) {
+    width: 70%;
   }
 }
 
@@ -132,11 +132,11 @@ p {
   // z-index: 1;
 }
 
-.mobile-btn{
-  border:1px solid $cinnabar;
-  background:$onyx;
-  color:$cinnabar;
-  padding:10px 40px;
+.mobile-btn {
+  border: 1px solid $cinnabar;
+  background: $onyx;
+  color: $cinnabar;
+  padding: 10px 40px;
 }
 
 .body-container {
@@ -319,8 +319,8 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 5% 0;
 
-  @media screen and (max-width:900px){
-    width:100%;
+  @media screen and (max-width:900px) {
+    width: 100%;
   }
 }
 
@@ -347,8 +347,8 @@ p {
     height: auto;
     clip-path: polygon(100% 0, 100% 0, 0 0, 0 0);
 
-    @media screen and (max-width:900px){
-      width:75%;
+    @media screen and (max-width:900px) {
+      width: 75%;
     }
   }
 }
@@ -488,18 +488,19 @@ p {
     display: block;
     width: 100%;
     height: auto;
+    background: $cinnabar;
   }
 }
 
 .swiper-slide {
-  width: 100%!important;
+  width: 100% !important;
   height: auto;
   min-height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position:relative;
+  position: relative;
 
   img {
     width: 100%;
@@ -507,59 +508,60 @@ p {
     filter: brightness(.5);
   }
 
-  p{
-    width:70%;
-    color:$white;
-    position:absolute;
+  p {
+    width: 70%;
+    color: $white;
+    position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
 
-  h1{
-    width:60%;
-    color:$white;
-    position:absolute;
+  h1 {
+    width: 60%;
+    color: $white;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  a{
-    position:absolute;
+
+  a {
+    position: absolute;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
 
-.button-container{
-  display:none;
+.button-container {
+  display: none;
 
-  @media screen and (max-width:900px){
-    width:100%;
-    height:auto;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:auto;
+  @media screen and (max-width:900px) {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     grid-template-areas: ". .";
-    gap:5px;
-    background:$cinnabar;
+    gap: 5px;
+    background: $cinnabar;
   }
 }
 
-.button-item{
-  background:$onyx;
-  width:100%;
-  height:100px;
-  display:flex;
+.button-item {
+  background: $onyx;
+  width: 100%;
+  height: 100px;
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  i{
-    color:$cinnabar;
-    font-size:10vw;
+  i {
+    color: $cinnabar;
+    font-size: 10vw;
   }
 }
 
@@ -649,106 +651,111 @@ marquee {
     min-height: 100px;
   }
 }
+
 // ***************
 // CONTACT SECTION
 // ***************
 
-.contact{
-  width:100%;
-  height:auto;
-  display:flex;
+.contact {
+  width: 100%;
+  height: auto;
+  display: flex;
   align-items: center;
-  border-top:2px solid $onyx;
-  border-bottom:2px solid $onyx;
+  border-top: 2px solid $onyx;
+  border-bottom: 2px solid $onyx;
 }
 
-.contact-container{
-  width:100%;
-  height:auto;
-  background:$white;
-  display:grid;
+.contact-container {
+  width: 100%;
+  height: auto;
+  background: $white;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.contact-section{
-  width:100%;
-  display:flex;
+.contact-section {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  &:nth-of-type(1){
-    border-right:2px solid $onyx;
+  &:nth-of-type(1) {
+    border-right: 2px solid $onyx;
   }
 
-  &:nth-of-type(2){
-    background:$cinnabar;
+  &:nth-of-type(2) {
+    background: $cinnabar;
   }
 
 }
 
-.contact-section-inner{
-  width:100%;
-  height:100%;
-  display:flex;
+.contact-section-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding:5% 0;
+  padding: 5% 0;
 
-  &:nth-of-type(1){
-    border-bottom:2px solid $onyx;
+  &:nth-of-type(1) {
+    border-bottom: 2px solid $onyx;
   }
 }
 
-.contact-section-inner-container{
-  width:90%;
-  height:auto;
-  display:flex;
+.contact-section-inner-container {
+  width: 90%;
+  height: auto;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  @media screen and (max-width:900px){
+
+  @media screen and (max-width:900px) {
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  &:nth-of-type(1){
-    h1{
-      margin-bottom:20px;
-      @media screen and (max-width:900px){
-        font-size:1.5em;
+  &:nth-of-type(1) {
+    h1 {
+      margin-bottom: 20px;
+
+      @media screen and (max-width:900px) {
+        font-size: 1.5em;
       }
     }
   }
-  a{
-    color:$onyx;
-    transition:.5s ease-in-out;
 
-    &:hover{
-      color:$cinnabar;
+  a {
+    color: $onyx;
+    transition: .5s ease-in-out;
+
+    &:hover {
+      color: $cinnabar;
       letter-spacing: 5px;
     }
   }
 }
 
 form {
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "name email" "phone phone" "message message";
   gap: 10px;
   font-family: 'Playfair Display', serif;
-  input[type=submit]{
-    font-size:2em;
-    color:$onyx;
-    display:flex;
+
+  input[type=submit] {
+    font-size: 2em;
+    color: $onyx;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding-left:0;
+    padding-left: 0;
   }
 
   input {
@@ -786,19 +793,19 @@ form {
 
 
 #name {
-grid-area: name;
+  grid-area: name;
 }
 
 #email {
-grid-area: email;
+  grid-area: email;
 }
 
 #phone {
-grid-area: phone;
+  grid-area: phone;
 }
 
 #message {
-grid-area: message;
+  grid-area: message;
 }
 
 
@@ -822,7 +829,7 @@ grid-area: message;
     font-size: 10.5vw;
     color: $onyx;
     text-align: center;
-    padding-top:5%;
+    padding-top: 5%;
     // transform: scale(2);
   }
 }

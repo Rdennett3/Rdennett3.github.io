@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 // NAME AT TOP OF PAGE
 // *******************
 
-gsap.fromTo('.header-container .xl span', { rotate: 5, y: 150, stagger: .05, autoAlpha: 0, delay:1.5, }, { y: 0, stagger: .05, autoAlpha: 1, rotate: 0, });
+gsap.fromTo('.header-container .xl span', { rotate: 5, y: 150, stagger: .05, autoAlpha: 0, delay: 1.5, }, { y: 0, stagger: .05, autoAlpha: 1, rotate: 0, });
 
 // ***********************
 // PICTURE OF ME ON LAPTOP
@@ -35,7 +35,7 @@ headerimgmm.add("(min-width:900px)", () => {
   });
   tl.to("#header-image img", {
     duration: 1,
-    x:"-10%",
+    x: "-10%",
     // xPercent:10,
     "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
 
@@ -114,7 +114,7 @@ aboutdescmm.add("(min-width:900px)", () => {
   tl.from("#about-desc", {
     autoAlpha: 0,
     x: "-100%",
-    duration:.75,
+    duration: .75,
   })
     .to("#about-desc", {
       autoAlpha: 1,
@@ -577,31 +577,31 @@ seemm.add("(min-width:900px)", () => {
       start: "top 50%",
       end: "top top",
       pin: true,
-      scrub:true,
+      scrub: true,
     }
   });
   tl.to("#pinnedh1", {
     duration: 1,
     // y:"100%",
-    scale:2,
+    scale: 2,
   })
 })
 
 seemm.add("(max-width:899px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger:".pinned",
-      start:"top 50%",
+      trigger: ".pinned",
+      start: "top 50%",
       end: "top 20%",
-      pin:true,
+      pin: true,
       // markers:true,
-      scrub:true,
+      scrub: true,
     }
   });
   tl.to("#pinnedh1", {
     duration: 1,
     // y:"80%",
-    scale:2,
+    scale: 2,
   })
 })
 // *************************
@@ -642,68 +642,21 @@ footeritemmm.add("(min-width:900px)", () => {
   tl.from(".footer-item", {
     duration: 1,
     x: "-50%",
-    autoAlpha:0,
-    stagger:.15,
+    autoAlpha: 0,
+    stagger: .15,
   })
 })
-
-// aboutimgmm.add("(max-width:899px)", () => {
-//   let tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "#about-img",
-//       start: "top 50%",
-//       end: "top top",
-//     }
-//   });
-//   tl.to("#about-img", {
-//     duration: 1,
-//     "clip-path": "polygon(100% 100%, 100% 0, 0 0, 0 100%)"
-//   })
-// })
 
 // **************************
 // MOBILE WORK SECTION SLIDER
 // **************************
 
 const swiper = new Swiper('.work-swiper', {
-  slidesPerView:1,
-  loop:true,
-  effect:'cube',
+  slidesPerView: 1,
+  loop: true,
+  effect: 'slide',
   navigation: {
     nextEl: '.swiper-button-next-custom',
     prevEl: '.swiper-button-prev-custom',
   },
-  // spaceBetween:10,
-  // autoplay: {
-  //   delay: 5000,
-  // },
 })
-
-// ***************************************
-// BELOW MIGHT BE REINSTATED AT SOME POINT
-// ***************************************
-
-// SKILLS AREA
-
-// let skillsdescmm = gsap.matchMedia();
-
-// skillsdescmm.add("(min-width:900px)", () => {
-//   let tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".tech-container",
-//       start: "top 60%",
-//       end: "top top",
-//     }
-//   });
-
-//   tl.from(".tech-item", {
-//     autoAlpha: 0,
-//     y: "100%",
-//     stagger: .15,
-//   })
-//     .to("#about-desc", {
-//       autoAlpha: 1,
-//       y: "0",
-//       stagger: .15,
-//     })
-// })
