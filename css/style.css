@@ -673,6 +673,7 @@ form {
 }
 form input[type=submit] {
   font-size: 2em;
+  color: #201E1F;
   display: flex;
   align-items: center;
   justify-content: center;
