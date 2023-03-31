@@ -77,6 +77,11 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
 }
+@media screen and (max-width: 900px) {
+  .mainbtn {
+    width: 70%;
+  }
+}
 
 .mainbtn:hover {
   color: #201E1F;
