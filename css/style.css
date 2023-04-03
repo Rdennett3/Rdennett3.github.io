@@ -815,7 +815,6 @@ footer {
 .footer-item:nth-of-type(2) a {
   color: #201E1F;
   font-size: 2em;
-  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 .footer-item:nth-of-type(3) {
   display: flex;
