@@ -4,6 +4,10 @@
   src: url("../fonts/munich.ttf");
 }
 @font-face {
+  font-family: "Stardom";
+  src: url("../fonts/Stardom-Regular.ttf");
+}
+@font-face {
   font-family: "Liquido";
   src: url("../fonts/liquido.otf");
 }
@@ -21,7 +25,7 @@ body {
 body {
   font-size: 22px;
   overflow-x: hidden;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Stardom", sans-serif;
   width: 100%;
   height: auto;
 }
@@ -43,7 +47,7 @@ a {
 h1 {
   font-size: 50px;
   font-weight: 200;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Stardom";
 }
 
 h2 {
@@ -228,7 +232,7 @@ p {
   font-size: 5vw;
   line-height: 1em;
   font-weight: 900;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Stardom", sans-serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

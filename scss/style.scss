@@ -13,6 +13,11 @@
 }
 
 @font-face {
+  font-family: "Stardom";
+  src: url("../fonts/Stardom-Regular.ttf");
+}
+
+@font-face {
   font-family: "Liquido";
   src: url('../fonts/liquido.otf');
 }
@@ -43,7 +48,7 @@ body {
   // @include margin;
   font-size: 22px;
   overflow-x: hidden;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: 'Stardom', sans-serif;
   width: 100%;
   height: auto;
   // cursor: url('../images/plane-2-small.png'), auto;
@@ -67,7 +72,8 @@ h1 {
   font-size: 50px;
   font-weight: 200;
   // font-family: 'NT Fabulous', sans-serif;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  // font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: "Stardom";
 }
 
 h2 {
@@ -260,7 +266,7 @@ p {
   line-height: 1em;
   font-weight: 900;
   // font-family: 'NT Fabulous', sans-serif;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Stardom", sans-serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
