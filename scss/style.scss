@@ -755,6 +755,10 @@ form {
   gap: 10px;
   font-family: 'Playfair Display', serif;
 
+  @media screen and (max-width:650px){
+    max-width:300px;
+  }
+
   input[type=submit] {
     font-size: 2em;
     color: $onyx;
