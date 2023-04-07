@@ -213,6 +213,7 @@ p {
 }
 .header-item-container p {
   font-size: 1.5em;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
 .xl {

@@ -66,16 +66,19 @@ headertextmm.add("(min-width:900px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#header-text",
-      start: "top 55%",
-      // markers:true,
+      start: "top 70%",
+      markers:true,
     }
   });
   tl.from("#header-text", {
-    y: "100%",
+    y: 100,
+    rotate:10,
     autoAlpha: 0,
+    duration:1,
   }).to("#header-text", {
     y: 0,
     autoAlpha: 1,
+    "clip-path": "polygon(0 0, 100% 1%, 100% 100%, 0 100%)",
   })
 })
 headertextmm.add("(max-width:899px)", () => {
@@ -83,15 +86,17 @@ headertextmm.add("(max-width:899px)", () => {
     scrollTrigger: {
       trigger: "#header-container",
       start: "top top",
-      // markers:true,
+      markers:true,
     }
   });
   tl.from("#header-text", {
     y: "100%",
     autoAlpha: 0,
+    duration:1,
   }).to("#header-text", {
     y: 0,
     autoAlpha: 1,
+    "clip-path": "polygon(0 0, 100% 1%, 100% 100%, 0 100%)",
   })
 })
 
@@ -241,6 +246,24 @@ let scrollTween = gsap.to(sections, {
     end: "+=3000"
   }
 });
+
+let proxy = { skew: 0 },
+    skewSetter = gsap.quickSetter(".workimg", "skewX", "deg"),
+    clamp = gsap.utils.clamp(-50, 50);
+
+ScrollTrigger.create({
+  onUpdate: (self) => {
+    let skew = clamp(self.getVelocity() / -300);
+    // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+    if (Math.abs(skew) > Math.abs(proxy.skew)) {
+      proxy.skew = skew;
+      gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+    }
+  }
+});
+
+// make the right edge "stick" to the scroll bar. force3D: true improves performance
+gsap.set(".workimg", {transformOrigin: "left center", force3D: true});
 
 // // PPAWS IMAGE ANIM
 
