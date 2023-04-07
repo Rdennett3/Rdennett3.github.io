@@ -667,10 +667,6 @@ marquee {
   justify-content: center;
   padding: 5% 0;
 }
-.contact-section-inner:nth-of-type(1) {
-  border-bottom: 2px solid #201E1F;
-}
-
 .contact-section-inner-container {
   width: 90%;
   height: auto;
