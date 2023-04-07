@@ -67,7 +67,7 @@ headertextmm.add("(min-width:900px)", () => {
     scrollTrigger: {
       trigger: "#header-text",
       start: "top 70%",
-      markers:true,
+      // markers:true,
     }
   });
   tl.from("#header-text", {
@@ -247,13 +247,15 @@ let scrollTween = gsap.to(sections, {
   }
 });
 
+// SCROLL VELOCITY BASED SKEWING ON WORK IMAGES
+
 let proxy = { skew: 0 },
     skewSetter = gsap.quickSetter(".workimg", "skewX", "deg"),
     clamp = gsap.utils.clamp(-50, 50);
 
 ScrollTrigger.create({
   onUpdate: (self) => {
-    let skew = clamp(self.getVelocity() / -300);
+    let skew = clamp(self.getVelocity() / -200);
     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
     if (Math.abs(skew) > Math.abs(proxy.skew)) {
       proxy.skew = skew;
@@ -262,8 +264,23 @@ ScrollTrigger.create({
   }
 });
 
+let proxy2 = { skew: 0 },
+    skewSetter2 = gsap.quickSetter(".worktitle", "skewX", "deg"),
+    clamp2 = gsap.utils.clamp(-50, 50);
+
+ScrollTrigger.create({
+  onUpdate: (self) => {
+    let skew = clamp2(self.getVelocity() / -200);
+    // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+    if (Math.abs(skew) > Math.abs(proxy2.skew)) {
+      proxy.skew = skew;
+      gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+    }
+  }
+});
+
 // make the right edge "stick" to the scroll bar. force3D: true improves performance
-gsap.set(".workimg", {transformOrigin: "left center", force3D: true});
+gsap.set(".worktitle", {transformOrigin: "bottom bottom", force3D: true});
 
 // // PPAWS IMAGE ANIM
 
@@ -284,18 +301,15 @@ gsap.set(".workimg", {transformOrigin: "left center", force3D: true});
 // // PPAWS TITLE ANIM
 // // ****************
 
-// gsap.from("#ppaws-title", {
-//   x: "50%",
-//   autoAlpha: 0,
-//   duration: .75,
-//   scale:1.5,
-//   scrollTrigger: {
-//     trigger: "#panel-1",
-//     start: "right 90%",
-//     end: "right 70%",
-//     containerAnimation: scrollTween,
-//   }
-// });
+gsap.to("#ppaws-title", {
+  "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+  scrollTrigger: {
+    trigger: "#panel-1",
+    start: "right 90%",
+    end: "right 70%",
+    containerAnimation: scrollTween,
+  }
+});
 
 // // ********************
 // // PPAWS TEXT ANIMATION
