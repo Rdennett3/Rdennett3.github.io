@@ -1,19 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap");
-@font-face {
-  font-family: "Munich";
-  src: url("../fonts/munich.ttf");
-}
 @font-face {
   font-family: "Stardom";
   src: url("../fonts/Stardom-Regular.ttf");
-}
-@font-face {
-  font-family: "Liquido";
-  src: url("../fonts/liquido.otf");
-}
-@font-face {
-  font-family: "NT Fabulous";
-  src: url("../fonts/nt-fabulous-alternative.otf");
 }
 html,
 body {
@@ -89,7 +76,7 @@ p {
 
 .mainbtn:hover {
   color: #201E1F;
-  border: 2px solid #3BCEAC;
+  border: 2px solid #D19C1D;
 }
 
 .mainbtn::before {
@@ -100,7 +87,7 @@ p {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background: #3BCEAC;
+  background: #D19C1D;
   color: #201E1F;
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
@@ -112,9 +99,9 @@ p {
 }
 
 .mobile-btn {
-  border: 1px solid #3BCEAC;
+  border: 1px solid #D19C1D;
   background: #201E1F;
-  color: #3BCEAC;
+  color: #D19C1D;
   padding: 10px 40px;
 }
 
@@ -135,7 +122,7 @@ p {
   width: 100%;
   height: auto;
   min-height: 50px;
-  background: #3BCEAC;
+  background: #D19C1D;
   position: fixed;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
@@ -169,53 +156,68 @@ p {
   color: #201E1F;
 }
 
-.header-area {
+.header-new {
   width: 100%;
   height: auto;
-  padding-top: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(to top, #201E1F 20%, #3BCEAC 10%, #3BCEAC 10%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: ". .";
+  min-height: 100vh;
+}
+@media screen and (max-width: 900px) {
+  .header-new {
+    grid-template-columns: 1fr;
+    grid-template-areas: ".";
+  }
 }
 
 .header-item {
+  width: 100%;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
+}
+.header-item:nth-of-type(1) {
+  background: #D19C1D;
+}
+@media screen and (max-width: 900px) {
+  .header-item:nth-of-type(1) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.header-item:nth-of-type(2) {
+  background: #201E1F;
+}
+@media screen and (max-width: 900px) {
+  .header-item:nth-of-type(2) {
+    display: none;
+  }
+}
+.header-item:nth-of-type(2) img {
+  width: 70%;
+  height: auto;
+  transform: translateY(20%);
 }
 
-.header-container {
+.header-item-container {
   width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  text-align: center;
-  color: #201E1F;
 }
-.header-container .xl {
-  margin-bottom: 5%;
-  color: #201E1F;
-}
-.header-container p {
-  margin-bottom: 5%;
+.header-item-container p {
   font-size: 1.5em;
-  text-align: left;
-}
-.header-container img {
-  width: 100%;
-  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-  box-shadow: 10px 10px 0 #201E1F;
 }
 
 .xl {
   font-weight: 400;
   font-size: 10vw;
-  line-height: 1em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -224,7 +226,7 @@ p {
 }
 @media screen and (max-width: 900px) {
   .xl {
-    font-size: 10vw;
+    font-size: 13vw;
   }
 }
 
@@ -243,6 +245,24 @@ p {
 @media screen and (max-width: 900px) {
   .xl2 {
     font-size: 10vw;
+  }
+}
+
+.xl3 {
+  font-size: 10vw;
+  line-height: 0.8em;
+  font-weight: 900;
+  font-family: "Stardom", sans-serif;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 900px) {
+  .xl3 {
+    font-size: 15vw;
   }
 }
 
@@ -272,7 +292,7 @@ p {
 .social i {
   font-size: 2.5em;
   margin: 0 10px;
-  color: #3BCEAC;
+  color: #D19C1D;
 }
 
 .about {
@@ -285,11 +305,12 @@ p {
 }
 
 .about-container {
-  width: 90%;
+  width: 70%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20% 0 5% 0;
 }
 @media screen and (max-width: 900px) {
   .about-container {
@@ -305,8 +326,9 @@ p {
   justify-content: center;
 }
 .about-item p {
-  font-size: 1.5em;
-  color: #3BCEAC;
+  font-size: 2.5em;
+  color: #D19C1D;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 @media screen and (max-width: 900px) {
   .about-item p {
@@ -326,7 +348,6 @@ p {
 }
 
 #recent {
-  width: 100%;
   margin-right: 5%;
 }
 
@@ -341,7 +362,7 @@ p {
   padding: 5% 0;
 }
 .work h1 {
-  color: #3BCEAC;
+  color: #D19C1D;
 }
 
 .work-container {
@@ -430,7 +451,7 @@ p {
 }
 
 .award {
-  background: #3BCEAC;
+  background: #D19C1D;
   padding: 5px 20px;
   margin: 10px 0 25px 0;
   color: #201E1F !important;
@@ -445,7 +466,7 @@ p {
     display: block;
     width: 100%;
     height: auto;
-    background: #3BCEAC;
+    background: #D19C1D;
   }
 }
 
@@ -501,7 +522,7 @@ p {
     grid-template-rows: auto;
     grid-template-areas: ". .";
     gap: 5px;
-    background: #3BCEAC;
+    background: #D19C1D;
   }
 }
 
@@ -514,14 +535,14 @@ p {
   justify-content: center;
 }
 .button-item i {
-  color: #3BCEAC;
+  color: #D19C1D;
   font-size: 10vw;
 }
 
 .skills {
   width: 100%;
   height: auto;
-  background: #3BCEAC;
+  background: #D19C1D;
   color: #201E1F;
   padding: 3.5% 0;
   display: flex;
@@ -627,7 +648,13 @@ marquee {
   border-right: 2px solid #201E1F;
 }
 .contact-section:nth-of-type(2) {
-  background: #3BCEAC;
+  background: #D19C1D;
+  border-left: 2px solid #201E1F;
+}
+@media screen and (max-width: 900px) {
+  .contact-section:nth-of-type(2) {
+    border-left: 0;
+  }
 }
 
 .contact-section-inner {
@@ -671,7 +698,7 @@ marquee {
   transition: 0.5s ease-in-out;
 }
 .contact-section-inner-container a:hover {
-  color: #3BCEAC;
+  color: #D19C1D;
   letter-spacing: 5px;
 }
 
@@ -770,7 +797,7 @@ footer {
   width: 100%;
   height: auto;
   min-height: 60vh;
-  background: #3BCEAC;
+  background: #D19C1D;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -786,7 +813,7 @@ footer {
 .footer-container {
   width: 90%;
   height: auto;
-  background: #3BCEAC;
+  background: #D19C1D;
   min-height: 50vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

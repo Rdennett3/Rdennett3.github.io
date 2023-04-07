@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 // NAME AT TOP OF PAGE
 // *******************
 
-gsap.fromTo('.header-container .xl span', { rotate: 5, y: 150, stagger: .05, autoAlpha: 0, delay: 1.5, }, { y: 0, stagger: .05, autoAlpha: 1, rotate: 0, });
+gsap.fromTo('.header-item-container .xl3 span', { rotate: 5, y: 150, stagger: .25, autoAlpha: 0, delay: 1.5, }, { y: 0, stagger: .25, autoAlpha: 1, rotate: 0, });
 
 // ***********************
 // PICTURE OF ME ON LAPTOP
@@ -105,20 +105,39 @@ aboutdescmm.add("(min-width:900px)", () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#about-desc",
-      start: "top 50%",
-      end: "top top",
+      start: "top 70%",
+      end: "top 30%",
+      // scrub:true,
       // markers:true,
     }
   });
 
   tl.from("#about-desc", {
-    autoAlpha: 0,
-    x: "-100%",
-    duration: .75,
+    duraion:1,
+    x: "90%",
   })
     .to("#about-desc", {
-      autoAlpha: 1,
-      x: "0",
+      scale:1.25,
+      "clip-path": "polygon(0 0, 100% 1%, 100% 100%, 0 100%)"
+    })
+})
+aboutdescmm.add("(max-width:899px)", () => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#about-desc",
+      start: "top 70%",
+      end: "top 30%",
+      // scrub:true,
+      // markers:true,
+    }
+  });
+
+  tl.from("#about-desc", {
+    duraion:1,
+    x: "90%",
+  })
+    .to("#about-desc", {
+      "clip-path": "polygon(0 0, 100% 1%, 100% 100%, 0 100%)"
     })
 })
 
@@ -197,6 +216,7 @@ recentmm.add("(max-width:899px)", () => {
   })
     .to("#work1 h1 .recent", {
       stagger: .05,
+      y:0,
       autoAlpha: 1
     })
 })
