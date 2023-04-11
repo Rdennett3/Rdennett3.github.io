@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 // NAME AT TOP OF PAGE
 // *******************
 
-gsap.fromTo('.header-item-container .xl3 span', { rotate: 5, y: 150, stagger: .25, autoAlpha: 0, delay: 1.5, }, { y: 0, stagger: .25, autoAlpha: 1, rotate: 0, });
+gsap.fromTo('.header-item-container .xl3 span', { y: 150, stagger: .15, autoAlpha: 0, delay: 1.5, }, { y: 0, stagger: .15, autoAlpha: 1, ease: "circ.out", });
 
 // ***********************
 // PICTURE OF ME ON LAPTOP
@@ -113,17 +113,20 @@ aboutdescmm.add("(min-width:900px)", () => {
       start: "top 70%",
       end: "top 30%",
       // scrub:true,
-      // markers:true,
+      markers:true,
     }
   });
 
-  tl.from("#about-desc", {
-    duraion:1,
-    x: "90%",
+  tl.from("#about-desc .desc", {
+    y: 150,
+    stagger: .05,
+    autoAlpha: 0,
+    ease: "circ.out"
   })
-    .to("#about-desc", {
-      scale:1.25,
-      "clip-path": "polygon(0 0, 100% 1%, 100% 100%, 0 100%)"
+    .to("#about-desc .desc", {
+      y: 0,
+      stagger: .05,
+      autoAlpha: 1,
     })
 })
 aboutdescmm.add("(max-width:899px)", () => {
@@ -251,11 +254,11 @@ let scrollTween = gsap.to(sections, {
 
 let proxy = { skew: 0 },
     skewSetter = gsap.quickSetter(".workimg", "skewX", "deg"),
-    clamp = gsap.utils.clamp(-50, 50);
+    clamp = gsap.utils.clamp(-20, 10);
 
 ScrollTrigger.create({
   onUpdate: (self) => {
-    let skew = clamp(self.getVelocity() / -200);
+    let skew = clamp(self.getVelocity() / -300);
     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
     if (Math.abs(skew) > Math.abs(proxy.skew)) {
       proxy.skew = skew;
@@ -263,7 +266,7 @@ ScrollTrigger.create({
     }
   }
 });
-
+gsap.set(".workimg", {transformOrigin: "center center", force3D: true});
 let proxy2 = { skew: 0 },
     skewSetter2 = gsap.quickSetter(".worktitle", "skewX", "deg"),
     clamp2 = gsap.utils.clamp(-50, 50);
@@ -282,21 +285,107 @@ ScrollTrigger.create({
 // make the right edge "stick" to the scroll bar. force3D: true improves performance
 gsap.set(".worktitle", {transformOrigin: "bottom bottom", force3D: true});
 
-// // PPAWS IMAGE ANIM
+// // PPAWS TITLE ANIM
 
-// gsap.from("#ppaws-img", {
-//   x: "90%",
-//   autoAlpha: 0,
-//   // markers:true,
+gsap.from("#ppaws-title", {
+  x: "10%",
+  autoAlpha: 0,
 
-//   scrollTrigger: {
-//     trigger: "#panel-1",
-//     start: "center 60%",
-//     end: "right 20%",
-//     containerAnimation: scrollTween,
-//   }
-// });
+  scrollTrigger: {
+    trigger: "#ppaws-title",
+    start: "center 80%",
+    end: "center 40%",
+    containerAnimation: scrollTween,
+    // markers:true,
+    // scrub:true,
+  }
+});
 
+// // NYCUA TITLE ANIM
+
+gsap.from("#nycua-title", {
+  x: "10%",
+  autoAlpha: 0,
+
+  scrollTrigger: {
+    trigger: "#nycua-title",
+    start: "center 80%",
+    end: "center 40%",
+    containerAnimation: scrollTween,
+    // markers:true,
+    // scrub:true,
+  }
+});
+// CASV TITLE ANIMATION
+gsap.from("#casv-title", {
+  x: "10%",
+  autoAlpha: 0,
+
+  scrollTrigger: {
+    trigger: "#casv-title",
+    start: "center 80%",
+    end: "center 40%",
+    containerAnimation: scrollTween,
+    // markers:true,
+    // scrub:true,
+  }
+});
+// BETH TITLE ANIMATION
+gsap.from("#beth-title", {
+  x: "10%",
+  autoAlpha: 0,
+
+  scrollTrigger: {
+    trigger: "#beth-title",
+    start: "center 80%",
+    end: "center 40%",
+    containerAnimation: scrollTween,
+    // markers:true,
+    // scrub:true,
+  }
+});
+// ROADTEX TITLE ANIMATION
+gsap.from("#roadtex-title", {
+  x: "10%",
+  autoAlpha: 0,
+
+  scrollTrigger: {
+    trigger: "#roadtex-title",
+    start: "center 80%",
+    end: "center 40%",
+    containerAnimation: scrollTween,
+    // markers:true,
+    // scrub:true,
+  }
+});
+// BROOKS TITLE ANIMATION
+gsap.from("#brooks-title", {
+  x: "10%",
+  autoAlpha: 0,
+
+  scrollTrigger: {
+    trigger: "#brooks-title",
+    start: "center 80%",
+    end: "center 40%",
+    containerAnimation: scrollTween,
+    // markers:true,
+    // scrub:true,
+  }
+});
+// ALB TITLE ANIMATION
+gsap.from("#alb-title", {
+  x: "10%",
+  autoAlpha: 0,
+
+  scrollTrigger: {
+    trigger: "#alb-title",
+    start: "center 80%",
+    end: "center 40%",
+    containerAnimation: scrollTween,
+    // markers:true,
+    // scrub:true,
+  }
+});
 // // ****************
 // // PPAWS TITLE ANIM
 // // ****************

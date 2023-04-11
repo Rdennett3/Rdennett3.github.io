@@ -17,7 +17,7 @@ $onyx: #201E1F;
 $ivory: #EBEBD3;
 // $cinnabar: #E94F37;
 // $cinnabar: #F0F7EE;
-$cinnabar:#D19C1D;
+$cinnabar:#1AFFD5;
 $white: #fff;
 
 html,
@@ -319,7 +319,7 @@ p {
 }
 
 .xl3 {
-  font-size: 10vw;
+  font-size: 8vw;
   line-height: .8em;
   font-weight: 900;
   // font-family: 'NT Fabulous', sans-serif;
@@ -400,9 +400,19 @@ p {
   justify-content: center;
 
   p {
+    display:flex;
+    flex-direction:row;
     font-size: 2.5em;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
     color: $cinnabar;
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+    span{
+      margin:0 8px;
+    }
+    // clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 
     @media screen and (max-width:900px) {
       font-size: 8vw;
@@ -773,7 +783,7 @@ marquee {
   padding: 5% 0;
 
   &:nth-of-type(1) {
-    // border-bottom: 2px solid $onyx;
+    border-bottom: 2px solid $onyx;
   }
 }
 
