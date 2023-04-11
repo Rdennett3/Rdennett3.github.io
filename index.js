@@ -254,7 +254,7 @@ let scrollTween = gsap.to(sections, {
 
 let proxy = { skew: 0 },
     skewSetter = gsap.quickSetter(".workimg", "skewX", "deg"),
-    clamp = gsap.utils.clamp(-20, 10);
+    clamp = gsap.utils.clamp(-10, 10);
 
 ScrollTrigger.create({
   onUpdate: (self) => {
@@ -269,7 +269,7 @@ ScrollTrigger.create({
 gsap.set(".workimg", {transformOrigin: "center center", force3D: true});
 let proxy2 = { skew: 0 },
     skewSetter2 = gsap.quickSetter(".worktitle", "skewX", "deg"),
-    clamp2 = gsap.utils.clamp(-50, 50);
+    clamp2 = gsap.utils.clamp(-10, 10);
 
 ScrollTrigger.create({
   onUpdate: (self) => {
