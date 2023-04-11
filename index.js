@@ -86,7 +86,7 @@ headertextmm.add("(max-width:899px)", () => {
     scrollTrigger: {
       trigger: "#header-container",
       start: "top top",
-      markers:true,
+      // markers:true,
     }
   });
   tl.from("#header-text", {
@@ -113,7 +113,7 @@ aboutdescmm.add("(min-width:900px)", () => {
       start: "top 70%",
       end: "top 30%",
       // scrub:true,
-      markers:true,
+      // markers:true,
     }
   });
 
