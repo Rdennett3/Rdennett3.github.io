@@ -140,12 +140,16 @@ aboutdescmm.add("(max-width:899px)", () => {
     }
   });
 
-  tl.from("#about-desc", {
-    duraion:1,
-    x: "90%",
+  tl.from("#about-desc .desc", {
+    y: 150,
+    stagger: .05,
+    autoAlpha: 0,
+    ease: "circ.out"
   })
-    .to("#about-desc", {
-      "clip-path": "polygon(0 0, 100% 1%, 100% 100%, 0 100%)"
+    .to("#about-desc .desc", {
+      y: 0,
+      stagger: .05,
+      autoAlpha: 1,
     })
 })
 

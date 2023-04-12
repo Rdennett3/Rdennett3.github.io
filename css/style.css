@@ -711,6 +711,12 @@ marquee {
   letter-spacing: 5px;
 }
 
+@media screen and (max-width: 900px) {
+  #form-container {
+    align-items: flex-start;
+  }
+}
+
 form {
   width: 100%;
   height: auto;
